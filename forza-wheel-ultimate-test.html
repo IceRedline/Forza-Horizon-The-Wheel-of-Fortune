@@ -60,21 +60,21 @@
     .subtitle {
       color: var(--muted);
       margin: 10px 0 0;
-      font-size: 15px;
+      font-size: 17px;
     }
 
     .counter {
       min-width: 132px;
       text-align: right;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 16px;
       white-space: nowrap;
     }
 
     .counter strong {
       display: block;
       color: var(--text);
-      font-size: 28px;
+      font-size: 30px;
       line-height: 1.1;
     }
 
@@ -469,7 +469,7 @@
 
     .panel h2 {
       margin: 0 0 14px;
-      font-size: 16px;
+      font-size: 18px;
       letter-spacing: 0;
     }
 
@@ -502,7 +502,7 @@
     .stat span {
       display: block;
       color: var(--muted);
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 6px;
     }
 
@@ -513,6 +513,16 @@
       overflow-wrap: anywhere;
       max-height: 48px;
       overflow: hidden;
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+      transition: opacity .18s ease, filter .18s ease, transform .18s ease;
+    }
+
+    .stats.is-changing .stat strong {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateY(5px);
     }
 
     .stat:nth-child(3) strong {
@@ -542,6 +552,16 @@
       border-radius: 8px;
       background: rgba(32, 38, 49, .74);
       padding: 8px;
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0) scale(1);
+      transition: opacity .28s ease, filter .28s ease, transform .28s ease;
+    }
+
+    .history-item.history-enter {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateY(-10px) scale(.98);
     }
 
     .history-item img {
@@ -580,7 +600,7 @@
 
     .history-meta {
       color: var(--muted);
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 4px;
     }
 
@@ -775,6 +795,7 @@
     const statRarity = document.getElementById('statRarity');
     const statValue = document.getElementById('statValue');
     const statSource = document.getElementById('statSource');
+    const statsPanel = document.querySelector('.stats');
     const spinSound = new Audio(spinSoundSrc);
     spinSound.preload = 'none';
     spinSound.volume = spinSoundVolume;
@@ -782,6 +803,7 @@
     let currentWinnerIndex = 0;
     let currentStartTranslate = 0;
     let hasSpun = false;
+    let currentResultAnimation = 0;
     const specialChanceCount = cars.filter(isSpecialChance).length;
     const carCount = cars.length - specialChanceCount;
     totalCars.textContent = specialChanceCount
@@ -1021,22 +1043,48 @@
         metaPill('Разгон', car.acceleration),
         metaPill('Торм.', car.braking),
       ].join('');
-      statPi.textContent = `${car.piClass} ${car.pi}`.trim() || '-';
-      statRarity.textContent = car.rarity || '-';
-      statValue.textContent = car.value || '-';
-      statSource.textContent = car.source || '-';
+      setCurrentResult({
+        pi: `${car.piClass} ${car.pi}`.trim() || '-',
+        rarity: car.rarity || '-',
+        value: car.value || '-',
+        source: car.source || '-',
+      });
     }
 
-    function clearCurrentResult() {
-      statPi.textContent = '-';
-      statRarity.textContent = '-';
-      statValue.textContent = '-';
-      statSource.textContent = '-';
+    function setCurrentResult(values, shouldAnimate = true) {
+      const apply = () => {
+        statPi.textContent = values.pi;
+        statRarity.textContent = values.rarity;
+        statValue.textContent = values.value;
+        statSource.textContent = values.source;
+      };
+      if (!shouldAnimate) {
+        statsPanel.classList.remove('is-changing');
+        apply();
+        return;
+      }
+      const token = ++currentResultAnimation;
+      statsPanel.classList.add('is-changing');
+      setTimeout(() => {
+        if (token !== currentResultAnimation) return;
+        apply();
+        void statsPanel.offsetWidth;
+        statsPanel.classList.remove('is-changing');
+      }, 170);
+    }
+
+    function clearCurrentResult(shouldAnimate = true) {
+      setCurrentResult({
+        pi: '-',
+        rarity: '-',
+        value: '-',
+        source: '-',
+      }, shouldAnimate);
     }
 
     function addHistory(car) {
       const item = document.createElement('div');
-      item.className = `history-item${isUltimateChance(car) ? ' history-special' : ''}${isRivalsChoice(car) ? ' history-rival' : ''}`;
+      item.className = `history-item history-enter${isUltimateChance(car) ? ' history-special' : ''}${isRivalsChoice(car) ? ' history-rival' : ''}`;
       const imageHtml = isSpecialChance(car)
         ? '<div class="history-special-mark">?</div>'
         : `<img src="${car.image}" alt="">`;
@@ -1047,6 +1095,8 @@
           <div class="history-meta">${escapeHtml(isSpecialChance(car) ? car.rarity : `${car.piClass} ${car.pi}`.trim() || 'PI -')}</div>
         </div>`;
       history.prepend(item);
+      void item.offsetWidth;
+      item.classList.remove('history-enter');
       while (history.children.length > 12) history.lastElementChild.remove();
     }
 
@@ -1122,7 +1172,7 @@
     renderCaseTrack(currentSequence);
     currentStartTranslate = getWinnerTranslate(initialIndex);
     caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
-    clearCurrentResult();
+    clearCurrentResult(false);
     status.textContent = 'Готово к розыгрышу';
   </script>
 </body>
