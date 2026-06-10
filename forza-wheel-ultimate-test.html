@@ -778,6 +778,10 @@
     const spinSound = new Audio(spinSoundSrc);
     spinSound.preload = 'none';
     spinSound.volume = spinSoundVolume;
+    let currentSequence = [];
+    let currentWinnerIndex = 0;
+    let currentStartTranslate = 0;
+    let hasSpun = false;
     const specialChanceCount = cars.filter(isSpecialChance).length;
     const carCount = cars.length - specialChanceCount;
     totalCars.textContent = specialChanceCount
@@ -1023,6 +1027,13 @@
       statSource.textContent = car.source || '-';
     }
 
+    function clearCurrentResult() {
+      statPi.textContent = '-';
+      statRarity.textContent = '-';
+      statValue.textContent = '-';
+      statSource.textContent = '-';
+    }
+
     function addHistory(car) {
       const item = document.createElement('div');
       item.className = `history-item${isUltimateChance(car) ? ' history-special' : ''}${isRivalsChoice(car) ? ' history-rival' : ''}`;
@@ -1050,22 +1061,30 @@
 
     async function spin() {
       if (spinButton.disabled) return;
-      const sequence = sampleCars(spinLength);
-      const winnerIndex = sequence.length - winnerOffsetFromEnd;
-      placeRivalsChoice(sequence, winnerIndex);
+      const isFirstSpin = !hasSpun;
+      const sequence = isFirstSpin ? currentSequence : sampleCars(spinLength);
+      const winnerIndex = isFirstSpin ? currentWinnerIndex : sequence.length - winnerOffsetFromEnd;
+      if (!isFirstSpin) placeRivalsChoice(sequence, winnerIndex);
       const winner = sequence[winnerIndex];
       spinButton.disabled = true;
       const soundReady = armSpinSound();
       status.textContent = 'Загружаем';
+      if (!isFirstSpin) clearCurrentResult();
       await Promise.all([preload(sequence), soundReady]);
-      startLoadFlash();
-      await wait(loadFlashLeadMs);
-      renderCaseTrack(sequence);
-      fadeLoadFlash();
-      await wait(80);
+      if (!isFirstSpin) {
+        startLoadFlash();
+        await wait(loadFlashLeadMs);
+        renderCaseTrack(sequence);
+        currentSequence = sequence;
+        currentWinnerIndex = winnerIndex;
+        currentStartTranslate = getWinnerTranslate(Math.min(3, sequence.length - 1));
+        caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
+        fadeLoadFlash();
+        await wait(80);
+      }
 
       const targetTranslate = getWinnerTranslate(winnerIndex);
-      const startTranslate = 0;
+      const startTranslate = currentStartTranslate;
       caseTrack.style.transition = 'none';
       caseTrack.style.transform = `translate3d(0, ${startTranslate}px, 0)`;
       void caseTrack.offsetHeight;
@@ -1089,18 +1108,21 @@
       status.textContent = 'Выпало';
       stage.classList.remove('spinning');
       spinButton.disabled = false;
+      hasSpun = true;
       spinButton.focus();
     }
 
     spinButton.addEventListener('click', spin);
 
-    const initialSequence = sampleCars(14);
-    const initialIndex = Math.floor(initialSequence.length / 2);
-    placeRivalsChoice(initialSequence, initialIndex);
-    renderCaseTrack(initialSequence);
-    const initial = initialSequence[initialIndex];
-    caseTrack.style.transform = `translate3d(0, ${getWinnerTranslate(initialIndex)}px, 0)`;
-    showCar(initial);
+    const initialSequence = sampleCars(spinLength);
+    const initialIndex = Math.min(3, initialSequence.length - 1);
+    currentSequence = initialSequence;
+    currentWinnerIndex = initialSequence.length - winnerOffsetFromEnd;
+    placeRivalsChoice(currentSequence, currentWinnerIndex);
+    renderCaseTrack(currentSequence);
+    currentStartTranslate = getWinnerTranslate(initialIndex);
+    caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
+    clearCurrentResult();
     status.textContent = 'Готово к розыгрышу';
   </script>
 </body>
