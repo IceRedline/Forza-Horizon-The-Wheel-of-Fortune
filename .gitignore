@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Local servers and caches
+.cache/
+.parcel-cache/
+.vite/
+node_modules/
+
+# Archives and generated bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+

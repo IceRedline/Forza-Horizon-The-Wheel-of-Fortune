@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forza Horizon 4 - тест Rival's choice</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e1116;
+      --panel: #171b23;
+      --panel-2: #202631;
+      --text: #f5f7fb;
+      --muted: #9aa5b5;
+      --line: #303846;
+      --accent: #ff4d8d;
+      --accent-2: #18c7c7;
+      --warn: #f6bf31;
+      --shadow: 0 24px 80px rgba(0, 0, 0, .35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(24, 199, 199, .16), transparent 28rem),
+        linear-gradient(145deg, #0e1116 0%, #151923 52%, #0d1015 100%);
+      color: var(--text);
+    }
+
+    .app {
+      width: min(1400px, calc(100% - 32px));
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 28px 0;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 10px 0 0;
+      font-size: 15px;
+    }
+
+    .counter {
+      min-width: 132px;
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .counter strong {
+      display: block;
+      color: var(--text);
+      font-size: 28px;
+      line-height: 1.1;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .stage {
+      --result-rgb: 255, 77, 141;
+      --grid-bg-width: 1120px;
+      --wheel-width: 880px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .018));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: minmax(760px, 1fr) auto;
+      min-height: 860px;
+    }
+
+    .car-view {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: min(var(--grid-bg-width), 100%);
+      justify-self: center;
+      padding: 52px 0;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        radial-gradient(circle at center, rgba(var(--result-rgb), .2), transparent 34rem);
+      background-size: 34px 34px, 34px 34px, auto;
+    }
+
+    .car-view::before {
+      content: "";
+      position: absolute;
+      inset: -18%;
+      z-index: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at center, rgba(var(--result-rgb), .34), rgba(var(--result-rgb), .12) 28%, transparent 62%);
+      opacity: .55;
+      filter: blur(22px);
+      transition: opacity .36s ease, background .36s ease;
+    }
+
+    .car-view::after {
+      content: "";
+      position: absolute;
+      inset: -200%;
+      z-index: 4;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at center, rgba(var(--result-rgb), .38), rgba(var(--result-rgb), .38) 46%, rgba(var(--result-rgb), .18) 82%, transparent 118%);
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+
+    .stage.result-flash .car-view::after {
+      animation: result-flash 1.72s ease;
+    }
+
+    .pointer {
+      display: none;
+    }
+
+    .car-card {
+      width: min(var(--wheel-width), calc(100% - 40px));
+      min-height: 680px;
+      display: grid;
+      grid-template-rows: 680px;
+      align-items: center;
+      transform: translateZ(0);
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-window {
+      position: relative;
+      width: 100%;
+      height: 680px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 8px;
+      background: rgba(14, 17, 22, .66);
+      box-shadow: inset 0 0 36px rgba(0, 0, 0, .32);
+    }
+
+    .case-window::before,
+    .case-window::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 104px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .case-window::before {
+      top: 0;
+      background: linear-gradient(180deg, rgba(14, 17, 22, .96), transparent);
+    }
+
+    .case-window::after {
+      bottom: 0;
+      background: linear-gradient(0deg, rgba(14, 17, 22, .96), transparent);
+    }
+
+    .case-selector {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      right: 20px;
+      height: 124px;
+      transform: translateY(-50%);
+      border: 4px solid rgba(255, 255, 255, .96);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .08);
+      box-shadow:
+        0 0 0 2px rgba(255, 255, 255, .24),
+        0 0 42px rgba(255, 255, 255, .28);
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .case-selector::before,
+    .case-selector::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 14px;
+      height: 28px;
+      transform: translateY(-50%);
+      background: #fff;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, .45));
+    }
+
+    .case-selector::before {
+      left: -18px;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+
+    .case-selector::after {
+      right: -18px;
+      clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    }
+
+    .case-track {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 0;
+      transform: translate3d(0, 0, 0);
+      will-change: transform;
+    }
+
+    .case-item {
+      --class-color: #3dbaea;
+      --class-rgb: 61, 186, 234;
+      width: calc(100% - 44px);
+      flex: 0 0 102px;
+      min-height: 102px;
+      display: grid;
+      grid-template-columns: 136px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid rgba(var(--class-rgb), .72);
+      border-left: 8px solid var(--class-color);
+      border-radius: 8px;
+      padding: 10px 14px 10px 10px;
+      background:
+        linear-gradient(90deg, rgba(var(--class-rgb), .28), rgba(var(--class-rgb), .07) 38%, rgba(20, 24, 31, .95)),
+        linear-gradient(180deg, rgba(32, 38, 49, .95), rgba(20, 24, 31, .95));
+      box-shadow:
+        0 12px 28px rgba(0, 0, 0, .28),
+        inset 0 0 22px rgba(var(--class-rgb), .08);
+    }
+
+    .case-class-x { --class-color: #62c845; --class-rgb: 98, 200, 69; }
+    .case-class-s2 { --class-color: #415af4; --class-rgb: 65, 90, 244; }
+    .case-class-s1 { --class-color: #8d35ff; --class-rgb: 141, 53, 255; }
+    .case-class-a { --class-color: #cc351f; --class-rgb: 204, 53, 31; }
+    .case-class-b { --class-color: #ec6325; --class-rgb: 236, 99, 37; }
+    .case-class-c { --class-color: #f0da24; --class-rgb: 240, 218, 36; }
+    .case-class-d { --class-color: #53bee7; --class-rgb: 83, 190, 231; }
+
+    .case-item img {
+      width: 136px;
+      height: 82px;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 18px rgba(0,0,0,.42));
+    }
+
+    .case-item-name {
+      min-height: auto;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      color: var(--text);
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.15;
+      text-align: left;
+    }
+
+    .case-item-pi {
+      justify-self: center;
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(var(--class-rgb), .18);
+      border: 2px solid rgba(var(--class-rgb), .55);
+      color: var(--class-color);
+      font-size: 19px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .case-item-special {
+      --special-border: rgba(255, 255, 255, .9);
+      --special-glow: rgba(255, 255, 255, .12);
+      --special-start: #050505;
+      --special-end: #000;
+      grid-template-columns: 1fr;
+      place-items: center;
+      border: 4px solid var(--special-border);
+      border-left-width: 4px;
+      background:
+        radial-gradient(circle at center, var(--special-glow), transparent 62%),
+        linear-gradient(180deg, var(--special-start), var(--special-end));
+      box-shadow:
+        0 16px 34px rgba(0, 0, 0, .44),
+        inset 0 0 34px var(--special-glow);
+    }
+
+    .case-item-rival {
+      --special-border: rgba(255, 255, 255, .88);
+      --special-glow: rgba(255, 255, 255, .14);
+      --special-start: #d21818;
+      --special-end: #7c0606;
+    }
+
+    .case-item-special .case-item-name {
+      max-width: 86%;
+      display: block;
+      color: #fff;
+      font-size: 30px;
+      line-height: 1.05;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 0 0 22px rgba(255, 255, 255, .38);
+    }
+
+    .case-item-special .case-item-pi {
+      display: none;
+    }
+
+    .car-info {
+      display: none;
+      grid-template-rows: 17px 132px;
+      row-gap: 10px;
+      align-items: start;
+      text-align: center;
+      min-height: 170px;
+    }
+
+    .status {
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: 12px;
+      font-weight: 800;
+      min-height: 17px;
+    }
+
+    .car-name {
+      width: 100%;
+      height: 150px;
+      margin: 0 auto;
+      max-width: 760px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: clamp(24px, 4.1vw, 46px);
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+      overflow: hidden;
+      opacity: 1;
+      filter: blur(0);
+      transition: opacity .26s ease, filter .26s ease;
+    }
+
+    .stage.spinning .car-name,
+    .stage.spinning .meta-row {
+      opacity: 0;
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .meta-row {
+      display: none;
+      min-height: 54px;
+      justify-content: center;
+      align-content: start;
+      flex-wrap: wrap;
+      gap: 8px;
+      opacity: 1;
+      filter: blur(0);
+      transition: opacity .26s ease, filter .26s ease;
+    }
+
+    .pill {
+      min-height: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(14, 17, 22, .62);
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .pill strong { color: var(--text); }
+    .pi-badge strong { color: var(--warn); }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 18px;
+      background: rgba(14, 17, 22, .88);
+      border-top: 1px solid var(--line);
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), #ff7a31);
+      font: inherit;
+      font-weight: 900;
+      min-height: 56px;
+      padding: 0 52px;
+      box-shadow: 0 16px 32px rgba(255, 77, 141, .24);
+      transition: transform .15s ease, opacity .15s ease, box-shadow .15s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+    button:active { transform: translateY(1px); }
+    button:disabled { cursor: wait; opacity: .65; transform: none; }
+
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+      min-width: 0;
+    }
+
+    .panel {
+      background: rgba(23, 27, 35, .9);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 82px 82px 126px;
+      gap: 10px;
+    }
+
+    .stat {
+      height: 82px;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      background: var(--panel-2);
+      overflow: hidden;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4) {
+      grid-column: 1 / -1;
+    }
+
+    .stat:nth-child(4) {
+      height: 126px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 6px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 20px;
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+      max-height: 48px;
+      overflow: hidden;
+    }
+
+    .stat:nth-child(3) strong {
+      max-height: 28px;
+    }
+
+    .stat:nth-child(4) strong {
+      max-height: 82px;
+    }
+
+    .history {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      max-height: 468px;
+      overflow: auto;
+      padding-right: 2px;
+    }
+
+    .history-item {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 10px;
+      align-items: center;
+      min-height: 58px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(32, 38, 49, .74);
+      padding: 8px;
+    }
+
+    .history-item img {
+      width: 64px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    .history-special {
+      border-color: rgba(255, 255, 255, .72);
+      background: #050505;
+    }
+
+    .history-rival {
+      border-color: rgba(255, 255, 255, .72);
+      background: linear-gradient(180deg, #d21818, #780606);
+    }
+
+    .history-special-mark {
+      width: 64px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 6px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .history-name {
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .history-meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    @keyframes result-flash {
+      0% { opacity: 0; }
+      12.5% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    @media (max-width: 880px) {
+      .app { width: min(100% - 20px, 720px); padding: 18px 0; }
+      header { align-items: start; flex-direction: column; }
+      .counter { text-align: left; }
+      main { grid-template-columns: 1fr; }
+      .stage { min-height: 740px; }
+      .car-view { width: 100%; padding: 42px 0; }
+      .car-card {
+        min-height: 560px;
+        grid-template-rows: 560px;
+      }
+      .case-window { height: 560px; }
+      .case-window::before,
+      .case-window::after { height: 64px; }
+      .case-selector {
+        left: 12px;
+        right: 12px;
+        height: 106px;
+      }
+      .case-selector::before {
+        left: -10px;
+        width: 8px;
+        height: 20px;
+      }
+      .case-selector::after {
+        right: -10px;
+        width: 8px;
+        height: 20px;
+      }
+      .case-item {
+        width: calc(100% - 24px);
+        flex-basis: 88px;
+        min-height: 88px;
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: 10px;
+        padding: 8px 10px;
+      }
+      .case-item img {
+        width: 96px;
+        height: 64px;
+      }
+      .case-item-name {
+        font-size: 17px;
+        -webkit-line-clamp: 2;
+      }
+      .case-item-pi {
+        grid-column: 2;
+        justify-self: start;
+        min-height: 32px;
+        padding: 5px 11px;
+        font-size: 15px;
+      }
+      .case-item-special {
+        grid-template-columns: 1fr;
+      }
+      .case-item-special .case-item-name {
+        font-size: 23px;
+      }
+      .car-info {
+        grid-template-rows: 17px 138px;
+        min-height: 180px;
+      }
+      .car-name {
+        height: 138px;
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.08;
+      }
+      .controls { justify-content: stretch; }
+      button { width: 100%; padding-inline: 26px; }
+      .side { grid-template-rows: auto auto; }
+      .history { max-height: 260px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Forza Horizon 4</h1>
+        <p class="subtitle">Тестовая версия: Rival's choice всегда попадает в сектор выбора</p>
+      </div>
+      <div class="counter"><strong id="totalCars">0</strong> автомобилей в базе</div>
+    </header>
+
+    <main>
+      <section class="stage" id="stage">
+        <div class="car-view">
+          <div class="pointer" aria-hidden="true"></div>
+          <article class="car-card" id="carCard">
+            <div class="case-window" id="caseWindow">
+              <div class="case-selector" aria-hidden="true"></div>
+              <div class="case-track" id="caseTrack"></div>
+            </div>
+            <div class="car-info">
+              <div class="status" id="status">Готово к розыгрышу</div>
+              <div class="car-name" id="carName">Нажми «Крутить»</div>
+              <div class="meta-row" id="metaRow"></div>
+            </div>
+          </article>
+        </div>
+        <div class="controls">
+          <button id="spinButton" type="button">Крутить</button>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="panel">
+          <h2>Текущий результат</h2>
+          <div class="stats">
+            <div class="stat"><span>Класс PI</span><strong id="statPi">-</strong></div>
+            <div class="stat"><span>Редкость</span><strong id="statRarity">-</strong></div>
+            <div class="stat"><span>Цена</span><strong id="statValue">-</strong></div>
+            <div class="stat"><span>Получение</span><strong id="statSource">-</strong></div>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>История</h2>
+          <div class="history" id="history"></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="data/cars.js"></script>
+  <script>
+    const cars = window.FH4_CARS || [];
+    const spinLength = 96;
+    const winnerOffsetFromEnd = 7;
+    const spinDurationMs = 14400;
+    const resultFlashLeadMs = 1000;
+    const forceRivalsChoice = true;
+    const totalCars = document.getElementById('totalCars');
+    const stage = document.getElementById('stage');
+    const carCard = document.getElementById('carCard');
+    const caseWindow = document.getElementById('caseWindow');
+    const caseTrack = document.getElementById('caseTrack');
+    const carName = document.getElementById('carName');
+    const status = document.getElementById('status');
+    const metaRow = document.getElementById('metaRow');
+    const spinButton = document.getElementById('spinButton');
+    const history = document.getElementById('history');
+    const statPi = document.getElementById('statPi');
+    const statRarity = document.getElementById('statRarity');
+    const statValue = document.getElementById('statValue');
+    const statSource = document.getElementById('statSource');
+    const specialChanceCount = cars.filter(isSpecialChance).length;
+    const carCount = cars.length - specialChanceCount;
+    totalCars.textContent = specialChanceCount
+      ? `${carCount.toLocaleString('ru-RU')} + ${specialChanceCount.toLocaleString('ru-RU')}`
+      : cars.length.toLocaleString('ru-RU');
+
+    function sampleCars(count) {
+      const pool = [...cars];
+      const limit = Math.min(count, pool.length);
+      for (let i = pool.length - 1; i > 0; i -= 1) {
+        const randomIndex = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[randomIndex]] = [pool[randomIndex], pool[i]];
+      }
+      return pool.slice(0, limit);
+    }
+
+    function placeRivalsChoice(sequence, targetIndex) {
+      if (!forceRivalsChoice) return;
+      const rivalsChoice = cars.find(isRivalsChoice);
+      if (!rivalsChoice || !sequence[targetIndex]) return;
+      const existingIndex = sequence.findIndex(isRivalsChoice);
+      if (existingIndex >= 0) {
+        [sequence[existingIndex], sequence[targetIndex]] = [sequence[targetIndex], sequence[existingIndex]];
+        return;
+      }
+      sequence[targetIndex] = rivalsChoice;
+    }
+
+    function wait(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
+    function loadImage(src) {
+      return new Promise((resolve) => {
+        if (!src) {
+          resolve(false);
+          return;
+        }
+        const img = new Image();
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = src;
+      });
+    }
+
+    async function preload(sequence) {
+      const uniqueImages = [...new Set(sequence.map((car) => car.image).filter(Boolean))];
+      const loading = Promise.allSettled(uniqueImages.map(loadImage));
+      await Promise.race([
+        Promise.all([loading, wait(350)]),
+        wait(1500),
+      ]);
+    }
+
+    function metaPill(label, value, extraClass = '') {
+      if (!value) return '';
+      return `<span class="pill ${extraClass}"><span>${label}</span><strong>${value}</strong></span>`;
+    }
+
+    function isUltimateChance(car) {
+      return car?.kind === 'ultimate-chance';
+    }
+
+    function isRivalsChoice(car) {
+      return car?.kind === 'rivals-choice';
+    }
+
+    function isSpecialChance(car) {
+      return isUltimateChance(car) || isRivalsChoice(car);
+    }
+
+    function getResultRgb(car) {
+      if (isUltimateChance(car)) return '255, 255, 255';
+      if (isRivalsChoice(car)) return '210, 24, 24';
+      const classColors = {
+        x: '98, 200, 69',
+        s2: '65, 90, 244',
+        s1: '141, 53, 255',
+        a: '204, 53, 31',
+        b: '236, 99, 37',
+        c: '240, 218, 36',
+        d: '83, 190, 231',
+      };
+      const normalized = String(car.piClass || '').toLowerCase();
+      return classColors[normalized] || classColors.d;
+    }
+
+    function updateResultGlow(car, shouldFlash = false) {
+      stage.style.setProperty('--result-rgb', getResultRgb(car));
+      stage.classList.remove('result-flash');
+      if (shouldFlash) {
+        void stage.offsetWidth;
+        stage.classList.add('result-flash');
+      }
+    }
+
+    function getClassColorClass(car) {
+      if (isRivalsChoice(car)) return 'case-item-special case-item-rival';
+      if (isUltimateChance(car)) return 'case-item-special';
+      const normalized = String(car.piClass || '').toLowerCase();
+      return `case-class-${normalized || 'd'}`;
+    }
+
+    function renderCaseItem(car) {
+      if (isSpecialChance(car)) {
+        return `
+          <div class="case-item ${getClassColorClass(car)}">
+            <div class="case-item-name">${escapeHtml(car.name)}</div>
+            <div class="case-item-pi" aria-hidden="true"></div>
+          </div>
+        `;
+      }
+      return `
+        <div class="case-item ${getClassColorClass(car)}">
+          <img src="${car.image}" alt="">
+          <div class="case-item-name">${escapeHtml(car.name)}</div>
+          <div class="case-item-pi">${escapeHtml(`${car.piClass} ${car.pi}`.trim() || 'PI -')}</div>
+        </div>
+      `;
+    }
+
+    function renderCaseTrack(sequence) {
+      caseTrack.innerHTML = sequence.map(renderCaseItem).join('');
+      caseTrack.style.transition = 'none';
+      caseTrack.style.transform = 'translate3d(0, 0, 0)';
+    }
+
+    function getWinnerTranslate(winnerIndex) {
+      const winnerItem = caseTrack.children[winnerIndex];
+      if (!winnerItem) return 0;
+      const windowRect = caseWindow.getBoundingClientRect();
+      const itemCenter = winnerItem.offsetTop + (winnerItem.offsetHeight / 2);
+      return (windowRect.height / 2) - itemCenter;
+    }
+
+    function waitForTrackTransition() {
+      return new Promise((resolve) => {
+        let done = false;
+        const finish = () => {
+          if (done) return;
+          done = true;
+          caseTrack.removeEventListener('transitionend', finish);
+          resolve();
+        };
+        caseTrack.addEventListener('transitionend', finish, { once: true });
+        setTimeout(finish, spinDurationMs + 400);
+      });
+    }
+
+    function showCar(car, mode = 'result') {
+      updateResultGlow(car, mode === 'win');
+      carName.textContent = car.name;
+      metaRow.innerHTML = [
+        metaPill('PI', `${car.piClass} ${car.pi}`.trim(), 'pi-badge'),
+        metaPill('Скорость', car.speed),
+        metaPill('Управл.', car.handling),
+        metaPill('Разгон', car.acceleration),
+        metaPill('Торм.', car.braking),
+      ].join('');
+      statPi.textContent = `${car.piClass} ${car.pi}`.trim() || '-';
+      statRarity.textContent = car.rarity || '-';
+      statValue.textContent = car.value || '-';
+      statSource.textContent = car.source || '-';
+    }
+
+    function addHistory(car) {
+      const item = document.createElement('div');
+      item.className = `history-item${isUltimateChance(car) ? ' history-special' : ''}${isRivalsChoice(car) ? ' history-rival' : ''}`;
+      const imageHtml = isSpecialChance(car)
+        ? '<div class="history-special-mark">?</div>'
+        : `<img src="${car.image}" alt="">`;
+      item.innerHTML = `
+        ${imageHtml}
+        <div>
+          <div class="history-name">${escapeHtml(car.name)}</div>
+          <div class="history-meta">${escapeHtml(isSpecialChance(car) ? car.rarity : `${car.piClass} ${car.pi}`.trim() || 'PI -')}</div>
+        </div>`;
+      history.prepend(item);
+      while (history.children.length > 12) history.lastElementChild.remove();
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"]/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+      }[char]));
+    }
+
+    async function spin() {
+      if (spinButton.disabled) return;
+      const sequence = sampleCars(spinLength);
+      const winnerIndex = sequence.length - winnerOffsetFromEnd;
+      placeRivalsChoice(sequence, winnerIndex);
+      const winner = sequence[winnerIndex];
+      spinButton.disabled = true;
+      status.textContent = 'Загружаем';
+      await preload(sequence);
+      renderCaseTrack(sequence);
+      await wait(80);
+
+      stage.classList.add('spinning');
+      status.textContent = 'Крутим';
+      const targetTranslate = getWinnerTranslate(winnerIndex);
+      const startTranslate = caseWindow.getBoundingClientRect().height + 40;
+      caseTrack.style.transition = 'none';
+      caseTrack.style.transform = `translate3d(0, ${startTranslate}px, 0)`;
+      void caseTrack.offsetHeight;
+      caseTrack.style.transition = `transform ${spinDurationMs / 1000}s cubic-bezier(.08, .78, .08, 1)`;
+      caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
+      const flashTimer = setTimeout(() => {
+        updateResultGlow(winner, true);
+      }, Math.max(0, spinDurationMs - resultFlashLeadMs));
+      await waitForTrackTransition();
+      clearTimeout(flashTimer);
+      caseTrack.style.transition = 'none';
+      caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
+
+      showCar(winner);
+      addHistory(winner);
+      status.textContent = 'Выпало';
+      stage.classList.remove('spinning');
+      spinButton.disabled = false;
+      spinButton.focus();
+    }
+
+    spinButton.addEventListener('click', spin);
+
+    const initialSequence = sampleCars(14);
+    const initialIndex = Math.floor(initialSequence.length / 2);
+    placeRivalsChoice(initialSequence, initialIndex);
+    renderCaseTrack(initialSequence);
+    const initial = initialSequence[initialIndex];
+    caseTrack.style.transform = `translate3d(0, ${getWinnerTranslate(initialIndex)}px, 0)`;
+    showCar(initial);
+    status.textContent = 'Готово к розыгрышу';
+  </script>
+</body>
+</html>
