@@ -12,6 +12,7 @@ Interactive Forza Horizon 4 wheel of fortune with local car data and local car i
 - `data/cars.json` - readable car database.
 - `data/cars.js` - browser-ready database used by the HTML pages.
 - `assets/cars/` - local car images.
+- `assets/sounds/wheel-spin.wav` - prebuilt wheel spin sound.
 
 ## Run
 
@@ -35,4 +36,3 @@ The wheel includes 753 cars plus 2 special outcomes:
 
 - `Absolute Ultimate Chance`
 - `Rival's choice`
-

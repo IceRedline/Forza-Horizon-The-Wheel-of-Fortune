@@ -144,6 +144,14 @@
       animation: result-flash 1.72s ease;
     }
 
+    .stage.load-flash .car-view::after {
+      animation: load-flash-in .175s ease-out forwards;
+    }
+
+    .stage.load-flash-fade .car-view::after {
+      animation: load-flash-out .48s ease-out forwards;
+    }
+
     .pointer {
       display: none;
     }
@@ -582,6 +590,32 @@
       100% { opacity: 0; }
     }
 
+    @keyframes load-flash-in {
+      0% {
+        opacity: 0;
+        transform: scale(.45);
+        background: #fff;
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1.05);
+        background: #fff;
+      }
+    }
+
+    @keyframes load-flash-out {
+      0% {
+        opacity: 1;
+        transform: scale(1.05);
+        background: #fff;
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.65);
+        background: #fff;
+      }
+    }
+
     @media (max-width: 880px) {
       .app { width: min(100% - 20px, 720px); padding: 18px 0; }
       header { align-items: start; flex-direction: column; }
@@ -722,6 +756,11 @@
     const spinDurationMs = 14400;
     const resultFlashLeadMs = 1000;
     const forceRivalsChoice = true;
+    const loadFlashLeadMs = 175;
+    const spinSoundSrc = 'assets/sounds/wheel-spin.wav';
+    const spinSoundVolume = 0.62;
+    const spinSoundWarmupMs = 1200;
+    const spinSoundLeadMs = 800;
     const totalCars = document.getElementById('totalCars');
     const stage = document.getElementById('stage');
     const carCard = document.getElementById('carCard');
@@ -736,6 +775,9 @@
     const statRarity = document.getElementById('statRarity');
     const statValue = document.getElementById('statValue');
     const statSource = document.getElementById('statSource');
+    const spinSound = new Audio(spinSoundSrc);
+    spinSound.preload = 'none';
+    spinSound.volume = spinSoundVolume;
     const specialChanceCount = cars.filter(isSpecialChance).length;
     const carCount = cars.length - specialChanceCount;
     totalCars.textContent = specialChanceCount
@@ -825,11 +867,31 @@
 
     function updateResultGlow(car, shouldFlash = false) {
       stage.style.setProperty('--result-rgb', getResultRgb(car));
+      stage.classList.remove('load-flash');
+      stage.classList.remove('load-flash-fade');
       stage.classList.remove('result-flash');
       if (shouldFlash) {
         void stage.offsetWidth;
         stage.classList.add('result-flash');
       }
+    }
+
+    function startLoadFlash() {
+      stage.classList.remove('result-flash');
+      stage.classList.remove('load-flash');
+      stage.classList.remove('load-flash-fade');
+      void stage.offsetWidth;
+      stage.classList.add('load-flash');
+    }
+
+    function fadeLoadFlash() {
+      stage.classList.remove('load-flash');
+      stage.classList.remove('load-flash-fade');
+      void stage.offsetWidth;
+      stage.classList.add('load-flash-fade');
+      setTimeout(() => {
+        stage.classList.remove('load-flash-fade');
+      }, 520);
     }
 
     function getClassColorClass(car) {
@@ -869,6 +931,66 @@
       const windowRect = caseWindow.getBoundingClientRect();
       const itemCenter = winnerItem.offsetTop + (winnerItem.offsetHeight / 2);
       return (windowRect.height / 2) - itemCenter;
+    }
+
+    function playSpinSound() {
+      try {
+        spinSound.currentTime = 0;
+      } catch (error) {
+        // The browser may reject seeking before metadata is ready.
+      }
+      spinSound.muted = false;
+      spinSound.volume = spinSoundVolume;
+      if (spinSound.paused) {
+        const playAttempt = spinSound.play();
+        if (playAttempt && typeof playAttempt.catch === 'function') {
+          playAttempt.catch(() => {});
+        }
+      }
+    }
+
+    function armSpinSound() {
+      const soundReady = new Promise((resolve) => {
+        if (spinSound.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+          resolve();
+          return;
+        }
+        let done = false;
+        const finish = () => {
+          if (done) return;
+          done = true;
+          spinSound.removeEventListener('canplay', finish);
+          spinSound.removeEventListener('canplaythrough', finish);
+          resolve();
+        };
+        spinSound.addEventListener('canplay', finish, { once: true });
+        spinSound.addEventListener('canplaythrough', finish, { once: true });
+        setTimeout(finish, spinSoundWarmupMs);
+      });
+      spinSound.pause();
+      try {
+        spinSound.currentTime = 0;
+      } catch (error) {
+        // The browser may reject seeking before metadata is ready.
+      }
+      spinSound.preload = 'auto';
+      spinSound.load();
+      spinSound.muted = true;
+      const playAttempt = spinSound.play();
+      if (playAttempt && typeof playAttempt.catch === 'function') {
+        playAttempt.catch(() => {});
+      }
+      return soundReady;
+    }
+
+    function stopSpinSound() {
+      spinSound.pause();
+      spinSound.muted = false;
+      try {
+        spinSound.currentTime = 0;
+      } catch (error) {
+        // Ignore browsers that cannot seek a just-stopped local file.
+      }
     }
 
     function waitForTrackTransition() {
@@ -933,24 +1055,31 @@
       placeRivalsChoice(sequence, winnerIndex);
       const winner = sequence[winnerIndex];
       spinButton.disabled = true;
+      const soundReady = armSpinSound();
       status.textContent = 'Загружаем';
-      await preload(sequence);
+      await Promise.all([preload(sequence), soundReady]);
+      startLoadFlash();
+      await wait(loadFlashLeadMs);
       renderCaseTrack(sequence);
+      fadeLoadFlash();
       await wait(80);
 
-      stage.classList.add('spinning');
-      status.textContent = 'Крутим';
       const targetTranslate = getWinnerTranslate(winnerIndex);
-      const startTranslate = caseWindow.getBoundingClientRect().height + 40;
+      const startTranslate = 0;
       caseTrack.style.transition = 'none';
       caseTrack.style.transform = `translate3d(0, ${startTranslate}px, 0)`;
       void caseTrack.offsetHeight;
+      playSpinSound();
+      await wait(spinSoundLeadMs);
+      stage.classList.add('spinning');
+      status.textContent = 'Крутим';
       caseTrack.style.transition = `transform ${spinDurationMs / 1000}s cubic-bezier(.08, .78, .08, 1)`;
       caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
       const flashTimer = setTimeout(() => {
         updateResultGlow(winner, true);
       }, Math.max(0, spinDurationMs - resultFlashLeadMs));
       await waitForTrackTransition();
+      stopSpinSound();
       clearTimeout(flashTimer);
       caseTrack.style.transition = 'none';
       caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
