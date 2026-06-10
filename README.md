@@ -30,6 +30,14 @@ Then open:
 http://127.0.0.1:8766/forza-wheel.html
 ```
 
+## Tests
+
+The tests use Node.js built-in test runner and do not require npm packages:
+
+```bash
+npm test
+```
+
 ## Special outcomes
 
 The wheel includes 753 cars plus 2 special outcomes:
