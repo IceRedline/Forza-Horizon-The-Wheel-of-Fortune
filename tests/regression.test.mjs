@@ -10,6 +10,8 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const paths = {
   mainHtml: join(root, 'forza-wheel.html'),
   rivalsTestHtml: join(root, 'forza-wheel-ultimate-test.html'),
+  appCss: join(root, 'assets', 'css', 'forza-wheel.css'),
+  appJs: join(root, 'assets', 'js', 'forza-wheel.js'),
   carsJson: join(root, 'data', 'cars.json'),
   carsJs: join(root, 'data', 'cars.js'),
   carsDir: join(root, 'assets', 'cars'),
@@ -102,33 +104,47 @@ test('main and rivals pages expose required DOM hooks', async () => {
       assertContains(html, `id="${id}"`, htmlPath);
     }
     assertContains(html, 'data/cars.js', htmlPath);
-    assertContains(html, 'assets/sounds/wheel-spin.wav', htmlPath);
+    assertContains(html, 'assets/css/forza-wheel.css', htmlPath);
+    assertContains(html, 'assets/js/forza-wheel.js', htmlPath);
   }
 });
 
 test('theme toggle keeps dark as default and supports saved light theme', async () => {
-  const html = await readText(paths.mainHtml);
-  assertContains(html, 'body.theme-light', 'main page CSS');
-  assertContains(html, 'forzaWheelTheme', 'theme persistence key');
-  assertContains(html, "setTheme('dark')", 'dark fallback');
-  assertContains(html, "themeToggle.checked ? 'light' : 'dark'", 'theme toggle handler');
+  const css = await readText(paths.appCss);
+  const js = await readText(paths.appJs);
+  assertContains(css, 'body.theme-light', 'app CSS');
+  assertContains(js, 'forzaWheelTheme', 'theme persistence key');
+  assertContains(js, "setTheme('dark')", 'dark fallback');
+  assertContains(js, "themeToggle.checked ? 'light' : 'dark'", 'theme toggle handler');
 });
 
 test('wheel startup behavior is protected', async () => {
-  const html = await readText(paths.mainHtml);
-  assertContains(html, 'const spinLength = 96;', 'spin length');
-  assertContains(html, 'const initialIndex = Math.min(3, initialSequence.length - 1);', 'initial offset');
-  assertContains(html, 'const startTranslate = currentStartTranslate;', 'repeat spin start alignment');
-  assertContains(html, 'if (!isFirstSpin) {', 'first spin skips reload block');
-  assertContains(html, 'clearCurrentResult(false);', 'initial result panel clear');
+  const js = await readText(paths.appJs);
+  assertContains(js, 'const spinLength = 96;', 'spin length');
+  assertContains(js, 'const initialIndex = Math.min(3, initialSequence.length - 1);', 'initial offset');
+  assertContains(js, 'const startTranslate = currentStartTranslate;', 'repeat spin start alignment');
+  assertContains(js, 'if (!isFirstSpin) {', 'first spin skips reload block');
+  assertContains(js, 'clearCurrentResult(false);', 'initial result panel clear');
 });
 
 test('rivals test page forces Rival choice without changing the main page', async () => {
   const main = await readText(paths.mainHtml);
   const rivals = await readText(paths.rivalsTestHtml);
+  const js = await readText(paths.appJs);
 
-  assert.ok(!main.includes('const forceRivalsChoice = true;'), 'main page should not force Rival choice');
-  assertContains(rivals, 'const forceRivalsChoice = true;', 'rivals test page');
-  assertContains(rivals, 'function placeRivalsChoice(sequence, targetIndex)', 'rivals placement helper');
-  assertContains(rivals, 'placeRivalsChoice(currentSequence, currentWinnerIndex);', 'initial rival placement');
+  assert.ok(!main.includes('data-force-rivals-choice="true"'), 'main page should not force Rival choice');
+  assertContains(rivals, 'data-force-rivals-choice="true"', 'rivals test page');
+  assertContains(js, 'const forceRivalsChoice = document.body.dataset.forceRivalsChoice', 'shared rival flag');
+  assertContains(js, 'function placeRivalsChoice(sequence, targetIndex)', 'rivals placement helper');
+  assertContains(js, 'placeRivalsChoice(currentSequence, currentWinnerIndex);', 'initial rival placement');
+});
+
+test('split assets contain the wheel styling and controller', async () => {
+  const css = await readText(paths.appCss);
+  const js = await readText(paths.appJs);
+  assertContains(css, 'Main wheel surface', 'CSS section comments');
+  assertContains(css, '.case-selector', 'selector frame styles');
+  assertContains(css, 'body.theme-light .case-selector', 'light selector inversion');
+  assertContains(js, 'Main spin flow', 'JS section comments');
+  assertContains(js, 'assets/sounds/wheel-spin.wav', 'spin sound path');
 });
