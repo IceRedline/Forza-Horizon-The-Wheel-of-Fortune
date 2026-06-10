@@ -31,6 +31,20 @@
       color: var(--text);
     }
 
+    body.theme-light {
+      color-scheme: light;
+      --bg: #f3f6fb;
+      --panel: #ffffff;
+      --panel-2: #eef3f9;
+      --text: #101827;
+      --muted: #5d6878;
+      --line: #cfd8e6;
+      --shadow: 0 24px 80px rgba(38, 54, 77, .18);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(24, 199, 199, .18), transparent 28rem),
+        linear-gradient(145deg, #f8fbff 0%, #edf3fa 52%, #e6edf7 100%);
+    }
+
     .app {
       width: min(1400px, calc(100% - 32px));
       min-height: 100vh;
@@ -78,6 +92,67 @@
       line-height: 1.1;
     }
 
+    .header-actions {
+      display: flex;
+      align-items: end;
+      gap: 14px;
+    }
+
+    .theme-toggle {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 46px auto;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(23, 27, 35, .72);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    body.theme-light .theme-toggle {
+      background: rgba(255, 255, 255, .78);
+    }
+
+    .theme-toggle input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .theme-switch {
+      width: 46px;
+      height: 24px;
+      border-radius: 999px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .04);
+    }
+
+    .theme-switch::after {
+      content: "";
+      display: block;
+      width: 18px;
+      height: 18px;
+      margin: 2px;
+      border-radius: 999px;
+      background: var(--accent-2);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, .28);
+      transition: transform .18s ease, background .18s ease;
+    }
+
+    .theme-toggle input:checked + .theme-switch::after {
+      transform: translateX(22px);
+      background: var(--warn);
+    }
+
     main {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 300px;
@@ -99,6 +174,10 @@
       min-height: 860px;
     }
 
+    body.theme-light .stage {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .96), rgba(239, 244, 250, .9));
+    }
+
     .car-view {
       position: relative;
       display: grid;
@@ -113,6 +192,13 @@
         linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
         radial-gradient(circle at center, rgba(var(--result-rgb), .2), transparent 34rem);
       background-size: 34px 34px, 34px 34px, auto;
+    }
+
+    body.theme-light .car-view {
+      background:
+        linear-gradient(90deg, rgba(35, 50, 72, .09) 1px, transparent 1px),
+        linear-gradient(rgba(35, 50, 72, .08) 1px, transparent 1px),
+        radial-gradient(circle at center, rgba(var(--result-rgb), .18), transparent 34rem);
     }
 
     .car-view::before {
@@ -178,6 +264,12 @@
       box-shadow: inset 0 0 36px rgba(0, 0, 0, .32);
     }
 
+    body.theme-light .case-window {
+      border-color: rgba(28, 42, 61, .14);
+      background: rgba(246, 249, 253, .78);
+      box-shadow: inset 0 0 36px rgba(53, 73, 101, .12);
+    }
+
     .case-window::before,
     .case-window::after {
       content: "";
@@ -199,6 +291,14 @@
       background: linear-gradient(0deg, rgba(14, 17, 22, .96), transparent);
     }
 
+    body.theme-light .case-window::before {
+      background: linear-gradient(180deg, rgba(246, 249, 253, .96), transparent);
+    }
+
+    body.theme-light .case-window::after {
+      background: linear-gradient(0deg, rgba(246, 249, 253, .96), transparent);
+    }
+
     .case-selector {
       position: absolute;
       top: 50%;
@@ -216,6 +316,14 @@
       pointer-events: none;
     }
 
+    body.theme-light .case-selector {
+      border-color: rgba(16, 24, 39, .92);
+      background: rgba(16, 24, 39, .06);
+      box-shadow:
+        0 0 0 2px rgba(16, 24, 39, .16),
+        0 0 42px rgba(16, 24, 39, .18);
+    }
+
     .case-selector::before,
     .case-selector::after {
       content: "";
@@ -226,6 +334,12 @@
       transform: translateY(-50%);
       background: #fff;
       filter: drop-shadow(0 0 10px rgba(255, 255, 255, .45));
+    }
+
+    body.theme-light .case-selector::before,
+    body.theme-light .case-selector::after {
+      background: #101827;
+      filter: drop-shadow(0 0 10px rgba(16, 24, 39, .28));
     }
 
     .case-selector::before {
@@ -269,6 +383,15 @@
       box-shadow:
         0 12px 28px rgba(0, 0, 0, .28),
         inset 0 0 22px rgba(var(--class-rgb), .08);
+    }
+
+    body.theme-light .case-item {
+      background:
+        linear-gradient(90deg, rgba(var(--class-rgb), .22), rgba(var(--class-rgb), .07) 38%, rgba(255, 255, 255, .94)),
+        linear-gradient(180deg, rgba(255, 255, 255, .96), rgba(238, 243, 249, .96));
+      box-shadow:
+        0 12px 28px rgba(48, 67, 94, .14),
+        inset 0 0 22px rgba(var(--class-rgb), .06);
     }
 
     .case-class-x { --class-color: #62c845; --class-rgb: 98, 200, 69; }
@@ -435,6 +558,10 @@
       border-top: 1px solid var(--line);
     }
 
+    body.theme-light .controls {
+      background: rgba(255, 255, 255, .86);
+    }
+
     button {
       border: 0;
       border-radius: 8px;
@@ -465,6 +592,10 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 16px;
+    }
+
+    body.theme-light .panel {
+      background: rgba(255, 255, 255, .9);
     }
 
     .panel h2 {
@@ -558,6 +689,10 @@
       transition: opacity .28s ease, filter .28s ease, transform .28s ease;
     }
 
+    body.theme-light .history-item {
+      background: rgba(255, 255, 255, .78);
+    }
+
     .history-item.history-enter {
       opacity: 0;
       filter: blur(8px);
@@ -639,6 +774,7 @@
     @media (max-width: 880px) {
       .app { width: min(100% - 20px, 720px); padding: 18px 0; }
       header { align-items: start; flex-direction: column; }
+      .header-actions { width: 100%; align-items: start; justify-content: space-between; flex-wrap: wrap; }
       .counter { text-align: left; }
       main { grid-template-columns: 1fr; }
       .stage { min-height: 740px; }
@@ -726,7 +862,15 @@
         <h1>Forza Horizon 4</h1>
         <p class="subtitle">Колесо фортуны без компромиссов</p>
       </div>
-      <div class="counter"><strong id="totalCars">0</strong> автомобилей в базе</div>
+      <div class="header-actions">
+        <label class="theme-toggle">
+          <span>Тёмная</span>
+          <input id="themeToggle" type="checkbox" aria-label="Светлая тема">
+          <span class="theme-switch" aria-hidden="true"></span>
+          <span>Светлая</span>
+        </label>
+        <div class="counter"><strong id="totalCars">0</strong> автомобилей в базе</div>
+      </div>
     </header>
 
     <main>
@@ -795,6 +939,7 @@
     const statValue = document.getElementById('statValue');
     const statSource = document.getElementById('statSource');
     const statsPanel = document.querySelector('.stats');
+    const themeToggle = document.getElementById('themeToggle');
     const spinSound = new Audio(spinSoundSrc);
     spinSound.preload = 'none';
     spinSound.volume = spinSoundVolume;
@@ -808,6 +953,27 @@
     totalCars.textContent = specialChanceCount
       ? `${carCount.toLocaleString('ru-RU')} + ${specialChanceCount.toLocaleString('ru-RU')}`
       : cars.length.toLocaleString('ru-RU');
+
+    function setTheme(theme) {
+      const isLight = theme === 'light';
+      document.body.classList.toggle('theme-light', isLight);
+      themeToggle.checked = isLight;
+      try {
+        localStorage.setItem('forzaWheelTheme', isLight ? 'light' : 'dark');
+      } catch (error) {
+        // Local files can run in browsers with storage disabled.
+      }
+    }
+
+    try {
+      setTheme(localStorage.getItem('forzaWheelTheme') === 'light' ? 'light' : 'dark');
+    } catch (error) {
+      setTheme('dark');
+    }
+
+    themeToggle.addEventListener('change', () => {
+      setTheme(themeToggle.checked ? 'light' : 'dark');
+    });
 
     function sampleCars(count) {
       const pool = [...cars];
