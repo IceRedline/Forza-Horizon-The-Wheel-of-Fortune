@@ -358,6 +358,14 @@ function addHistory(car) {
   while (history.children.length > 12) history.lastElementChild.remove();
 }
 
+function recordSpinStats(car) {
+  try {
+    window.ForzaSpinStats?.recordSpin(car);
+  } catch (error) {
+    // Stats are non-critical UI state; storage may be unavailable.
+  }
+}
+
 function escapeHtml(value) {
   return String(value).replace(/[&<>"]/g, (char) => ({
     '&': '&amp;',
@@ -414,6 +422,7 @@ async function spin() {
 
   showCar(winner);
   addHistory(winner);
+  recordSpinStats(winner);
   status.textContent = 'Выпало';
   stage.classList.remove('spinning');
   spinButton.disabled = false;

@@ -3,13 +3,17 @@ import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createContext, Script } from 'node:vm';
 import test from 'node:test';
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const paths = {
+  homeHtml: join(root, 'index.html'),
   mainHtml: join(root, 'forza-wheel.html'),
   rivalsTestHtml: join(root, 'forza-wheel-ultimate-test.html'),
+  homeJs: join(root, 'assets', 'js', 'home.js'),
+  spinStatsJs: join(root, 'assets', 'js', 'spin-stats.js'),
   appCss: join(root, 'assets', 'css', 'forza-wheel.css'),
   appJs: join(root, 'assets', 'js', 'forza-wheel.js'),
   carsJson: join(root, 'data', 'cars.json'),
@@ -20,6 +24,22 @@ const paths = {
 
 async function readText(path) {
   return readFile(path, 'utf8');
+}
+
+async function loadSpinStatsApi() {
+  const source = await readText(paths.spinStatsJs);
+  const storage = new Map();
+  const localStorage = {
+    getItem: (key) => (storage.has(key) ? storage.get(key) : null),
+    setItem: (key, value) => storage.set(key, String(value)),
+  };
+  const sandbox = { window: { localStorage } };
+  new Script(source).runInContext(createContext(sandbox));
+  return { api: sandbox.window.ForzaSpinStats, storage };
+}
+
+function plainObject(value) {
+  return JSON.parse(JSON.stringify(value));
 }
 
 async function readCarsJson() {
@@ -104,9 +124,77 @@ test('main and rivals pages expose required DOM hooks', async () => {
       assertContains(html, `id="${id}"`, htmlPath);
     }
     assertContains(html, 'data/cars.js', htmlPath);
+    assertContains(html, 'assets/js/spin-stats.js', htmlPath);
     assertContains(html, 'assets/css/forza-wheel.css', htmlPath);
     assertContains(html, 'assets/js/forza-wheel.js', htmlPath);
   }
+});
+
+test('home page exposes dynamic local stats hooks', async () => {
+  const html = await readText(paths.homeHtml);
+  assertContains(html, 'id="homeTotalSpins"', 'home page');
+  assertContains(html, 'id="homeCollectionProgress"', 'home page');
+  assertContains(html, 'id="homeCreditsWon"', 'home page');
+  assertContains(html, 'id="homeUniquePrizes"', 'home page');
+  assertContains(html, 'data/cars.js', 'home page');
+  assertContains(html, 'assets/js/spin-stats.js', 'home page');
+  assertContains(html, 'assets/js/home.js', 'home page');
+
+  const homeJs = await readText(paths.homeJs);
+  assertContains(homeJs, 'ForzaSpinStats', 'home stats controller');
+  assertContains(homeJs, 'FH4_CARS', 'home stats controller');
+  assertContains(homeJs, 'homeTotalSpins', 'home stats controller');
+  assertContains(homeJs, 'homeCollectionProgress', 'home stats controller');
+  assertContains(homeJs, 'homeCreditsWon', 'home stats controller');
+  assertContains(homeJs, 'homeUniquePrizes', 'home stats controller');
+});
+
+test('spin stats persist local spin count and parsed car values', async () => {
+  const { api } = await loadSpinStatsApi();
+  assert.equal(api.parseCreditValue('43,500 CR'), 43500);
+  assert.equal(api.parseCreditValue('1,200,000 CR'), 1200000);
+  assert.equal(api.parseCreditValue('∞ CR'), 0);
+  assert.equal(api.parseCreditValue("Rival's choice"), 0);
+
+  assert.deepEqual(plainObject(api.read()), { totalSpins: 0, creditsWon: 0, wonPrizeKeys: [] });
+  assert.deepEqual(
+    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', value: '43,500 CR' })),
+    { totalSpins: 1, creditsWon: 43500, wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017'] },
+  );
+  assert.deepEqual(
+    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', value: '43,500 CR' })),
+    { totalSpins: 2, creditsWon: 87000, wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017'] },
+  );
+  assert.deepEqual(
+    plainObject(api.recordSpin({ name: 'Zenvo TSR-S 2019', year: '2019', value: '1,200,000 CR' })),
+    {
+      totalSpins: 3,
+      creditsWon: 1287000,
+      wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017', 'car:Zenvo TSR-S 2019:2019'],
+    },
+  );
+  assert.deepEqual(
+    plainObject(api.recordSpin({ name: 'Absolute Ultimate Chance', kind: 'ultimate-chance', value: '∞ CR' })),
+    {
+      totalSpins: 4,
+      creditsWon: 1287000,
+      wonPrizeKeys: [
+        'car:Abarth 124 Spider 2017:2017',
+        'car:Zenvo TSR-S 2019:2019',
+        'ultimate-chance:Absolute Ultimate Chance',
+      ],
+    },
+  );
+  assert.equal(api.formatNumber(1243500), '1,243,500');
+  assert.equal(api.formatCredits(1243500), '1.2M');
+  assert.equal(api.formatCollectionProgress(1, 755), '0.1%');
+  assert.equal(api.formatCollectionProgress(755, 755), '100%');
+});
+
+test('home unique prizes count comes from the browser data set', async () => {
+  const { api } = await loadSpinStatsApi();
+  const cars = await readCarsJson();
+  assert.equal(api.getPrizeCount(cars), 755);
 });
 
 test('theme toggle keeps dark as default and supports saved light theme', async () => {
@@ -125,6 +213,13 @@ test('wheel startup behavior is protected', async () => {
   assertContains(js, 'const startTranslate = currentStartTranslate;', 'repeat spin start alignment');
   assertContains(js, 'if (!isFirstSpin) {', 'first spin skips reload block');
   assertContains(js, 'clearCurrentResult(false);', 'initial result panel clear');
+});
+
+test('wheel records completed spins in local home stats', async () => {
+  const js = await readText(paths.appJs);
+  assertContains(js, 'function recordSpinStats(car)', 'spin stats recorder');
+  assertContains(js, 'ForzaSpinStats?.recordSpin(car)', 'spin stats recorder');
+  assertContains(js, 'recordSpinStats(winner);', 'spin completion flow');
 });
 
 test('rivals test page forces Rival choice without changing the main page', async () => {
