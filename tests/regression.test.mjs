@@ -15,8 +15,12 @@ const paths = {
   spinStatsJs: join(root, 'assets', 'js', 'spin-stats.js'),
   appCss: join(root, 'assets', 'css', 'forza-wheel.css'),
   appJs: join(root, 'assets', 'js', 'forza-wheel.js'),
-  carsJson: join(root, 'data', 'cars.json'),
-  carsJs: join(root, 'data', 'cars.js'),
+  fh4CarsJson: join(root, 'data', 'fh4-cars.json'),
+  fh4CarsJs: join(root, 'data', 'fh4-cars.js'),
+  fh5CarsJson: join(root, 'data', 'fh5-cars.json'),
+  fh5CarsJs: join(root, 'data', 'fh5-cars.js'),
+  fh6CarsJson: join(root, 'data', 'fh6-cars.json'),
+  fh6CarsJs: join(root, 'data', 'fh6-cars.js'),
   carsDir: join(root, 'assets', 'cars'),
   spinSound: join(root, 'assets', 'sounds', 'wheel-spin.wav'),
 };
@@ -42,15 +46,19 @@ function plainObject(value) {
 }
 
 async function readCarsJson() {
-  return JSON.parse(await readText(paths.carsJson));
+  return JSON.parse(await readText(paths.fh4CarsJson));
+}
+
+async function readBrowserCarsJs(path, globalName) {
+  const source = (await readText(path)).trim();
+  const prefix = `window.${globalName} = `;
+  assert.ok(source.startsWith(prefix), `${path} should expose window.${globalName}`);
+  assert.ok(source.endsWith(';'), `${path} should end with a semicolon`);
+  return JSON.parse(source.slice(prefix.length, -1));
 }
 
 async function readCarsJs() {
-  const source = (await readText(paths.carsJs)).trim();
-  const prefix = 'window.FH4_CARS = ';
-  assert.ok(source.startsWith(prefix), 'cars.js should expose window.FH4_CARS');
-  assert.ok(source.endsWith(';'), 'cars.js should end with a semicolon');
-  return JSON.parse(source.slice(prefix.length, -1));
+  return readBrowserCarsJs(paths.fh4CarsJs, 'FH4_CARS');
 }
 
 function assertContains(source, needle, label) {
@@ -60,12 +68,13 @@ function assertContains(source, needle, label) {
 test('car database has expected size, specials, and browser mirror', async () => {
   const carsJson = await readCarsJson();
   const carsJs = await readCarsJs();
-  assert.deepEqual(carsJs, carsJson, 'cars.js should match cars.json exactly');
+  assert.deepEqual(carsJs, carsJson, 'fh4-cars.js should match fh4-cars.json exactly');
 
   const specials = carsJson.filter((car) => car.kind);
   const regularCars = carsJson.filter((car) => !car.kind);
   assert.equal(regularCars.length, 753, 'regular car count should stay stable');
   assert.equal(specials.length, 2, 'special outcome count should stay stable');
+  assert.ok(carsJson.every((car) => car.game === 'fh4'), 'current car database should be marked as FH4');
 
   assert.deepEqual(
     specials.map((car) => car.name),
@@ -75,6 +84,38 @@ test('car database has expected size, specials, and browser mirror', async () =>
   const absolute = specials.find((car) => car.kind === 'ultimate-chance');
   assert.equal(absolute.value, '∞ CR');
   assert.equal(absolute.source, 'Any car you want');
+});
+
+test('future game car databases are parsed and mirrored', async () => {
+  const cases = [
+    {
+      jsonPath: paths.fh5CarsJson,
+      jsPath: paths.fh5CarsJs,
+      globalName: 'FH5_CARS',
+      game: 'fh5',
+      count: 902,
+      sample: 'Abarth 124 Spider 2017',
+    },
+    {
+      jsonPath: paths.fh6CarsJson,
+      jsPath: paths.fh6CarsJs,
+      globalName: 'FH6_CARS',
+      game: 'fh6',
+      count: 618,
+      sample: 'Abarth 695 Biposto 2016',
+    },
+  ];
+
+  for (const entry of cases) {
+    const carsJson = JSON.parse(await readText(entry.jsonPath));
+    const carsJs = await readBrowserCarsJs(entry.jsPath, entry.globalName);
+    assert.deepEqual(carsJs, carsJson, `${entry.game} browser mirror should match JSON exactly`);
+    assert.equal(carsJson.length, entry.count, `${entry.game} parsed car count should stay stable`);
+    assert.ok(carsJson.every((car) => car.game === entry.game), `${entry.game} cars should be game-marked`);
+    assert.ok(carsJson.some((car) => car.name === entry.sample), `${entry.game} should include ${entry.sample}`);
+    assert.ok(carsJson.every((car) => car.name && car.year && car.value && car.piClass && car.pi), `${entry.game} cars should have usable wheel fields`);
+    assert.equal(new Set(carsJson.map((car) => `${car.name}:${car.year}`)).size, carsJson.length, `${entry.game} cars should be unique`);
+  }
 });
 
 test('regular cars point at local image files', async () => {
@@ -125,7 +166,7 @@ test('main page exposes required DOM hooks', async () => {
   ]) {
     assertContains(html, `id="${id}"`, paths.mainHtml);
   }
-  assertContains(html, 'data/cars.js', paths.mainHtml);
+  assertContains(html, 'data/fh4-cars.js', paths.mainHtml);
   assertContains(html, 'assets/js/spin-stats.js', paths.mainHtml);
   assertContains(html, 'assets/css/forza-wheel.css', paths.mainHtml);
   assertContains(html, 'assets/js/forza-wheel.js', paths.mainHtml);
@@ -147,7 +188,7 @@ test('home page exposes dynamic local stats hooks', async () => {
   assertContains(html, 'id="homeCollectionProgress"', 'home page');
   assertContains(html, 'id="homeCreditsWon"', 'home page');
   assertContains(html, 'id="homeUniquePrizes"', 'home page');
-  assertContains(html, 'data/cars.js', 'home page');
+  assertContains(html, 'data/fh4-cars.js', 'home page');
   assertContains(html, 'assets/js/spin-stats.js', 'home page');
   assertContains(html, 'assets/js/home.js', 'home page');
 
@@ -220,7 +261,8 @@ test('theme toggle keeps dark as default and supports saved light theme', async 
 test('wheel startup behavior is protected', async () => {
   const js = await readText(paths.appJs);
   assertContains(js, 'const spinLength = 96;', 'spin length');
-  assertContains(js, 'const initialIndex = Math.min(3, initialSequence.length - 1);', 'initial offset');
+  assertContains(js, 'const initialIndex = Math.max(0, initialSequence.length - 1 - startOffsetFromEnd);', 'initial offset');
+  assertContains(js, 'const winnerOffsetFromStart = 7;', 'reversed spin target offset');
   assertContains(js, 'const startTranslate = currentStartTranslate;', 'repeat spin start alignment');
   assertContains(js, 'if (!isFirstSpin) {', 'first spin skips reload block');
   assertContains(js, 'clearCurrentResult(false);', 'initial result panel clear');

@@ -751,6 +751,11 @@ button:hover { transform: translateY(-1px); }
 button:active { transform: translateY(1px); }
 button:disabled { cursor: wait; opacity: .65; transform: none; }
 
+#spinButton {
+  font-size: 18px;
+  letter-spacing: .02em;
+}
+
 /* Right rail: current result cards and animated history. */
 .side {
   display: grid;

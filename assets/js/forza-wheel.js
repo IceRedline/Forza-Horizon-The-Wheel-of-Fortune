@@ -2,7 +2,8 @@
 const cars = window.FH4_CARS || [];
 const forceRivalsChoice = document.body.dataset.forceRivalsChoice === 'true';
 const spinLength = 96;
-const winnerOffsetFromEnd = 7;
+const winnerOffsetFromStart = 7;
+const startOffsetFromEnd = 3;
 const spinDurationMs = 14400;
 const resultFlashLeadMs = 1000;
 const loadFlashLeadMs = 175;
@@ -425,7 +426,7 @@ async function spin() {
   if (spinButton.disabled) return;
   const isFirstSpin = !hasSpun;
   const sequence = isFirstSpin ? currentSequence : sampleCars(spinLength);
-  const winnerIndex = isFirstSpin ? currentWinnerIndex : sequence.length - winnerOffsetFromEnd;
+  const winnerIndex = isFirstSpin ? currentWinnerIndex : Math.min(winnerOffsetFromStart, sequence.length - 1);
   placeRivalsChoice(sequence, winnerIndex);
   const winner = sequence[winnerIndex];
   spinButton.disabled = true;
@@ -439,7 +440,7 @@ async function spin() {
     renderCaseTrack(sequence);
     currentSequence = sequence;
     currentWinnerIndex = winnerIndex;
-    currentStartTranslate = getWinnerTranslate(Math.min(3, sequence.length - 1));
+    currentStartTranslate = getWinnerTranslate(Math.max(0, sequence.length - 1 - startOffsetFromEnd));
     caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
     fadeLoadFlash();
     await wait(80);
@@ -479,9 +480,9 @@ spinButton.addEventListener('click', spin);
 
 // Initial reel is already full-length so the first click can spin immediately without a reload flash.
 const initialSequence = sampleCars(spinLength);
-const initialIndex = Math.min(3, initialSequence.length - 1);
+const initialIndex = Math.max(0, initialSequence.length - 1 - startOffsetFromEnd);
 currentSequence = initialSequence;
-currentWinnerIndex = initialSequence.length - winnerOffsetFromEnd;
+currentWinnerIndex = Math.min(winnerOffsetFromStart, initialSequence.length - 1);
 placeRivalsChoice(currentSequence, currentWinnerIndex);
 renderCaseTrack(currentSequence);
 currentStartTranslate = getWinnerTranslate(initialIndex);
