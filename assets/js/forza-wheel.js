@@ -12,9 +12,13 @@ const spinOvershootItems = 0.24;
 const resultFlashLeadMs = 300;
 const loadFlashLeadMs = 175;
 const spinSoundSrc = 'assets/sounds/wheel-spin-custom.wav';
+const stopSoundSrc = 'assets/sounds/wheel_stop.mp3';
 const spinSoundVolume = 0.62;
+const stopSoundVolume = 0.8;
 const spinSoundWarmupMs = 1200;
-const spinSoundLeadMs = 800;
+const spinStartDelayMs = 800;
+const spinSoundLeadMs = 380;
+const stopSoundOffsetMs = -800;
 const totalCars = document.getElementById('totalCars');
 const stage = document.getElementById('stage');
 const carCard = document.getElementById('carCard');
@@ -38,11 +42,15 @@ const gamePickerTooltip = document.getElementById('gamePickerTooltip');
 const spinSound = new Audio(spinSoundSrc);
 spinSound.preload = 'none';
 spinSound.volume = spinSoundVolume;
+const stopSound = new Audio(stopSoundSrc);
+stopSound.preload = 'none';
+stopSound.volume = stopSoundVolume;
 let currentSequence = [];
 let currentWinnerIndex = 0;
 let currentStartTranslate = 0;
 let hasSpun = false;
 let currentResultAnimation = 0;
+let pendingStopSoundTimer = 0;
 const specialChanceCount = cars.filter(isSpecialChance).length;
 const carCount = cars.length - specialChanceCount;
 totalCars.textContent = specialChanceCount
@@ -291,6 +299,40 @@ function playSpinSound() {
   }
 }
 
+function playStopSound() {
+  try {
+    stopSound.currentTime = 0;
+  } catch (error) {
+    // The browser may reject seeking before metadata is ready.
+  }
+  stopSound.muted = false;
+  stopSound.volume = stopSoundVolume;
+  const playAttempt = stopSound.play();
+  if (playAttempt && typeof playAttempt.catch === 'function') {
+    playAttempt.catch(() => {});
+  }
+}
+
+function resetStopSound() {
+  clearTimeout(pendingStopSoundTimer);
+  pendingStopSoundTimer = 0;
+  stopSound.pause();
+  stopSound.muted = false;
+  try {
+    stopSound.currentTime = 0;
+  } catch (error) {
+    // Ignore browsers that cannot seek a just-stopped local file.
+  }
+}
+
+function scheduleStopSound(delayMs) {
+  clearTimeout(pendingStopSoundTimer);
+  pendingStopSoundTimer = setTimeout(() => {
+    pendingStopSoundTimer = 0;
+    playStopSound();
+  }, delayMs);
+}
+
 function armSpinSound() {
   const soundReady = new Promise((resolve) => {
     if (spinSound.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
@@ -319,6 +361,40 @@ function armSpinSound() {
   spinSound.load();
   spinSound.muted = true;
   const playAttempt = spinSound.play();
+  if (playAttempt && typeof playAttempt.catch === 'function') {
+    playAttempt.catch(() => {});
+  }
+  return soundReady;
+}
+
+function armStopSound() {
+  const soundReady = new Promise((resolve) => {
+    if (stopSound.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) {
+      resolve();
+      return;
+    }
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      stopSound.removeEventListener('canplay', finish);
+      stopSound.removeEventListener('canplaythrough', finish);
+      stopSound.pause();
+      try {
+        stopSound.currentTime = 0;
+      } catch (error) {
+        // The browser may reject seeking before metadata is ready.
+      }
+      resolve();
+    };
+    stopSound.addEventListener('canplay', finish, { once: true });
+    stopSound.addEventListener('canplaythrough', finish, { once: true });
+    setTimeout(finish, spinSoundWarmupMs);
+  });
+  stopSound.preload = 'auto';
+  stopSound.load();
+  stopSound.muted = true;
+  const playAttempt = stopSound.play();
   if (playAttempt && typeof playAttempt.catch === 'function') {
     playAttempt.catch(() => {});
   }
@@ -443,6 +519,7 @@ function escapeHtml(value) {
 // Main spin flow: prepare assets, optionally swap the reel under a white flash, then animate.
 async function spin() {
   if (spinButton.disabled) return;
+  resetStopSound();
   const isFirstSpin = !hasSpun;
   const sequence = isFirstSpin ? currentSequence : sampleCars(spinLength);
   const winnerIndex = isFirstSpin ? currentWinnerIndex : Math.min(winnerOffsetFromStart, sequence.length - 1);
@@ -450,9 +527,10 @@ async function spin() {
   const winner = sequence[winnerIndex];
   spinButton.disabled = true;
   const soundReady = armSpinSound();
+  const stopSoundReady = armStopSound();
   status.textContent = 'Loading';
   if (!isFirstSpin) clearCurrentResult();
-  await Promise.all([preload(sequence), soundReady]);
+  await Promise.all([preload(sequence), soundReady, stopSoundReady]);
   if (!isFirstSpin) {
     startLoadFlash();
     await wait(loadFlashLeadMs);
@@ -475,14 +553,16 @@ async function spin() {
   caseTrack.style.transition = 'none';
   caseTrack.style.transform = `translate3d(0, ${startTranslate}px, 0)`;
   void caseTrack.offsetHeight;
-  const soundStart = wait(spinIntroCurveMs).then(playSpinSound);
-  await wait(spinSoundLeadMs);
+  const soundDelayMs = Math.max(0, spinStartDelayMs - spinSoundLeadMs);
+  const soundStart = wait(soundDelayMs).then(playSpinSound);
+  await wait(spinStartDelayMs);
   await soundStart;
   stage.classList.add('spinning');
   status.textContent = 'Spinning';
   const flashTimer = setTimeout(() => {
     updateResultGlow(winner, true);
   }, Math.max(0, spinDurationMs - resultFlashLeadMs));
+  scheduleStopSound(Math.max(0, spinDurationMs + stopSoundOffsetMs));
   await animateTrackTo(introTranslate, spinIntroCurveMs, 'cubic-bezier(.34, 0, .22, 1)');
   await animateTrackTo(overshootTranslate, mainSpinDurationMs, 'cubic-bezier(.08, .78, .08, 1)');
   await animateTrackTo(targetTranslate, spinSettleCurveMs, 'cubic-bezier(.18, .84, .24, 1)');
