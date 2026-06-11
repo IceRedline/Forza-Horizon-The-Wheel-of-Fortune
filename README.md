@@ -2,7 +2,9 @@
 
 Interactive Forza Horizon 4 wheel of fortune with local car data and local car images.
 
-<img width="3290" height="1966" alt="Снимок экрана — 2026-06-10 в 14 09 31" src="https://github.com/user-attachments/assets/99cd19a8-b34f-494a-8f2a-3ef2588140cc" />
+<img width="3456" height="1986" alt="Снимок экрана — 2026-06-11 в 16 51 04" src="https://github.com/user-attachments/assets/e64872e2-f85d-42fa-8b33-2b12b6470633" />
+<img width="3456" height="1984" alt="Снимок экрана — 2026-06-11 в 16 51 27" src="https://github.com/user-attachments/assets/8fb8afa8-c8bf-4776-a1cf-7852c6464a4b" />
+
 
 ## Files
 
