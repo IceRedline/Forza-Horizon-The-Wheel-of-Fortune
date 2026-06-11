@@ -22,7 +22,7 @@ const paths = {
   fh6CarsJson: join(root, 'data', 'fh6-cars.json'),
   fh6CarsJs: join(root, 'data', 'fh6-cars.js'),
   carsDir: join(root, 'assets', 'cars'),
-  spinSound: join(root, 'assets', 'sounds', 'wheel-spin.wav'),
+  spinSound: join(root, 'assets', 'sounds', 'wheel-spin-custom.wav'),
 };
 
 async function readText(path) {
@@ -142,7 +142,7 @@ test('spin sound is a local playable wav file', async () => {
   assert.ok(dataOffset > 0, 'wav file should contain a data chunk');
   const dataSize = sound.readUInt32LE(dataOffset + 4);
   const duration = dataSize / (channels * (bitsPerSample / 8)) / sampleRate;
-  assert.ok(duration > 15 && duration < 16, `spin sound duration should be about 15 seconds, got ${duration}`);
+  assert.ok(duration > 10 && duration < 11, `spin sound duration should be about 11 seconds, got ${duration}`);
 });
 
 test('main page exposes required DOM hooks', async () => {
@@ -302,5 +302,5 @@ test('split assets contain the wheel styling and controller', async () => {
   assertContains(css, '.case-selector', 'selector frame styles');
   assertContains(css, 'body.theme-light .case-selector', 'light selector inversion');
   assertContains(js, 'Main spin flow', 'JS section comments');
-  assertContains(js, 'assets/sounds/wheel-spin.wav', 'spin sound path');
+  assertContains(js, 'assets/sounds/wheel-spin-custom.wav', 'spin sound path');
 });
