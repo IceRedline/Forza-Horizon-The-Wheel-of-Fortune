@@ -109,6 +109,10 @@ test('main page exposes required DOM hooks', async () => {
   for (const id of [
     'themeToggle',
     'totalCars',
+    'gamePicker',
+    'gamePickerToggle',
+    'gamePickerMenu',
+    'gamePickerTooltip',
     'stage',
     'caseWindow',
     'caseTrack',
@@ -125,6 +129,16 @@ test('main page exposes required DOM hooks', async () => {
   assertContains(html, 'assets/js/spin-stats.js', paths.mainHtml);
   assertContains(html, 'assets/css/forza-wheel.css', paths.mainHtml);
   assertContains(html, 'assets/js/forza-wheel.js', paths.mainHtml);
+  assertContains(html, 'Forza Horizon 5', paths.mainHtml);
+  assertContains(html, 'Forza Horizon 6', paths.mainHtml);
+  assertContains(html, 'Coming soon', paths.mainHtml);
+});
+
+test('wheel page UI is English-only', async () => {
+  const html = await readText(paths.mainHtml);
+  const js = await readText(paths.appJs);
+  assert.ok(!/[А-Яа-яЁё]/.test(html), 'main wheel HTML should not contain Cyrillic UI text');
+  assert.ok(!/[А-Яа-яЁё]/.test(js), 'wheel controller should not contain Cyrillic UI text');
 });
 
 test('home page exposes dynamic local stats hooks', async () => {

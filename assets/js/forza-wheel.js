@@ -26,6 +26,10 @@ const statValue = document.getElementById('statValue');
 const statSource = document.getElementById('statSource');
 const statsPanel = document.querySelector('.stats');
 const themeToggle = document.getElementById('themeToggle');
+const gamePicker = document.getElementById('gamePicker');
+const gamePickerToggle = document.getElementById('gamePickerToggle');
+const gamePickerMenu = document.getElementById('gamePickerMenu');
+const gamePickerTooltip = document.getElementById('gamePickerTooltip');
 const spinSound = new Audio(spinSoundSrc);
 spinSound.preload = 'none';
 spinSound.volume = spinSoundVolume;
@@ -37,8 +41,8 @@ let currentResultAnimation = 0;
 const specialChanceCount = cars.filter(isSpecialChance).length;
 const carCount = cars.length - specialChanceCount;
 totalCars.textContent = specialChanceCount
-  ? `${carCount.toLocaleString('ru-RU')} + ${specialChanceCount.toLocaleString('ru-RU')}`
-  : cars.length.toLocaleString('ru-RU');
+  ? `${carCount.toLocaleString('en-US')} + ${specialChanceCount.toLocaleString('en-US')}`
+  : cars.length.toLocaleString('en-US');
 
 // Theme is intentionally page-local: default dark, optional light, persisted per browser.
 function setTheme(theme) {
@@ -60,6 +64,47 @@ try {
 
 themeToggle.addEventListener('change', () => {
   setTheme(themeToggle.checked ? 'light' : 'dark');
+});
+
+function closeGamePicker() {
+  if (!gamePicker || !gamePickerToggle) return;
+  gamePicker.classList.remove('is-open');
+  gamePickerToggle.setAttribute('aria-expanded', 'false');
+}
+
+function showComingSoonTooltip() {
+  if (!gamePickerTooltip) return;
+  gamePickerTooltip.classList.remove('is-visible');
+  void gamePickerTooltip.offsetWidth;
+  gamePickerTooltip.classList.add('is-visible');
+  setTimeout(() => {
+    gamePickerTooltip.classList.remove('is-visible');
+  }, 1800);
+}
+
+if (gamePickerToggle && gamePicker) {
+  gamePickerToggle.addEventListener('click', () => {
+    const isOpen = gamePicker.classList.toggle('is-open');
+    gamePickerToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+if (gamePickerMenu) {
+  gamePickerMenu.addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button) return;
+    if (button.dataset.comingSoon !== undefined) showComingSoonTooltip();
+    closeGamePicker();
+  });
+}
+
+document.addEventListener('click', (event) => {
+  if (!gamePicker || gamePicker.contains(event.target)) return;
+  closeGamePicker();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeGamePicker();
 });
 
 // Build a no-repeat spin pool. Specials are part of the same data source as cars.
@@ -296,10 +341,10 @@ function showCar(car, mode = 'result') {
   carName.textContent = car.name;
   metaRow.innerHTML = [
     metaPill('PI', `${car.piClass} ${car.pi}`.trim(), 'pi-badge'),
-    metaPill('Скорость', car.speed),
-    metaPill('Управл.', car.handling),
-    metaPill('Разгон', car.acceleration),
-    metaPill('Торм.', car.braking),
+    metaPill('Speed', car.speed),
+    metaPill('Handling', car.handling),
+    metaPill('Accel.', car.acceleration),
+    metaPill('Braking', car.braking),
   ].join('');
   setCurrentResult({
     pi: `${car.piClass} ${car.pi}`.trim() || '-',
@@ -385,7 +430,7 @@ async function spin() {
   const winner = sequence[winnerIndex];
   spinButton.disabled = true;
   const soundReady = armSpinSound();
-  status.textContent = 'Загружаем';
+  status.textContent = 'Loading';
   if (!isFirstSpin) clearCurrentResult();
   await Promise.all([preload(sequence), soundReady]);
   if (!isFirstSpin) {
@@ -408,7 +453,7 @@ async function spin() {
   playSpinSound();
   await wait(spinSoundLeadMs);
   stage.classList.add('spinning');
-  status.textContent = 'Крутим';
+  status.textContent = 'Spinning';
   caseTrack.style.transition = `transform ${spinDurationMs / 1000}s cubic-bezier(.08, .78, .08, 1)`;
   caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
   const flashTimer = setTimeout(() => {
@@ -423,7 +468,7 @@ async function spin() {
   showCar(winner);
   addHistory(winner);
   recordSpinStats(winner);
-  status.textContent = 'Выпало';
+  status.textContent = 'Result';
   stage.classList.remove('spinning');
   spinButton.disabled = false;
   hasSpun = true;
@@ -442,4 +487,4 @@ renderCaseTrack(currentSequence);
 currentStartTranslate = getWinnerTranslate(initialIndex);
 caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
 clearCurrentResult(false);
-status.textContent = 'Готово к розыгрышу';
+status.textContent = 'Ready to spin';

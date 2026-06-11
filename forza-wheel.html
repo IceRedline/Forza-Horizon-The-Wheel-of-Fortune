@@ -1,28 +1,41 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Forza Horizon 4 - вертикальное колесо автомобилей</title>
+  <title>Forza Horizon 4 - Wheelspin Simulator</title>
   <!-- Shared wheel styling. Page-specific behavior is controlled by body data attributes. -->
   <link rel="stylesheet" href="assets/css/forza-wheel.css">
 </head>
 <body>
   <div class="app">
     <header>
-      <div>
-        <h1>Forza Horizon 4</h1>
-        <p class="subtitle">Колесо фортуны без компромиссов</p>
+      <div class="title-block">
+        <div class="game-picker" id="gamePicker">
+          <button class="game-picker-toggle" id="gamePickerToggle" type="button" aria-haspopup="true" aria-expanded="false">
+            <span>Forza Horizon 4</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m7 9 5 5 5-5H7Z"/>
+            </svg>
+          </button>
+          <div class="game-picker-menu" id="gamePickerMenu" role="menu">
+            <button type="button" class="active" role="menuitem">Forza Horizon 4</button>
+            <button type="button" data-coming-soon role="menuitem">Forza Horizon 5</button>
+            <button type="button" data-coming-soon role="menuitem">Forza Horizon 6</button>
+          </div>
+          <div class="game-picker-tooltip" id="gamePickerTooltip" role="status" aria-live="polite">Coming soon</div>
+        </div>
+        <p class="subtitle">No-compromise wheelspin simulator</p>
       </div>
       <div class="header-actions">
         <!-- Theme switch is hidden for the public UI. Remove `hidden` to enable manual dark/light switching again. -->
         <label class="theme-toggle" hidden>
-          <span>Тёмная</span>
-          <input id="themeToggle" type="checkbox" aria-label="Светлая тема">
+          <span>Dark</span>
+          <input id="themeToggle" type="checkbox" aria-label="Light theme">
           <span class="theme-switch" aria-hidden="true"></span>
-          <span>Светлая</span>
+          <span>Light</span>
         </label>
-        <div class="counter"><strong id="totalCars">0</strong> автомобилей в базе</div>
+        <div class="counter"><strong id="totalCars">0</strong> prizes in database</div>
       </div>
     </header>
 
@@ -36,29 +49,29 @@
               <div class="case-track" id="caseTrack"></div>
             </div>
             <div class="car-info">
-              <div class="status" id="status">Готово к розыгрышу</div>
-              <div class="car-name" id="carName">Нажми «Крутить»</div>
+              <div class="status" id="status">Ready to spin</div>
+              <div class="car-name" id="carName">Press Spin</div>
               <div class="meta-row" id="metaRow"></div>
             </div>
           </article>
         </div>
         <div class="controls">
-          <button id="spinButton" type="button">Крутить</button>
+          <button id="spinButton" type="button">Spin</button>
         </div>
       </section>
 
       <aside class="side">
         <section class="panel">
-          <h2>Текущий результат</h2>
+          <h2>Current Result</h2>
           <div class="stats">
-            <div class="stat"><span>Класс PI</span><strong id="statPi">-</strong></div>
-            <div class="stat"><span>Редкость</span><strong id="statRarity">-</strong></div>
-            <div class="stat"><span>Цена</span><strong id="statValue">-</strong></div>
-            <div class="stat"><span>Получение</span><strong id="statSource">-</strong></div>
+            <div class="stat stat-pi"><span>PI Class</span><strong id="statPi">-</strong></div>
+            <div class="stat stat-rarity"><span>Rarity</span><strong id="statRarity">-</strong></div>
+            <div class="stat"><span>Value</span><strong id="statValue">-</strong></div>
+            <div class="stat"><span>Source</span><strong id="statSource">-</strong></div>
           </div>
         </section>
         <section class="panel">
-          <h2>История</h2>
+          <h2>History</h2>
           <div class="history" id="history"></div>
         </section>
       </aside>
