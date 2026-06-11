@@ -261,9 +261,17 @@ test('theme toggle keeps dark as default and supports saved light theme', async 
 test('wheel startup behavior is protected', async () => {
   const js = await readText(paths.appJs);
   assertContains(js, 'const spinLength = 96;', 'spin length');
+  assertContains(js, 'const spinIntroCurveMs = 420;', 'spin intro curve');
+  assertContains(js, 'const spinSettleCurveMs = 460;', 'spin settle curve');
+  assertContains(js, 'const spinOvershootItems = 0.24;', 'spin overshoot distance');
   assertContains(js, 'const initialIndex = Math.max(0, initialSequence.length - 1 - startOffsetFromEnd);', 'initial offset');
   assertContains(js, 'const winnerOffsetFromStart = 7;', 'reversed spin target offset');
   assertContains(js, 'const startTranslate = currentStartTranslate;', 'repeat spin start alignment');
+  assertContains(js, 'const introTranslate = startTranslate - (direction * itemStep * spinIntroCurveItems);', 'intro counter-move');
+  assertContains(js, 'const overshootTranslate = targetTranslate + (direction * itemStep * spinOvershootItems);', 'winner overshoot');
+  assertContains(js, 'const soundStart = wait(spinIntroCurveMs).then(playSpinSound);', 'sound delayed by intro curve');
+  assertContains(js, "await animateTrackTo(overshootTranslate, mainSpinDurationMs, 'cubic-bezier(.08, .78, .08, 1)');", 'fast main spin easing');
+  assertContains(js, 'await animateTrackTo(targetTranslate, spinSettleCurveMs', 'settle back to winner');
   assertContains(js, 'if (!isFirstSpin) {', 'first spin skips reload block');
   assertContains(js, 'clearCurrentResult(false);', 'initial result panel clear');
 });

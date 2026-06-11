@@ -5,6 +5,10 @@ const spinLength = 96;
 const winnerOffsetFromStart = 7;
 const startOffsetFromEnd = 3;
 const spinDurationMs = 14400;
+const spinIntroCurveMs = 420;
+const spinSettleCurveMs = 460;
+const spinIntroCurveItems = 0.26;
+const spinOvershootItems = 0.24;
 const resultFlashLeadMs = 1000;
 const loadFlashLeadMs = 175;
 const spinSoundSrc = 'assets/sounds/wheel-spin.wav';
@@ -261,6 +265,15 @@ function getWinnerTranslate(winnerIndex) {
   return (windowRect.height / 2) - itemCenter;
 }
 
+function getCaseItemStep(index) {
+  const currentTranslate = getWinnerTranslate(index);
+  const previousIndex = Math.max(0, index - 1);
+  if (previousIndex !== index) return Math.abs(getWinnerTranslate(previousIndex) - currentTranslate);
+  const nextIndex = Math.min(caseTrack.children.length - 1, index + 1);
+  if (nextIndex !== index) return Math.abs(getWinnerTranslate(nextIndex) - currentTranslate);
+  return 0;
+}
+
 // Safari and local-file playback are sensitive to late audio startup, so the sound is warmed up.
 function playSpinSound() {
   try {
@@ -322,7 +335,7 @@ function stopSpinSound() {
   }
 }
 
-function waitForTrackTransition() {
+function waitForTrackTransition(timeoutMs) {
   return new Promise((resolve) => {
     let done = false;
     const finish = () => {
@@ -332,8 +345,14 @@ function waitForTrackTransition() {
       resolve();
     };
     caseTrack.addEventListener('transitionend', finish, { once: true });
-    setTimeout(finish, spinDurationMs + 400);
+    setTimeout(finish, timeoutMs + 400);
   });
+}
+
+async function animateTrackTo(translate, durationMs, easing) {
+  caseTrack.style.transition = `transform ${durationMs / 1000}s ${easing}`;
+  caseTrack.style.transform = `translate3d(0, ${translate}px, 0)`;
+  await waitForTrackTransition(durationMs);
 }
 
 // The result panel is animated by swapping text while the values are faded/blurred out.
@@ -448,19 +467,25 @@ async function spin() {
 
   const targetTranslate = getWinnerTranslate(winnerIndex);
   const startTranslate = currentStartTranslate;
+  const itemStep = getCaseItemStep(winnerIndex);
+  const direction = Math.sign(targetTranslate - startTranslate) || 1;
+  const introTranslate = startTranslate - (direction * itemStep * spinIntroCurveItems);
+  const overshootTranslate = targetTranslate + (direction * itemStep * spinOvershootItems);
+  const mainSpinDurationMs = spinDurationMs - spinIntroCurveMs - spinSettleCurveMs;
   caseTrack.style.transition = 'none';
   caseTrack.style.transform = `translate3d(0, ${startTranslate}px, 0)`;
   void caseTrack.offsetHeight;
-  playSpinSound();
+  const soundStart = wait(spinIntroCurveMs).then(playSpinSound);
   await wait(spinSoundLeadMs);
+  await soundStart;
   stage.classList.add('spinning');
   status.textContent = 'Spinning';
-  caseTrack.style.transition = `transform ${spinDurationMs / 1000}s cubic-bezier(.08, .78, .08, 1)`;
-  caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
   const flashTimer = setTimeout(() => {
     updateResultGlow(winner, true);
   }, Math.max(0, spinDurationMs - resultFlashLeadMs));
-  await waitForTrackTransition();
+  await animateTrackTo(introTranslate, spinIntroCurveMs, 'cubic-bezier(.34, 0, .22, 1)');
+  await animateTrackTo(overshootTranslate, mainSpinDurationMs, 'cubic-bezier(.08, .78, .08, 1)');
+  await animateTrackTo(targetTranslate, spinSettleCurveMs, 'cubic-bezier(.18, .84, .24, 1)');
   stopSpinSound();
   clearTimeout(flashTimer);
   caseTrack.style.transition = 'none';
