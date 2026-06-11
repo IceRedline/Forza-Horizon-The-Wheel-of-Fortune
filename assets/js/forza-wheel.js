@@ -9,7 +9,7 @@ const spinIntroCurveMs = 420;
 const spinSettleCurveMs = 460;
 const spinIntroCurveItems = 0.26;
 const spinOvershootItems = 0.24;
-const resultFlashLeadMs = 1000;
+const resultFlashLeadMs = 300;
 const loadFlashLeadMs = 175;
 const spinSoundSrc = 'assets/sounds/wheel-spin.wav';
 const spinSoundVolume = 0.62;
@@ -356,8 +356,8 @@ async function animateTrackTo(translate, durationMs, easing) {
 }
 
 // The result panel is animated by swapping text while the values are faded/blurred out.
-function showCar(car, mode = 'result') {
-  updateResultGlow(car, mode === 'win');
+function showCar(car, mode = 'result', shouldUpdateGlow = true) {
+  if (shouldUpdateGlow) updateResultGlow(car, mode === 'win');
   carName.textContent = car.name;
   metaRow.innerHTML = [
     metaPill('PI', `${car.piClass} ${car.pi}`.trim(), 'pi-badge'),
@@ -491,7 +491,7 @@ async function spin() {
   caseTrack.style.transition = 'none';
   caseTrack.style.transform = `translate3d(0, ${targetTranslate}px, 0)`;
 
-  showCar(winner);
+  showCar(winner, 'result', false);
   addHistory(winner);
   recordSpinStats(winner);
   status.textContent = 'Result';
