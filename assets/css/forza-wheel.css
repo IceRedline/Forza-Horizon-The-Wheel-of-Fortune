@@ -112,6 +112,10 @@ h1 {
   user-select: none;
 }
 
+.theme-toggle[hidden] {
+  display: none;
+}
+
 body.theme-light .theme-toggle {
   background: rgba(255, 255, 255, .78);
 }

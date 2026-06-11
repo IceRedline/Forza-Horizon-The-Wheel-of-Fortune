@@ -7,7 +7,6 @@ Interactive Forza Horizon 4 wheel of fortune with local car data and local car i
 ## Files
 
 - `forza-wheel.html` - main vertical wheel.
-- `forza-wheel-ultimate-test.html` - test version where `Rival's choice` always lands in the selector.
 - `Forza Wheel Old.html` - previous horizontal version.
 - `assets/css/forza-wheel.css` - shared layout, theme, and animation styles.
 - `assets/js/forza-wheel.js` - shared wheel controller and UI behavior.

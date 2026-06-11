@@ -11,7 +11,6 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const paths = {
   homeHtml: join(root, 'index.html'),
   mainHtml: join(root, 'forza-wheel.html'),
-  rivalsTestHtml: join(root, 'forza-wheel-ultimate-test.html'),
   homeJs: join(root, 'assets', 'js', 'home.js'),
   spinStatsJs: join(root, 'assets', 'js', 'spin-stats.js'),
   appCss: join(root, 'assets', 'css', 'forza-wheel.css'),
@@ -105,29 +104,27 @@ test('spin sound is a local playable wav file', async () => {
   assert.ok(duration > 15 && duration < 16, `spin sound duration should be about 15 seconds, got ${duration}`);
 });
 
-test('main and rivals pages expose required DOM hooks', async () => {
-  for (const htmlPath of [paths.mainHtml, paths.rivalsTestHtml]) {
-    const html = await readText(htmlPath);
-    for (const id of [
-      'themeToggle',
-      'totalCars',
-      'stage',
-      'caseWindow',
-      'caseTrack',
-      'spinButton',
-      'history',
-      'statPi',
-      'statRarity',
-      'statValue',
-      'statSource',
-    ]) {
-      assertContains(html, `id="${id}"`, htmlPath);
-    }
-    assertContains(html, 'data/cars.js', htmlPath);
-    assertContains(html, 'assets/js/spin-stats.js', htmlPath);
-    assertContains(html, 'assets/css/forza-wheel.css', htmlPath);
-    assertContains(html, 'assets/js/forza-wheel.js', htmlPath);
+test('main page exposes required DOM hooks', async () => {
+  const html = await readText(paths.mainHtml);
+  for (const id of [
+    'themeToggle',
+    'totalCars',
+    'stage',
+    'caseWindow',
+    'caseTrack',
+    'spinButton',
+    'history',
+    'statPi',
+    'statRarity',
+    'statValue',
+    'statSource',
+  ]) {
+    assertContains(html, `id="${id}"`, paths.mainHtml);
   }
+  assertContains(html, 'data/cars.js', paths.mainHtml);
+  assertContains(html, 'assets/js/spin-stats.js', paths.mainHtml);
+  assertContains(html, 'assets/css/forza-wheel.css', paths.mainHtml);
+  assertContains(html, 'assets/js/forza-wheel.js', paths.mainHtml);
 });
 
 test('home page exposes dynamic local stats hooks', async () => {
@@ -222,13 +219,11 @@ test('wheel records completed spins in local home stats', async () => {
   assertContains(js, 'recordSpinStats(winner);', 'spin completion flow');
 });
 
-test('rivals test page forces Rival choice without changing the main page', async () => {
+test('main page does not force Rival choice', async () => {
   const main = await readText(paths.mainHtml);
-  const rivals = await readText(paths.rivalsTestHtml);
   const js = await readText(paths.appJs);
 
   assert.ok(!main.includes('data-force-rivals-choice="true"'), 'main page should not force Rival choice');
-  assertContains(rivals, 'data-force-rivals-choice="true"', 'rivals test page');
   assertContains(js, 'const forceRivalsChoice = document.body.dataset.forceRivalsChoice', 'shared rival flag');
   assertContains(js, 'function placeRivalsChoice(sequence, targetIndex)', 'rivals placement helper');
   assertContains(js, 'placeRivalsChoice(currentSequence, currentWinnerIndex);', 'initial rival placement');
