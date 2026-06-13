@@ -66,6 +66,25 @@ function assertContains(source, needle, label) {
   assert.ok(source.includes(needle), `${label} should contain ${needle}`);
 }
 
+function extractCssBlock(source, marker) {
+  const markerIndex = source.indexOf(marker);
+  assert.notEqual(markerIndex, -1, `CSS should contain ${marker}`);
+  const openIndex = source.indexOf('{', markerIndex);
+  assert.notEqual(openIndex, -1, `${marker} should open a CSS block`);
+
+  let depth = 0;
+  for (let index = openIndex; index < source.length; index += 1) {
+    const char = source[index];
+    if (char === '{') depth += 1;
+    if (char === '}') {
+      depth -= 1;
+      if (depth === 0) return source.slice(openIndex + 1, index);
+    }
+  }
+
+  assert.fail(`${marker} should close a CSS block`);
+}
+
 test('car database has expected size, specials, and browser mirror', async () => {
   const carsJson = await readCarsJson();
   const carsJs = await readCarsJs();
@@ -294,6 +313,66 @@ test('theme toggle keeps dark as default and supports saved light theme', async 
   assertContains(js, 'forzaWheelTheme', 'theme persistence key');
   assertContains(js, "setTheme('dark')", 'dark fallback');
   assertContains(js, "themeToggle.checked ? 'light' : 'dark'", 'theme toggle handler');
+});
+
+test('mobile wheel layout keeps reel cells tall and readable', async () => {
+  const css = await readText(paths.appCss);
+  const mobile = extractCssBlock(css, '@media (max-width: 880px)');
+  const phone = extractCssBlock(css, '@media (max-width: 520px)');
+
+  const mobileStage = extractCssBlock(mobile, '.stage');
+  assertContains(mobileStage, 'min-height: 820px;', 'mobile stage');
+
+  const mobileCard = extractCssBlock(mobile, '.car-card');
+  assertContains(mobileCard, 'min-height: 640px;', 'mobile card');
+  assertContains(mobileCard, 'grid-template-rows: 640px;', 'mobile card');
+
+  const mobileWindow = extractCssBlock(mobile, '.case-window');
+  assertContains(mobileWindow, 'height: 640px;', 'mobile reel window');
+
+  const mobileSelector = extractCssBlock(mobile, '.case-selector');
+  assertContains(mobileSelector, 'height: 148px;', 'mobile selector frame');
+
+  const mobileItem = extractCssBlock(mobile, '.case-item');
+  assertContains(mobileItem, 'flex-basis: 132px;', 'mobile reel item');
+  assertContains(mobileItem, 'min-height: 132px;', 'mobile reel item');
+  assertContains(mobileItem, 'grid-template-columns: minmax(86px, 32%) minmax(0, 1fr);', 'mobile reel item');
+  assertContains(mobileItem, 'grid-template-rows: auto auto;', 'mobile reel item');
+
+  const mobileImage = extractCssBlock(mobile, '.case-item img,\n  .case-item-placeholder');
+  assertContains(mobileImage, 'grid-row: 1 / 3;', 'mobile reel image');
+  assertContains(mobileImage, 'max-width: 112px;', 'mobile reel image');
+  assertContains(mobileImage, 'height: 76px;', 'mobile reel image');
+
+  const mobileName = extractCssBlock(mobile, '.case-item-name');
+  assertContains(mobileName, '-webkit-line-clamp: 3;', 'mobile car name');
+  assertContains(mobileName, 'line-height: 1.12;', 'mobile car name');
+
+  const mobilePi = extractCssBlock(mobile, '.case-item-pi');
+  assertContains(mobilePi, 'max-width: 100%;', 'mobile PI badge');
+  assertContains(mobilePi, 'overflow: hidden;', 'mobile PI badge');
+  assertContains(mobilePi, 'text-overflow: ellipsis;', 'mobile PI badge');
+
+  const phoneStage = extractCssBlock(phone, '.stage');
+  assertContains(phoneStage, 'min-height: 880px;', 'phone stage');
+
+  const phoneCard = extractCssBlock(phone, '.car-card');
+  assertContains(phoneCard, 'min-height: 700px;', 'phone card');
+  assertContains(phoneCard, 'grid-template-rows: 700px;', 'phone card');
+
+  const phoneWindow = extractCssBlock(phone, '.case-window');
+  assertContains(phoneWindow, 'height: 700px;', 'phone reel window');
+
+  const phoneSelector = extractCssBlock(phone, '.case-selector');
+  assertContains(phoneSelector, 'height: 172px;', 'phone selector frame');
+
+  const phoneItem = extractCssBlock(phone, '.case-item');
+  assertContains(phoneItem, 'flex-basis: 156px;', 'phone reel item');
+  assertContains(phoneItem, 'min-height: 156px;', 'phone reel item');
+
+  const phoneName = extractCssBlock(phone, '.case-item-name');
+  assertContains(phoneName, 'overflow-wrap: anywhere;', 'phone car name');
+  assertContains(phoneName, '-webkit-line-clamp: 4;', 'phone car name');
 });
 
 test('wheel startup behavior is protected', async () => {
