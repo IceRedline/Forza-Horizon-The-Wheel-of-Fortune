@@ -232,14 +232,25 @@ test('home page exposes dynamic local stats hooks', async () => {
   assertContains(html, 'id="homeCollectionProgress"', 'home page');
   assertContains(html, 'id="homeCreditsWon"', 'home page');
   assertContains(html, 'id="homeUniquePrizes"', 'home page');
+  assertContains(html, 'id="homeMiniWheelWindow"', 'home page');
+  assertContains(html, 'id="homeMiniWheelTrack"', 'home page');
+  assertContains(html, 'mini-wheel-card', 'home page');
+  assertContains(html, 'wheel-badge', 'home page');
   assertContains(html, 'data/fh4-cars.js', 'home page');
   assertContains(html, 'data/fh5-cars.js', 'home page');
   assertContains(html, 'data/fh6-cars.js', 'home page');
   assertContains(html, 'assets/js/spin-stats.js', 'home page');
   assertContains(html, 'assets/js/home.js', 'home page');
+  assert.equal((html.match(/class="mini-wheel-card/g) || []).length, 4, 'home mini wheel should use four mocked cars');
+  assert.ok(!html.includes('100,000'), 'home page should not render the old mock credit slot');
+  assert.ok(!html.includes('25,000'), 'home page should not render the old mock credit slot');
+  assert.ok(!html.includes('hero-dots'), 'home page should not render mini wheel pagination dots');
 
   const homeJs = await readText(paths.homeJs);
   assertContains(homeJs, 'ForzaSpinStats', 'home stats controller');
+  assertContains(homeJs, 'initHomeMiniWheel', 'home mini wheel controller');
+  assertContains(homeJs, 'homeMiniWheelTrack', 'home mini wheel controller');
+  assert.ok(!homeJs.includes('hero-dots'), 'home mini wheel controller should not update removed pagination dots');
   assertContains(homeJs, 'FH4_CARS', 'home stats controller');
   assertContains(homeJs, 'FH5_CARS', 'home stats controller');
   assertContains(homeJs, 'FH6_CARS', 'home stats controller');
