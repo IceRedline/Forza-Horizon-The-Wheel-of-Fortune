@@ -48,7 +48,7 @@
 
   function recordSpin(outcome) {
     const stats = readStats();
-    const prizeKey = getPrizeKey(outcome);
+    const prizeKey = isSpecialPrize(outcome) ? '' : getPrizeKey(outcome);
     const wonPrizeKeys = prizeKey
       ? [...new Set([...stats.wonPrizeKeys, prizeKey])]
       : stats.wonPrizeKeys;
@@ -62,20 +62,60 @@
 
   function getPrizeKey(outcome) {
     const kind = String(outcome?.kind || 'car').trim();
+    const game = String(outcome?.game || '').trim();
     const imageFile = String(outcome?.imageFile || '').trim();
-    if (imageFile) return `${kind}:${imageFile}`;
+    if (imageFile) return [kind, game, imageFile].filter(Boolean).join(':');
     const name = String(outcome?.name || '').trim();
     if (!name) return '';
     return [
       kind,
+      game,
       name,
       String(outcome?.year || '').trim(),
     ].filter(Boolean).join(':');
   }
 
+  function getLegacyPrizeKeys(outcome) {
+    const kind = String(outcome?.kind || 'car').trim();
+    const game = String(outcome?.game || '').trim();
+    const imageFile = String(outcome?.imageFile || '').trim();
+    if (imageFile) {
+      const keys = [`${kind}:${imageFile}`];
+      const basename = imageFile.split('/').filter(Boolean).pop();
+      if (basename && basename !== imageFile) {
+        if (game) keys.push(`${kind}:${game}:${basename}`);
+        keys.push(`${kind}:${basename}`);
+      }
+      return keys;
+    }
+    const name = String(outcome?.name || '').trim();
+    if (!name) return [];
+    return [[
+      kind,
+      name,
+      String(outcome?.year || '').trim(),
+    ].filter(Boolean).join(':')];
+  }
+
+  function isSpecialPrize(outcome) {
+    const kind = String(outcome?.kind || '').trim();
+    return kind === 'ultimate-chance' || kind === 'rivals-choice';
+  }
+
   function getPrizeCount(prizes) {
     if (!Array.isArray(prizes)) return 0;
-    return new Set(prizes.map(getPrizeKey).filter(Boolean)).size;
+    return new Set(prizes.filter((prize) => !isSpecialPrize(prize)).map(getPrizeKey).filter(Boolean)).size;
+  }
+
+  function getWonPrizeCount(wonPrizeKeys, prizes) {
+    if (!Array.isArray(wonPrizeKeys) || !Array.isArray(prizes)) return 0;
+    const knownKeys = new Set();
+    prizes.filter((prize) => !isSpecialPrize(prize)).forEach((prize) => {
+      const key = getPrizeKey(prize);
+      if (key) knownKeys.add(key);
+      getLegacyPrizeKeys(prize).forEach((legacyKey) => knownKeys.add(legacyKey));
+    });
+    return new Set(wonPrizeKeys.filter((key) => knownKeys.has(String(key)))).size;
   }
 
   function formatNumber(value) {
@@ -93,6 +133,7 @@
     const total = toSafeInteger(totalCount);
     if (!total) return '0%';
     const progress = Math.min(100, (toSafeInteger(wonCount) / total) * 100);
+    if (progress > 0 && progress < 0.1) return '<0.1%';
     if (!progress || Number.isInteger(progress)) return `${progress}%`;
     return `${progress.toFixed(1)}%`;
   }
@@ -111,6 +152,7 @@
     parseCreditValue,
     getPrizeKey,
     getPrizeCount,
+    getWonPrizeCount,
     formatNumber,
     formatCredits,
     formatCollectionProgress,

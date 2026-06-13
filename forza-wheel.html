@@ -19,11 +19,10 @@
             </svg>
           </button>
           <div class="game-picker-menu" id="gamePickerMenu" role="menu">
-            <button type="button" class="active" role="menuitem">Forza Horizon 4</button>
-            <button type="button" data-coming-soon role="menuitem">Forza Horizon 5</button>
-            <button type="button" data-coming-soon role="menuitem">Forza Horizon 6</button>
+            <button type="button" class="active" data-game="fh4" role="menuitem">Forza Horizon 4</button>
+            <button type="button" data-game="fh5" role="menuitem">Forza Horizon 5</button>
+            <button type="button" data-game="fh6" role="menuitem">Forza Horizon 6</button>
           </div>
-          <div class="game-picker-tooltip" id="gamePickerTooltip" role="status" aria-live="polite">Coming soon</div>
         </div>
         <p class="subtitle">No-compromise wheelspin simulator</p>
       </div>
@@ -78,8 +77,10 @@
     </main>
   </div>
 
-  <!-- Data must load before the controller; it exposes window.FH4_CARS. -->
+  <!-- Data must load before the controller; each file exposes a game-specific window dataset. -->
   <script src="data/fh4-cars.js"></script>
+  <script src="data/fh5-cars.js"></script>
+  <script src="data/fh6-cars.js"></script>
   <script src="assets/js/spin-stats.js"></script>
   <script src="assets/js/forza-wheel.js"></script>
 </body>

@@ -14,7 +14,7 @@ Interactive Forza Horizon 4 wheel of fortune with local car data and local car i
 - `assets/js/forza-wheel.js` - shared wheel controller and UI behavior.
 - `data/fh4-cars.json` - readable Forza Horizon 4 car database.
 - `data/fh4-cars.js` - browser-ready Forza Horizon 4 database used by the HTML pages.
-- `assets/cars/` - local car images.
+- `assets/cars/fh4/`, `assets/cars/fh5/`, `assets/cars/fh6/` - local car images by game.
 - `assets/sounds/wheel-spin.wav` - prebuilt wheel spin sound.
 - `tests/regression.test.mjs` - Node.js regression checks for the page contracts.
 

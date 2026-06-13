@@ -1,6 +1,11 @@
 (function initHomeStats() {
   const statsApi = window.ForzaSpinStats;
-  const prizeCount = statsApi?.getPrizeCount(window.FH4_CARS);
+  const allPrizes = [
+    ...(window.FH4_CARS || []),
+    ...(window.FH5_CARS || []),
+    ...(window.FH6_CARS || []),
+  ];
+  const prizeCount = statsApi?.getPrizeCount(allPrizes);
   const totalSpins = document.getElementById('homeTotalSpins');
   const collectionProgress = document.getElementById('homeCollectionProgress');
   const creditsWon = document.getElementById('homeCreditsWon');
@@ -10,8 +15,9 @@
 
   function renderStats() {
     const stats = statsApi.read();
+    const wonPrizeCount = statsApi.getWonPrizeCount(stats.wonPrizeKeys, allPrizes);
     totalSpins.textContent = statsApi.formatNumber(stats.totalSpins);
-    collectionProgress.textContent = statsApi.formatCollectionProgress(stats.wonPrizeKeys.length, prizeCount);
+    collectionProgress.textContent = statsApi.formatCollectionProgress(wonPrizeCount, prizeCount);
     creditsWon.textContent = statsApi.formatCredits(stats.creditsWon);
     uniquePrizes.textContent = statsApi.formatNumber(prizeCount);
   }

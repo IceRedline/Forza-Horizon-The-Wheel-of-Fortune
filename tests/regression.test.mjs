@@ -94,7 +94,7 @@ test('future game car databases are parsed and mirrored', async () => {
       jsPath: paths.fh5CarsJs,
       globalName: 'FH5_CARS',
       game: 'fh5',
-      count: 902,
+      regularCount: 902,
       sample: 'Abarth 124 Spider 2017',
     },
     {
@@ -102,7 +102,7 @@ test('future game car databases are parsed and mirrored', async () => {
       jsPath: paths.fh6CarsJs,
       globalName: 'FH6_CARS',
       game: 'fh6',
-      count: 618,
+      regularCount: 618,
       sample: 'Abarth 695 Biposto 2016',
     },
   ];
@@ -110,24 +110,40 @@ test('future game car databases are parsed and mirrored', async () => {
   for (const entry of cases) {
     const carsJson = JSON.parse(await readText(entry.jsonPath));
     const carsJs = await readBrowserCarsJs(entry.jsPath, entry.globalName);
+    const specials = carsJson.filter((car) => car.kind);
+    const regularCars = carsJson.filter((car) => !car.kind);
     assert.deepEqual(carsJs, carsJson, `${entry.game} browser mirror should match JSON exactly`);
-    assert.equal(carsJson.length, entry.count, `${entry.game} parsed car count should stay stable`);
+    assert.equal(regularCars.length, entry.regularCount, `${entry.game} parsed regular car count should stay stable`);
+    assert.equal(specials.length, 2, `${entry.game} should include special outcomes`);
     assert.ok(carsJson.every((car) => car.game === entry.game), `${entry.game} cars should be game-marked`);
     assert.ok(carsJson.some((car) => car.name === entry.sample), `${entry.game} should include ${entry.sample}`);
-    assert.ok(carsJson.every((car) => car.name && car.year && car.value && car.piClass && car.pi), `${entry.game} cars should have usable wheel fields`);
-    assert.equal(new Set(carsJson.map((car) => `${car.name}:${car.year}`)).size, carsJson.length, `${entry.game} cars should be unique`);
+    assert.ok(regularCars.every((car) => car.name && car.year && car.value && car.piClass && car.pi), `${entry.game} cars should have usable wheel fields`);
+    assert.deepEqual(
+      specials.map((car) => car.name),
+      ['Absolute Ultimate Chance', "Rival's choice"],
+    );
+    assert.equal(new Set(regularCars.map((car) => `${car.name}:${car.year}`)).size, regularCars.length, `${entry.game} cars should be unique`);
   }
 });
 
-test('regular cars point at local image files', async () => {
-  const regularCars = (await readCarsJson()).filter((car) => !car.kind);
-  for (const car of regularCars) {
-    assert.ok(car.image.startsWith('assets/cars/'), `${car.name} should use a local car image`);
-    assert.ok(car.imageFile, `${car.name} should have imageFile`);
-    assert.ok(
-      existsSync(join(paths.carsDir, car.imageFile)),
-      `${car.name} image is missing: ${car.imageFile}`,
-    );
+test('regular cars point at local image files in game-specific folders', async () => {
+  const cases = [
+    { game: 'fh4', jsonPath: paths.fh4CarsJson, expectedCount: 753 },
+    { game: 'fh5', jsonPath: paths.fh5CarsJson, expectedCount: 902 },
+    { game: 'fh6', jsonPath: paths.fh6CarsJson, expectedCount: 618 },
+  ];
+
+  for (const entry of cases) {
+    const regularCars = JSON.parse(await readText(entry.jsonPath)).filter((car) => !car.kind);
+    assert.equal(regularCars.length, entry.expectedCount, `${entry.game} regular car count should stay stable`);
+    for (const car of regularCars) {
+      assert.ok(car.image.startsWith(`assets/cars/${entry.game}/`), `${car.name} should use a local ${entry.game} car image`);
+      assert.ok(car.imageFile.startsWith(`${entry.game}/`), `${car.name} should have a ${entry.game} imageFile`);
+      assert.ok(
+        existsSync(join(paths.carsDir, car.imageFile)),
+        `${car.name} image is missing: ${car.imageFile}`,
+      );
+    }
   }
 });
 
@@ -160,7 +176,6 @@ test('main page exposes required DOM hooks', async () => {
     'gamePicker',
     'gamePickerToggle',
     'gamePickerMenu',
-    'gamePickerTooltip',
     'stage',
     'caseWindow',
     'caseTrack',
@@ -174,12 +189,15 @@ test('main page exposes required DOM hooks', async () => {
     assertContains(html, `id="${id}"`, paths.mainHtml);
   }
   assertContains(html, 'data/fh4-cars.js', paths.mainHtml);
+  assertContains(html, 'data/fh5-cars.js', paths.mainHtml);
+  assertContains(html, 'data/fh6-cars.js', paths.mainHtml);
   assertContains(html, 'assets/js/spin-stats.js', paths.mainHtml);
   assertContains(html, 'assets/css/forza-wheel.css', paths.mainHtml);
   assertContains(html, 'assets/js/forza-wheel.js', paths.mainHtml);
   assertContains(html, 'Forza Horizon 5', paths.mainHtml);
   assertContains(html, 'Forza Horizon 6', paths.mainHtml);
-  assertContains(html, 'Coming soon', paths.mainHtml);
+  assertContains(html, 'data-game="fh5"', paths.mainHtml);
+  assertContains(html, 'data-game="fh6"', paths.mainHtml);
 });
 
 test('wheel page UI is English-only', async () => {
@@ -196,12 +214,17 @@ test('home page exposes dynamic local stats hooks', async () => {
   assertContains(html, 'id="homeCreditsWon"', 'home page');
   assertContains(html, 'id="homeUniquePrizes"', 'home page');
   assertContains(html, 'data/fh4-cars.js', 'home page');
+  assertContains(html, 'data/fh5-cars.js', 'home page');
+  assertContains(html, 'data/fh6-cars.js', 'home page');
   assertContains(html, 'assets/js/spin-stats.js', 'home page');
   assertContains(html, 'assets/js/home.js', 'home page');
 
   const homeJs = await readText(paths.homeJs);
   assertContains(homeJs, 'ForzaSpinStats', 'home stats controller');
   assertContains(homeJs, 'FH4_CARS', 'home stats controller');
+  assertContains(homeJs, 'FH5_CARS', 'home stats controller');
+  assertContains(homeJs, 'FH6_CARS', 'home stats controller');
+  assertContains(homeJs, 'getWonPrizeCount', 'home stats controller');
   assertContains(homeJs, 'homeTotalSpins', 'home stats controller');
   assertContains(homeJs, 'homeCollectionProgress', 'home stats controller');
   assertContains(homeJs, 'homeCreditsWon', 'home stats controller');
@@ -217,43 +240,51 @@ test('spin stats persist local spin count and parsed car values', async () => {
 
   assert.deepEqual(plainObject(api.read()), { totalSpins: 0, creditsWon: 0, wonPrizeKeys: [] });
   assert.deepEqual(
-    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', value: '43,500 CR' })),
-    { totalSpins: 1, creditsWon: 43500, wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017'] },
+    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', game: 'fh5', value: '43,500 CR' })),
+    { totalSpins: 1, creditsWon: 43500, wonPrizeKeys: ['car:fh5:Abarth 124 Spider 2017:2017'] },
   );
   assert.deepEqual(
-    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', value: '43,500 CR' })),
-    { totalSpins: 2, creditsWon: 87000, wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017'] },
+    plainObject(api.recordSpin({ name: 'Abarth 124 Spider 2017', year: '2017', game: 'fh5', value: '43,500 CR' })),
+    { totalSpins: 2, creditsWon: 87000, wonPrizeKeys: ['car:fh5:Abarth 124 Spider 2017:2017'] },
   );
   assert.deepEqual(
-    plainObject(api.recordSpin({ name: 'Zenvo TSR-S 2019', year: '2019', value: '1,200,000 CR' })),
+    plainObject(api.recordSpin({ name: 'Zenvo TSR-S 2019', year: '2019', game: 'fh4', value: '1,200,000 CR' })),
     {
       totalSpins: 3,
       creditsWon: 1287000,
-      wonPrizeKeys: ['car:Abarth 124 Spider 2017:2017', 'car:Zenvo TSR-S 2019:2019'],
+      wonPrizeKeys: ['car:fh5:Abarth 124 Spider 2017:2017', 'car:fh4:Zenvo TSR-S 2019:2019'],
     },
   );
   assert.deepEqual(
-    plainObject(api.recordSpin({ name: 'Absolute Ultimate Chance', kind: 'ultimate-chance', value: '∞ CR' })),
+    plainObject(api.recordSpin({ name: 'Absolute Ultimate Chance', kind: 'ultimate-chance', game: 'fh4', value: '∞ CR' })),
     {
       totalSpins: 4,
       creditsWon: 1287000,
       wonPrizeKeys: [
-        'car:Abarth 124 Spider 2017:2017',
-        'car:Zenvo TSR-S 2019:2019',
-        'ultimate-chance:Absolute Ultimate Chance',
+        'car:fh5:Abarth 124 Spider 2017:2017',
+        'car:fh4:Zenvo TSR-S 2019:2019',
       ],
     },
   );
   assert.equal(api.formatNumber(1243500), '1,243,500');
   assert.equal(api.formatCredits(1243500), '1.2M');
-  assert.equal(api.formatCollectionProgress(1, 755), '0.1%');
-  assert.equal(api.formatCollectionProgress(755, 755), '100%');
+  assert.equal(api.formatCollectionProgress(1, 2273), '<0.1%');
+  assert.equal(api.formatCollectionProgress(2273, 2273), '100%');
 });
 
-test('home unique prizes count comes from the browser data set', async () => {
+test('home unique prizes count comes from all regular browser data sets', async () => {
   const { api } = await loadSpinStatsApi();
-  const cars = await readCarsJson();
-  assert.equal(api.getPrizeCount(cars), 755);
+  const allCars = [
+    ...(await readCarsJson()),
+    ...JSON.parse(await readText(paths.fh5CarsJson)),
+    ...JSON.parse(await readText(paths.fh6CarsJson)),
+  ];
+  assert.equal(api.getPrizeCount(await readCarsJson()), 753);
+  assert.equal(api.getPrizeCount(allCars), 2273);
+  assert.equal(
+    api.getWonPrizeCount(['car:fh4:0753-zenvo-tsr-s-2019.png', 'car:0752-zenvo-st1-2016.png', 'ultimate-chance:Absolute Ultimate Chance'], allCars),
+    2,
+  );
 });
 
 test('theme toggle keeps dark as default and supports saved light theme', async () => {
@@ -268,6 +299,9 @@ test('theme toggle keeps dark as default and supports saved light theme', async 
 test('wheel startup behavior is protected', async () => {
   const js = await readText(paths.appJs);
   assertContains(js, 'const spinLength = 96;', 'spin length');
+  assertContains(js, 'const gameDatasets = {', 'game datasets');
+  assertContains(js, 'function setGame(gameId)', 'game switcher');
+  assertContains(js, 'function resetWheelForCurrentGame()', 'game switch wheel reset');
   assertContains(js, 'const spinIntroCurveMs = 420;', 'spin intro curve');
   assertContains(js, 'const spinSettleCurveMs = 460;', 'spin settle curve');
   assertContains(js, 'const spinOvershootItems = 0.24;', 'spin overshoot distance');

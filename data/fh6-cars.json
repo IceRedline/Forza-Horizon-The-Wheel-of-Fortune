@@ -15,8 +15,8 @@
     "braking": "4.8",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0001-abarth-695-biposto-2016.webp",
+    "imageFile": "fh6/0001-abarth-695-biposto-2016.webp"
   },
   {
     "game": "fh6",
@@ -34,8 +34,8 @@
     "braking": "3.2",
     "offroad": "5.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0002-abarth-fiat-131-1980.webp",
+    "imageFile": "fh6/0002-abarth-fiat-131-1980.webp"
   },
   {
     "game": "fh6",
@@ -53,8 +53,8 @@
     "braking": "2.0",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0003-abarth-595-esseesse-1968.webp",
+    "imageFile": "fh6/0003-abarth-595-esseesse-1968.webp"
   },
   {
     "game": "fh6",
@@ -72,8 +72,8 @@
     "braking": "3.7",
     "offroad": "5.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0004-acura-integra-a-spec-2023.webp",
+    "imageFile": "fh6/0004-acura-integra-a-spec-2023.webp"
   },
   {
     "game": "fh6",
@@ -91,8 +91,8 @@
     "braking": "6.9",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0005-acura-nsx-type-s-2022.webp",
+    "imageFile": "fh6/0005-acura-nsx-type-s-2022.webp"
   },
   {
     "game": "fh6",
@@ -110,8 +110,8 @@
     "braking": "3.5",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0006-acura-rsx-type-s-2002.webp",
+    "imageFile": "fh6/0006-acura-rsx-type-s-2002.webp"
   },
   {
     "game": "fh6",
@@ -129,8 +129,8 @@
     "braking": "3.4",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0007-acura-integra-type-r-2001.webp",
+    "imageFile": "fh6/0007-acura-integra-type-r-2001.webp"
   },
   {
     "game": "fh6",
@@ -148,8 +148,8 @@
     "braking": "",
     "offroad": "",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0008-alfa-romeo-giulia-gtam-2021.webp",
+    "imageFile": "fh6/0008-alfa-romeo-giulia-gtam-2021.webp"
   },
   {
     "game": "fh6",
@@ -167,8 +167,8 @@
     "braking": "6.7",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0009-alfa-romeo-giulia-quadrifoglio-2017.webp",
+    "imageFile": "fh6/0009-alfa-romeo-giulia-quadrifoglio-2017.webp"
   },
   {
     "game": "fh6",
@@ -186,8 +186,8 @@
     "braking": "5.2",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0010-alfa-romeo-4c-2014.webp",
+    "imageFile": "fh6/0010-alfa-romeo-4c-2014.webp"
   },
   {
     "game": "fh6",
@@ -205,8 +205,8 @@
     "braking": "4.9",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0011-alfa-romeo-8c-competizione-2007.webp",
+    "imageFile": "fh6/0011-alfa-romeo-8c-competizione-2007.webp"
   },
   {
     "game": "fh6",
@@ -224,8 +224,8 @@
     "braking": "3.3",
     "offroad": "5.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0012-alfa-romeo-155-q4-1992.webp",
+    "imageFile": "fh6/0012-alfa-romeo-155-q4-1992.webp"
   },
   {
     "game": "fh6",
@@ -243,8 +243,8 @@
     "braking": "",
     "offroad": "",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0013-alfa-romeo-se-048sp-1990.webp",
+    "imageFile": "fh6/0013-alfa-romeo-se-048sp-1990.webp"
   },
   {
     "game": "fh6",
@@ -262,8 +262,8 @@
     "braking": "3.6",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0014-alfa-romeo-33-stradale-1968.webp",
+    "imageFile": "fh6/0014-alfa-romeo-33-stradale-1968.webp"
   },
   {
     "game": "fh6",
@@ -281,8 +281,8 @@
     "braking": "3.4",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0015-alfa-romeo-giulia-tz2-1965.webp",
+    "imageFile": "fh6/0015-alfa-romeo-giulia-tz2-1965.webp"
   },
   {
     "game": "fh6",
@@ -300,8 +300,8 @@
     "braking": "2.8",
     "offroad": "5.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0016-alfa-romeo-giulia-sprint-gta-stradale-1965.webp",
+    "imageFile": "fh6/0016-alfa-romeo-giulia-sprint-gta-stradale-1965.webp"
   },
   {
     "game": "fh6",
@@ -319,8 +319,8 @@
     "braking": "5.0",
     "offroad": "9.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0017-alumicraft-6165-trick-truck-2022.webp",
+    "imageFile": "fh6/0017-alumicraft-6165-trick-truck-2022.webp"
   },
   {
     "game": "fh6",
@@ -338,8 +338,8 @@
     "braking": "5.3",
     "offroad": "9.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0018-alumicraft-122-class-1-buggy-2021.webp",
+    "imageFile": "fh6/0018-alumicraft-122-class-1-buggy-2021.webp"
   },
   {
     "game": "fh6",
@@ -357,8 +357,8 @@
     "braking": "4.8",
     "offroad": "9.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0019-alumicraft-class-10-race-car-2015.webp",
+    "imageFile": "fh6/0019-alumicraft-class-10-race-car-2015.webp"
   },
   {
     "game": "fh6",
@@ -376,8 +376,8 @@
     "braking": "6.7",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0020-amg-transport-dynamics-m12s-warthog-cst-2554.webp",
+    "imageFile": "fh6/0020-amg-transport-dynamics-m12s-warthog-cst-2554.webp"
   },
   {
     "game": "fh6",
@@ -395,8 +395,8 @@
     "braking": "10",
     "offroad": "4.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0021-apollo-intensa-emozione-2019.webp",
+    "imageFile": "fh6/0021-apollo-intensa-emozione-2019.webp"
   },
   {
     "game": "fh6",
@@ -414,8 +414,8 @@
     "braking": "4.2",
     "offroad": "8.3",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0022-ariel-nomad-2016.webp",
+    "imageFile": "fh6/0022-ariel-nomad-2016.webp"
   },
   {
     "game": "fh6",
@@ -433,8 +433,8 @@
     "braking": "6.9",
     "offroad": "4.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0023-ariel-atom-500-v8-2013.webp",
+    "imageFile": "fh6/0023-ariel-atom-500-v8-2013.webp"
   },
   {
     "game": "fh6",
@@ -452,8 +452,8 @@
     "braking": "10",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0024-aston-martin-valkyrie-2023.webp",
+    "imageFile": "fh6/0024-aston-martin-valkyrie-2023.webp"
   },
   {
     "game": "fh6",
@@ -471,8 +471,8 @@
     "braking": "10",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0025-aston-martin-valkyrie-amr-pro-2022.webp",
+    "imageFile": "fh6/0025-aston-martin-valkyrie-amr-pro-2022.webp"
   },
   {
     "game": "fh6",
@@ -490,8 +490,8 @@
     "braking": "5.2",
     "offroad": "6.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0026-aston-martin-dbx-2021.webp",
+    "imageFile": "fh6/0026-aston-martin-dbx-2021.webp"
   },
   {
     "game": "fh6",
@@ -509,8 +509,8 @@
     "braking": "10",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0027-aston-martin-valhalla-concept-car-2019.webp",
+    "imageFile": "fh6/0027-aston-martin-valhalla-concept-car-2019.webp"
   },
   {
     "game": "fh6",
@@ -528,8 +528,8 @@
     "braking": "6.9",
     "offroad": "5.0",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0028-aston-martin-dbs-superleggera-2019.webp",
+    "imageFile": "fh6/0028-aston-martin-dbs-superleggera-2019.webp"
   },
   {
     "game": "fh6",
@@ -547,8 +547,8 @@
     "braking": "6.1",
     "offroad": "5.0",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0029-aston-martin-vantage-2019.webp",
+    "imageFile": "fh6/0029-aston-martin-vantage-2019.webp"
   },
   {
     "game": "fh6",
@@ -566,8 +566,8 @@
     "braking": "10",
     "offroad": "3.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0030-aston-martin-vulcan-amr-pro-2017.webp",
+    "imageFile": "fh6/0030-aston-martin-vulcan-amr-pro-2017.webp"
   },
   {
     "game": "fh6",
@@ -585,8 +585,8 @@
     "braking": "6.1",
     "offroad": "5.3",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0031-aston-martin-db11-2017.webp",
+    "imageFile": "fh6/0031-aston-martin-db11-2017.webp"
   },
   {
     "game": "fh6",
@@ -604,8 +604,8 @@
     "braking": "10",
     "offroad": "4.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0032-aston-martin-vulcan-2016.webp",
+    "imageFile": "fh6/0032-aston-martin-vulcan-2016.webp"
   },
   {
     "game": "fh6",
@@ -623,8 +623,8 @@
     "braking": "2.7",
     "offroad": "5.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0033-aston-martin-db5-1964.webp",
+    "imageFile": "fh6/0033-aston-martin-db5-1964.webp"
   },
   {
     "game": "fh6",
@@ -642,8 +642,8 @@
     "braking": "7.8",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0034-audi-r8-coupe-v10-gt-rwd-2023.webp",
+    "imageFile": "fh6/0034-audi-r8-coupe-v10-gt-rwd-2023.webp"
   },
   {
     "game": "fh6",
@@ -661,8 +661,8 @@
     "braking": "4.2",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0035-audi-rs-e-tron-gt-2021.webp",
+    "imageFile": "fh6/0035-audi-rs-e-tron-gt-2021.webp"
   },
   {
     "game": "fh6",
@@ -680,8 +680,8 @@
     "braking": "4.9",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0036-audi-rs-7-sportback-2021-2021.webp",
+    "imageFile": "fh6/0036-audi-rs-7-sportback-2021-2021.webp"
   },
   {
     "game": "fh6",
@@ -699,8 +699,8 @@
     "braking": "4.9",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0037-audi-rs-6-avant-2021-2021.webp",
+    "imageFile": "fh6/0037-audi-rs-6-avant-2021-2021.webp"
   },
   {
     "game": "fh6",
@@ -718,8 +718,8 @@
     "braking": "6.8",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0038-audi-r8-v10-performance-2020.webp",
+    "imageFile": "fh6/0038-audi-r8-v10-performance-2020.webp"
   },
   {
     "game": "fh6",
@@ -737,8 +737,8 @@
     "braking": "4.6",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0039-audi-rs-3-sedan-2020.webp",
+    "imageFile": "fh6/0039-audi-rs-3-sedan-2020.webp"
   },
   {
     "game": "fh6",
@@ -756,8 +756,8 @@
     "braking": "4.9",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0040-audi-rs-4-avant-2018-2018.webp",
+    "imageFile": "fh6/0040-audi-rs-4-avant-2018-2018.webp"
   },
   {
     "game": "fh6",
@@ -775,8 +775,8 @@
     "braking": "7.2",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0041-audi-r8-v10-plus-2016.webp",
+    "imageFile": "fh6/0041-audi-r8-v10-plus-2016.webp"
   },
   {
     "game": "fh6",
@@ -794,8 +794,8 @@
     "braking": "5.3",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0042-audi-rs-6-avant-2015-2015.webp",
+    "imageFile": "fh6/0042-audi-rs-6-avant-2015-2015.webp"
   },
   {
     "game": "fh6",
@@ -813,8 +813,8 @@
     "braking": "3.7",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0043-audi-s1-2015.webp",
+    "imageFile": "fh6/0043-audi-s1-2015.webp"
   },
   {
     "game": "fh6",
@@ -832,8 +832,8 @@
     "braking": "6.8",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0044-audi-r8-coupe-v10-plus-5-2-fsi-quattro-2013.webp",
+    "imageFile": "fh6/0044-audi-r8-coupe-v10-plus-5-2-fsi-quattro-2013.webp"
   },
   {
     "game": "fh6",
@@ -851,8 +851,8 @@
     "braking": "5.6",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0045-audi-rs-7-sportback-2013-2013.webp",
+    "imageFile": "fh6/0045-audi-rs-7-sportback-2013-2013.webp"
   },
   {
     "game": "fh6",
@@ -870,8 +870,8 @@
     "braking": "5.2",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0046-audi-rs-4-avant-2013-2013.webp",
+    "imageFile": "fh6/0046-audi-rs-4-avant-2013-2013.webp"
   },
   {
     "game": "fh6",
@@ -889,8 +889,8 @@
     "braking": "5.9",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0047-audi-rs-5-coupe-2011-2011.webp",
+    "imageFile": "fh6/0047-audi-rs-5-coupe-2011-2011.webp"
   },
   {
     "game": "fh6",
@@ -908,8 +908,8 @@
     "braking": "4.1",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0048-audi-rs-3-sportback-2011.webp",
+    "imageFile": "fh6/0048-audi-rs-3-sportback-2011.webp"
   },
   {
     "game": "fh6",
@@ -927,8 +927,8 @@
     "braking": "4.4",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0049-audi-tt-rs-coupe-2010-2010.webp",
+    "imageFile": "fh6/0049-audi-tt-rs-coupe-2010-2010.webp"
   },
   {
     "game": "fh6",
@@ -946,8 +946,8 @@
     "braking": "9.5",
     "offroad": "4.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0050-audi-r8-lms-2009.webp",
+    "imageFile": "fh6/0050-audi-r8-lms-2009.webp"
   },
   {
     "game": "fh6",
@@ -965,8 +965,8 @@
     "braking": "5.8",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0051-audi-rs-6-2009-2009.webp",
+    "imageFile": "fh6/0051-audi-rs-6-2009-2009.webp"
   },
   {
     "game": "fh6",
@@ -984,8 +984,8 @@
     "braking": "4.4",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0052-audi-rs-4-2006.webp",
+    "imageFile": "fh6/0052-audi-rs-4-2006.webp"
   },
   {
     "game": "fh6",
@@ -1003,8 +1003,8 @@
     "braking": "4.1",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0053-audi-rs-6-2003-2003.webp",
+    "imageFile": "fh6/0053-audi-rs-6-2003-2003.webp"
   },
   {
     "game": "fh6",
@@ -1022,8 +1022,8 @@
     "braking": "3.6",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0054-audi-rs-4-avant-2001-2001.webp",
+    "imageFile": "fh6/0054-audi-rs-4-avant-2001-2001.webp"
   },
   {
     "game": "fh6",
@@ -1041,8 +1041,8 @@
     "braking": "5.4",
     "offroad": "8.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0055-audi-2-audi-sport-quattro-s1-1986.webp",
+    "imageFile": "fh6/0055-audi-2-audi-sport-quattro-s1-1986.webp"
   },
   {
     "game": "fh6",
@@ -1060,8 +1060,8 @@
     "braking": "4.0",
     "offroad": "6.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0056-audi-sport-quattro-1983.webp",
+    "imageFile": "fh6/0056-audi-sport-quattro-1983.webp"
   },
   {
     "game": "fh6",
@@ -1079,8 +1079,8 @@
     "braking": "2.4",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0057-austin-healey-3000-mkiii-1965.webp",
+    "imageFile": "fh6/0057-austin-healey-3000-mkiii-1965.webp"
   },
   {
     "game": "fh6",
@@ -1098,8 +1098,8 @@
     "braking": "3.0",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0058-autozam-az-1-1993.webp",
+    "imageFile": "fh6/0058-autozam-az-1-1993.webp"
   },
   {
     "game": "fh6",
@@ -1117,8 +1117,8 @@
     "braking": "8.1",
     "offroad": "4.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0059-bac-mono-2014.webp",
+    "imageFile": "fh6/0059-bac-mono-2014.webp"
   },
   {
     "game": "fh6",
@@ -1136,8 +1136,8 @@
     "braking": "4.3",
     "offroad": "5.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0060-bentley-continental-gt-convertible-2021.webp",
+    "imageFile": "fh6/0060-bentley-continental-gt-convertible-2021.webp"
   },
   {
     "game": "fh6",
@@ -1155,8 +1155,8 @@
     "braking": "4.0",
     "offroad": "6.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0061-bentley-bentayga-2016.webp",
+    "imageFile": "fh6/0061-bentley-bentayga-2016.webp"
   },
   {
     "game": "fh6",
@@ -1174,8 +1174,8 @@
     "braking": "5.0",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0062-bmw-x6-m-competition-2024.webp",
+    "imageFile": "fh6/0062-bmw-x6-m-competition-2024.webp"
   },
   {
     "game": "fh6",
@@ -1193,8 +1193,8 @@
     "braking": "5.8",
     "offroad": "4.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0063-bmw-m2-forza-edition-2023.webp",
+    "imageFile": "fh6/0063-bmw-m2-forza-edition-2023.webp"
   },
   {
     "game": "fh6",
@@ -1212,8 +1212,8 @@
     "braking": "5.2",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0064-bmw-m2-2023-2023.webp",
+    "imageFile": "fh6/0064-bmw-m2-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -1231,8 +1231,8 @@
     "braking": "6.7",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0065-bmw-m5-cs-2022.webp",
+    "imageFile": "fh6/0065-bmw-m5-cs-2022.webp"
   },
   {
     "game": "fh6",
@@ -1250,8 +1250,8 @@
     "braking": "3.5",
     "offroad": "6.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0066-bmw-ix-xdrive50-2022.webp",
+    "imageFile": "fh6/0066-bmw-ix-xdrive50-2022.webp"
   },
   {
     "game": "fh6",
@@ -1269,8 +1269,8 @@
     "braking": "6.8",
     "offroad": "4.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0067-bmw-m4-competition-coupe-welcome-pack-2021.webp",
+    "imageFile": "fh6/0067-bmw-m4-competition-coupe-welcome-pack-2021.webp"
   },
   {
     "game": "fh6",
@@ -1288,8 +1288,8 @@
     "braking": "5.2",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0068-bmw-m4-competition-coupe-2021.webp",
+    "imageFile": "fh6/0068-bmw-m4-competition-coupe-2021.webp"
   },
   {
     "game": "fh6",
@@ -1307,8 +1307,8 @@
     "braking": "6.3",
     "offroad": "5.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0069-bmw-m8-competition-coupe-2020.webp",
+    "imageFile": "fh6/0069-bmw-m8-competition-coupe-2020.webp"
   },
   {
     "game": "fh6",
@@ -1326,8 +1326,8 @@
     "braking": "5.3",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0070-bmw-m2-competition-coupe-2020.webp",
+    "imageFile": "fh6/0070-bmw-m2-competition-coupe-2020.webp"
   },
   {
     "game": "fh6",
@@ -1345,8 +1345,8 @@
     "braking": "4.4",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0071-bmw-z4-roadster-2019.webp",
+    "imageFile": "fh6/0071-bmw-z4-roadster-2019.webp"
   },
   {
     "game": "fh6",
@@ -1364,8 +1364,8 @@
     "braking": "7.0",
     "offroad": "4.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0072-bmw-m4-gts-2016.webp",
+    "imageFile": "fh6/0072-bmw-m4-gts-2016.webp"
   },
   {
     "game": "fh6",
@@ -1383,8 +1383,8 @@
     "braking": "4.6",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0073-bmw-i8-2015.webp",
+    "imageFile": "fh6/0073-bmw-i8-2015.webp"
   },
   {
     "game": "fh6",
@@ -1402,8 +1402,8 @@
     "braking": "6.5",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0074-bmw-m4-coupe-2014.webp",
+    "imageFile": "fh6/0074-bmw-m4-coupe-2014.webp"
   },
   {
     "game": "fh6",
@@ -1421,8 +1421,8 @@
     "braking": "4.8",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0075-bmw-m5-2012-2012.webp",
+    "imageFile": "fh6/0075-bmw-m5-2012-2012.webp"
   },
   {
     "game": "fh6",
@@ -1440,8 +1440,8 @@
     "braking": "3.7",
     "offroad": "6.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0076-bmw-x5-m-2011.webp",
+    "imageFile": "fh6/0076-bmw-x5-m-2011.webp"
   },
   {
     "game": "fh6",
@@ -1459,8 +1459,8 @@
     "braking": "5.6",
     "offroad": "4.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0077-bmw-m3-gts-2010.webp",
+    "imageFile": "fh6/0077-bmw-m3-gts-2010.webp"
   },
   {
     "game": "fh6",
@@ -1478,8 +1478,8 @@
     "braking": "4.4",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0078-bmw-m5-2009-2009.webp",
+    "imageFile": "fh6/0078-bmw-m5-2009-2009.webp"
   },
   {
     "game": "fh6",
@@ -1497,8 +1497,8 @@
     "braking": "4.5",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0079-bmw-m3-2008-2008.webp",
+    "imageFile": "fh6/0079-bmw-m3-2008-2008.webp"
   },
   {
     "game": "fh6",
@@ -1516,8 +1516,8 @@
     "braking": "4.3",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0080-bmw-z4-m-coupe-2008.webp",
+    "imageFile": "fh6/0080-bmw-z4-m-coupe-2008.webp"
   },
   {
     "game": "fh6",
@@ -1535,8 +1535,8 @@
     "braking": "3.8",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0081-bmw-m3-2005-2005.webp",
+    "imageFile": "fh6/0081-bmw-m3-2005-2005.webp"
   },
   {
     "game": "fh6",
@@ -1554,8 +1554,8 @@
     "braking": "3.8",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0082-bmw-m5-2003-2003.webp",
+    "imageFile": "fh6/0082-bmw-m5-2003-2003.webp"
   },
   {
     "game": "fh6",
@@ -1573,8 +1573,8 @@
     "braking": "3.6",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0083-bmw-m3-1997-1997.webp",
+    "imageFile": "fh6/0083-bmw-m3-1997-1997.webp"
   },
   {
     "game": "fh6",
@@ -1592,8 +1592,8 @@
     "braking": "3.6",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0084-bmw-m5-1995-1995.webp",
+    "imageFile": "fh6/0084-bmw-m5-1995-1995.webp"
   },
   {
     "game": "fh6",
@@ -1611,8 +1611,8 @@
     "braking": "3.2",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0085-bmw-850csi-1995.webp",
+    "imageFile": "fh6/0085-bmw-850csi-1995.webp"
   },
   {
     "game": "fh6",
@@ -1630,8 +1630,8 @@
     "braking": "3.1",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0086-bmw-m3-1988-1988.webp",
+    "imageFile": "fh6/0086-bmw-m3-1988-1988.webp"
   },
   {
     "game": "fh6",
@@ -1649,8 +1649,8 @@
     "braking": "3.1",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0087-bmw-m5-1988-1988.webp",
+    "imageFile": "fh6/0087-bmw-m5-1988-1988.webp"
   },
   {
     "game": "fh6",
@@ -1668,8 +1668,8 @@
     "braking": "3.2",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0088-bmw-m1-1981.webp",
+    "imageFile": "fh6/0088-bmw-m1-1981.webp"
   },
   {
     "game": "fh6",
@@ -1687,8 +1687,8 @@
     "braking": "2.8",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0089-bmw-2002-turbo-1973.webp",
+    "imageFile": "fh6/0089-bmw-2002-turbo-1973.webp"
   },
   {
     "game": "fh6",
@@ -1706,8 +1706,8 @@
     "braking": "2.4",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0090-bmw-isetta-300-export-1957.webp",
+    "imageFile": "fh6/0090-bmw-isetta-300-export-1957.webp"
   },
   {
     "game": "fh6",
@@ -1725,8 +1725,8 @@
     "braking": "2.5",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0091-buick-regal-gnx-1987.webp",
+    "imageFile": "fh6/0091-buick-regal-gnx-1987.webp"
   },
   {
     "game": "fh6",
@@ -1744,8 +1744,8 @@
     "braking": "6.7",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0092-cadillac-ct5-v-blackwing-2022.webp",
+    "imageFile": "fh6/0092-cadillac-ct5-v-blackwing-2022.webp"
   },
   {
     "game": "fh6",
@@ -1763,8 +1763,8 @@
     "braking": "4.9",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0093-cadillac-ct4-v-blackwing-2022.webp",
+    "imageFile": "fh6/0093-cadillac-ct4-v-blackwing-2022.webp"
   },
   {
     "game": "fh6",
@@ -1782,8 +1782,8 @@
     "braking": "4.4",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0094-cadillac-cts-v-sedan-2016.webp",
+    "imageFile": "fh6/0094-cadillac-cts-v-sedan-2016.webp"
   },
   {
     "game": "fh6",
@@ -1801,8 +1801,8 @@
     "braking": "4.2",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0095-cadillac-ats-v-2016.webp",
+    "imageFile": "fh6/0095-cadillac-ats-v-2016.webp"
   },
   {
     "game": "fh6",
@@ -1820,8 +1820,8 @@
     "braking": "3.0",
     "offroad": "5.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0096-cadillac-xts-limousine-2013.webp",
+    "imageFile": "fh6/0096-cadillac-xts-limousine-2013.webp"
   },
   {
     "game": "fh6",
@@ -1839,8 +1839,8 @@
     "braking": "4.5",
     "offroad": "9.8",
     "country": "Canada",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0097-can-am-maverick-x-rs-turbo-r-2018.webp",
+    "imageFile": "fh6/0097-can-am-maverick-x-rs-turbo-r-2018.webp"
   },
   {
     "game": "fh6",
@@ -1858,8 +1858,8 @@
     "braking": "5.4",
     "offroad": "9.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0098-casey-currie-motorsports-4402-ultra-4-trophy-jeep-2019.webp",
+    "imageFile": "fh6/0098-casey-currie-motorsports-4402-ultra-4-trophy-jeep-2019.webp"
   },
   {
     "game": "fh6",
@@ -1877,8 +1877,8 @@
     "braking": "7.3",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0099-chevrolet-corvette-e-ray-2024.webp",
+    "imageFile": "fh6/0099-chevrolet-corvette-e-ray-2024.webp"
   },
   {
     "game": "fh6",
@@ -1896,8 +1896,8 @@
     "braking": "7.7",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0100-chevrolet-corvette-z06-2023-2023.webp",
+    "imageFile": "fh6/0100-chevrolet-corvette-z06-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -1915,8 +1915,8 @@
     "braking": "5.2",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0101-chevrolet-corvette-stingray-coupe-2020.webp",
+    "imageFile": "fh6/0101-chevrolet-corvette-stingray-coupe-2020.webp"
   },
   {
     "game": "fh6",
@@ -1934,8 +1934,8 @@
     "braking": "3.1",
     "offroad": "8.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0102-chevrolet-silverado-lt-trail-boss-2020.webp",
+    "imageFile": "fh6/0102-chevrolet-silverado-lt-trail-boss-2020.webp"
   },
   {
     "game": "fh6",
@@ -1953,8 +1953,8 @@
     "braking": "7.7",
     "offroad": "4.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0103-chevrolet-corvette-zr1-2019-2019.webp",
+    "imageFile": "fh6/0103-chevrolet-corvette-zr1-2019-2019.webp"
   },
   {
     "game": "fh6",
@@ -1972,8 +1972,8 @@
     "braking": "5.8",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0104-chevrolet-camaro-zl1-1le-2018.webp",
+    "imageFile": "fh6/0104-chevrolet-camaro-zl1-1le-2018.webp"
   },
   {
     "game": "fh6",
@@ -1991,8 +1991,8 @@
     "braking": "5.5",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0105-chevrolet-camaro-zl1-2017-2017.webp",
+    "imageFile": "fh6/0105-chevrolet-camaro-zl1-2017-2017.webp"
   },
   {
     "game": "fh6",
@@ -2010,8 +2010,8 @@
     "braking": "7.5",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0106-chevrolet-corvette-z06-2015-2015.webp",
+    "imageFile": "fh6/0106-chevrolet-corvette-z06-2015-2015.webp"
   },
   {
     "game": "fh6",
@@ -2029,8 +2029,8 @@
     "braking": "7.2",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0107-chevrolet-camaro-z-28-2015-2015.webp",
+    "imageFile": "fh6/0107-chevrolet-camaro-z-28-2015-2015.webp"
   },
   {
     "game": "fh6",
@@ -2048,8 +2048,8 @@
     "braking": "6.6",
     "offroad": "4.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0108-chevrolet-corvette-zr1-2009-2009.webp",
+    "imageFile": "fh6/0108-chevrolet-corvette-zr1-2009-2009.webp"
   },
   {
     "game": "fh6",
@@ -2067,8 +2067,8 @@
     "braking": "3.9",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0109-chevrolet-corvette-z06-2002-2002.webp",
+    "imageFile": "fh6/0109-chevrolet-corvette-z06-2002-2002.webp"
   },
   {
     "game": "fh6",
@@ -2086,8 +2086,8 @@
     "braking": "2.7",
     "offroad": "5.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0110-chevrolet-impala-super-sport-1996.webp",
+    "imageFile": "fh6/0110-chevrolet-impala-super-sport-1996.webp"
   },
   {
     "game": "fh6",
@@ -2105,8 +2105,8 @@
     "braking": "3.7",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0111-chevrolet-corvette-zr-1-1995-1995.webp",
+    "imageFile": "fh6/0111-chevrolet-corvette-zr-1-1995-1995.webp"
   },
   {
     "game": "fh6",
@@ -2124,8 +2124,8 @@
     "braking": "2.0",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0112-chevrolet-monte-carlo-super-sport-1988.webp",
+    "imageFile": "fh6/0112-chevrolet-monte-carlo-super-sport-1988.webp"
   },
   {
     "game": "fh6",
@@ -2143,8 +2143,8 @@
     "braking": "2.5",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0113-chevrolet-camaro-z28-1979-1979.webp",
+    "imageFile": "fh6/0113-chevrolet-camaro-z28-1979-1979.webp"
   },
   {
     "game": "fh6",
@@ -2162,8 +2162,8 @@
     "braking": "2.7",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0114-chevrolet-k-10-custom-1972.webp",
+    "imageFile": "fh6/0114-chevrolet-k-10-custom-1972.webp"
   },
   {
     "game": "fh6",
@@ -2181,8 +2181,8 @@
     "braking": "3.1",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0115-chevrolet-corvette-zr-1-1970-1970.webp",
+    "imageFile": "fh6/0115-chevrolet-corvette-zr-1-1970-1970.webp"
   },
   {
     "game": "fh6",
@@ -2200,8 +2200,8 @@
     "braking": "2.4",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0116-chevrolet-el-camino-super-sport-454-1970.webp",
+    "imageFile": "fh6/0116-chevrolet-el-camino-super-sport-454-1970.webp"
   },
   {
     "game": "fh6",
@@ -2219,8 +2219,8 @@
     "braking": "2.4",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0117-chevrolet-camaro-z28-1970-1970.webp",
+    "imageFile": "fh6/0117-chevrolet-camaro-z28-1970-1970.webp"
   },
   {
     "game": "fh6",
@@ -2238,8 +2238,8 @@
     "braking": "2.4",
     "offroad": "5.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0118-chevrolet-chevelle-super-sport-454-1970.webp",
+    "imageFile": "fh6/0118-chevrolet-chevelle-super-sport-454-1970.webp"
   },
   {
     "game": "fh6",
@@ -2257,8 +2257,8 @@
     "braking": "3.1",
     "offroad": "5.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0119-chevrolet-camaro-super-sport-coupe-1969.webp",
+    "imageFile": "fh6/0119-chevrolet-camaro-super-sport-coupe-1969.webp"
   },
   {
     "game": "fh6",
@@ -2276,8 +2276,8 @@
     "braking": "2.4",
     "offroad": "5.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0120-chevrolet-nova-super-sport-396-1969.webp",
+    "imageFile": "fh6/0120-chevrolet-nova-super-sport-396-1969.webp"
   },
   {
     "game": "fh6",
@@ -2295,8 +2295,8 @@
     "braking": "3.1",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0121-chevrolet-corvette-stingray-427-1967.webp",
+    "imageFile": "fh6/0121-chevrolet-corvette-stingray-427-1967.webp"
   },
   {
     "game": "fh6",
@@ -2314,8 +2314,8 @@
     "braking": "2.3",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0122-chevrolet-impala-super-sport-409-1964.webp",
+    "imageFile": "fh6/0122-chevrolet-impala-super-sport-409-1964.webp"
   },
   {
     "game": "fh6",
@@ -2333,8 +2333,8 @@
     "braking": "2.5",
     "offroad": "5.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0123-chevrolet-corvette-1960-1960.webp",
+    "imageFile": "fh6/0123-chevrolet-corvette-1960-1960.webp"
   },
   {
     "game": "fh6",
@@ -2352,8 +2352,8 @@
     "braking": "2.1",
     "offroad": "6.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0124-chevrolet-bel-air-1957.webp",
+    "imageFile": "fh6/0124-chevrolet-bel-air-1957.webp"
   },
   {
     "game": "fh6",
@@ -2371,8 +2371,8 @@
     "braking": "2.0",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0125-chevrolet-150-utility-sedan-1955.webp",
+    "imageFile": "fh6/0125-chevrolet-150-utility-sedan-1955.webp"
   },
   {
     "game": "fh6",
@@ -2390,8 +2390,8 @@
     "braking": "2.0",
     "offroad": "5.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0126-chevrolet-corvette-1953-1953.webp",
+    "imageFile": "fh6/0126-chevrolet-corvette-1953-1953.webp"
   },
   {
     "game": "fh6",
@@ -2409,8 +2409,8 @@
     "braking": "10",
     "offroad": "4.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0127-datsun-269-attacking-the-clock-racing-240z-all-carbon-hill-climb-beast-1972.webp",
+    "imageFile": "fh6/0127-datsun-269-attacking-the-clock-racing-240z-all-carbon-hill-climb-beast-1972.webp"
   },
   {
     "game": "fh6",
@@ -2428,8 +2428,8 @@
     "braking": "1.9",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0128-datsun-510-1970.webp",
+    "imageFile": "fh6/0128-datsun-510-1970.webp"
   },
   {
     "game": "fh6",
@@ -2447,8 +2447,8 @@
     "braking": "2.6",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0129-datsun-2000-roadster-1969.webp",
+    "imageFile": "fh6/0129-datsun-2000-roadster-1969.webp"
   },
   {
     "game": "fh6",
@@ -2466,8 +2466,8 @@
     "braking": "6.6",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0130-deberti-toyota-tacoma-trd-the-performance-truck-2019.webp",
+    "imageFile": "fh6/0130-deberti-toyota-tacoma-trd-the-performance-truck-2019.webp"
   },
   {
     "game": "fh6",
@@ -2485,8 +2485,8 @@
     "braking": "3.8",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0131-deberti-ford-super-duty-f-250-lariat-transformer-2019.webp",
+    "imageFile": "fh6/0131-deberti-ford-super-duty-f-250-lariat-transformer-2019.webp"
   },
   {
     "game": "fh6",
@@ -2504,8 +2504,8 @@
     "braking": "5.2",
     "offroad": "4.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0132-deberti-chevrolet-silverado-1500-drift-truck-2018.webp",
+    "imageFile": "fh6/0132-deberti-chevrolet-silverado-1500-drift-truck-2018.webp"
   },
   {
     "game": "fh6",
@@ -2523,8 +2523,8 @@
     "braking": "4.4",
     "offroad": "9.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0133-deberti-jeep-wrangler-unlimited-2018.webp",
+    "imageFile": "fh6/0133-deberti-jeep-wrangler-unlimited-2018.webp"
   },
   {
     "game": "fh6",
@@ -2542,8 +2542,8 @@
     "braking": "3.1",
     "offroad": "6.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0134-delorean-dmc-12-1982.webp",
+    "imageFile": "fh6/0134-delorean-dmc-12-1982.webp"
   },
   {
     "game": "fh6",
@@ -2561,8 +2561,8 @@
     "braking": "4.7",
     "offroad": "4.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0135-dodge-challenger-srt-super-stock-2022.webp",
+    "imageFile": "fh6/0135-dodge-challenger-srt-super-stock-2022.webp"
   },
   {
     "game": "fh6",
@@ -2580,8 +2580,8 @@
     "braking": "4.3",
     "offroad": "6.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0136-dodge-durango-srt-hellcat-2021.webp",
+    "imageFile": "fh6/0136-dodge-durango-srt-hellcat-2021.webp"
   },
   {
     "game": "fh6",
@@ -2599,8 +2599,8 @@
     "braking": "5.3",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0137-dodge-challenger-srt-demon-2018.webp",
+    "imageFile": "fh6/0137-dodge-challenger-srt-demon-2018.webp"
   },
   {
     "game": "fh6",
@@ -2618,8 +2618,8 @@
     "braking": "9.1",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0138-dodge-viper-acr-2016.webp",
+    "imageFile": "fh6/0138-dodge-viper-acr-2016.webp"
   },
   {
     "game": "fh6",
@@ -2637,8 +2637,8 @@
     "braking": "5.0",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0139-dodge-charger-srt-hellcat-2015.webp",
+    "imageFile": "fh6/0139-dodge-charger-srt-hellcat-2015.webp"
   },
   {
     "game": "fh6",
@@ -2656,8 +2656,8 @@
     "braking": "4.9",
     "offroad": "4.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0140-dodge-challenger-srt-hellcat-2015.webp",
+    "imageFile": "fh6/0140-dodge-challenger-srt-hellcat-2015.webp"
   },
   {
     "game": "fh6",
@@ -2675,8 +2675,8 @@
     "braking": "7.1",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0141-dodge-viper-srt-10-acr-2008.webp",
+    "imageFile": "fh6/0141-dodge-viper-srt-10-acr-2008.webp"
   },
   {
     "game": "fh6",
@@ -2694,8 +2694,8 @@
     "braking": "4.1",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0142-dodge-ram-srt-10-2006.webp",
+    "imageFile": "fh6/0142-dodge-ram-srt-10-2006.webp"
   },
   {
     "game": "fh6",
@@ -2713,8 +2713,8 @@
     "braking": "4.7",
     "offroad": "9.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0143-dodge-viper-gts-acr-forza-edition-1999.webp",
+    "imageFile": "fh6/0143-dodge-viper-gts-acr-forza-edition-1999.webp"
   },
   {
     "game": "fh6",
@@ -2732,8 +2732,8 @@
     "braking": "4.0",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0144-dodge-viper-gts-acr-1999.webp",
+    "imageFile": "fh6/0144-dodge-viper-gts-acr-1999.webp"
   },
   {
     "game": "fh6",
@@ -2751,8 +2751,8 @@
     "braking": "2.4",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0145-dodge-coronet-super-bee-1970.webp",
+    "imageFile": "fh6/0145-dodge-coronet-super-bee-1970.webp"
   },
   {
     "game": "fh6",
@@ -2770,8 +2770,8 @@
     "braking": "2.5",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0146-dodge-challenger-r-t-1970.webp",
+    "imageFile": "fh6/0146-dodge-challenger-r-t-1970.webp"
   },
   {
     "game": "fh6",
@@ -2789,8 +2789,8 @@
     "braking": "2.8",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0147-dodge-charger-daytona-hemi-1969.webp",
+    "imageFile": "fh6/0147-dodge-charger-daytona-hemi-1969.webp"
   },
   {
     "game": "fh6",
@@ -2808,8 +2808,8 @@
     "braking": "2.4",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0148-dodge-charger-r-t-1969.webp",
+    "imageFile": "fh6/0148-dodge-charger-r-t-1969.webp"
   },
   {
     "game": "fh6",
@@ -2827,8 +2827,8 @@
     "braking": "2.9",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0149-dodge-dart-hemi-super-stock-1968.webp",
+    "imageFile": "fh6/0149-dodge-dart-hemi-super-stock-1968.webp"
   },
   {
     "game": "fh6",
@@ -2846,8 +2846,8 @@
     "braking": "",
     "offroad": "",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0150-ferrari-f80-2025.webp",
+    "imageFile": "fh6/0150-ferrari-f80-2025.webp"
   },
   {
     "game": "fh6",
@@ -2865,8 +2865,8 @@
     "braking": "7.7",
     "offroad": "4.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0151-ferrari-296-gtb-2022.webp",
+    "imageFile": "fh6/0151-ferrari-296-gtb-2022.webp"
   },
   {
     "game": "fh6",
@@ -2884,8 +2884,8 @@
     "braking": "7.7",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0152-ferrari-sf90-stradale-2020.webp",
+    "imageFile": "fh6/0152-ferrari-sf90-stradale-2020.webp"
   },
   {
     "game": "fh6",
@@ -2903,8 +2903,8 @@
     "braking": "6.9",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0153-ferrari-roma-2020.webp",
+    "imageFile": "fh6/0153-ferrari-roma-2020.webp"
   },
   {
     "game": "fh6",
@@ -2922,8 +2922,8 @@
     "braking": "8.0",
     "offroad": "4.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0154-ferrari-488-pista-2019.webp",
+    "imageFile": "fh6/0154-ferrari-488-pista-2019.webp"
   },
   {
     "game": "fh6",
@@ -2941,8 +2941,8 @@
     "braking": "7.8",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0155-ferrari-f8-tributo-2019.webp",
+    "imageFile": "fh6/0155-ferrari-f8-tributo-2019.webp"
   },
   {
     "game": "fh6",
@@ -2960,8 +2960,8 @@
     "braking": "7.1",
     "offroad": "4.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0156-ferrari-monza-sp2-2019.webp",
+    "imageFile": "fh6/0156-ferrari-monza-sp2-2019.webp"
   },
   {
     "game": "fh6",
@@ -2979,8 +2979,8 @@
     "braking": "10",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0157-ferrari-fxx-k-evo-welcome-pack-2018.webp",
+    "imageFile": "fh6/0157-ferrari-fxx-k-evo-welcome-pack-2018.webp"
   },
   {
     "game": "fh6",
@@ -2998,8 +2998,8 @@
     "braking": "10",
     "offroad": "4.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0158-ferrari-fxx-k-evo-2018.webp",
+    "imageFile": "fh6/0158-ferrari-fxx-k-evo-2018.webp"
   },
   {
     "game": "fh6",
@@ -3017,8 +3017,8 @@
     "braking": "6.7",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0159-ferrari-portofino-2018.webp",
+    "imageFile": "fh6/0159-ferrari-portofino-2018.webp"
   },
   {
     "game": "fh6",
@@ -3036,8 +3036,8 @@
     "braking": "7.6",
     "offroad": "4.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0160-ferrari-j50-preorder-car-2017.webp",
+    "imageFile": "fh6/0160-ferrari-j50-preorder-car-2017.webp"
   },
   {
     "game": "fh6",
@@ -3055,8 +3055,8 @@
     "braking": "7.4",
     "offroad": "4.5",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0161-ferrari-812-superfast-2017.webp",
+    "imageFile": "fh6/0161-ferrari-812-superfast-2017.webp"
   },
   {
     "game": "fh6",
@@ -3074,8 +3074,8 @@
     "braking": "7.2",
     "offroad": "4.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0162-ferrari-j50-2017.webp",
+    "imageFile": "fh6/0162-ferrari-j50-2017.webp"
   },
   {
     "game": "fh6",
@@ -3093,8 +3093,8 @@
     "braking": "8.0",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0163-ferrari-f12tdf-2015.webp",
+    "imageFile": "fh6/0163-ferrari-f12tdf-2015.webp"
   },
   {
     "game": "fh6",
@@ -3112,8 +3112,8 @@
     "braking": "7.5",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0164-ferrari-488-gtb-2015.webp",
+    "imageFile": "fh6/0164-ferrari-488-gtb-2015.webp"
   },
   {
     "game": "fh6",
@@ -3131,8 +3131,8 @@
     "braking": "10",
     "offroad": "4.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0165-ferrari-fxx-k-2014.webp",
+    "imageFile": "fh6/0165-ferrari-fxx-k-2014.webp"
   },
   {
     "game": "fh6",
@@ -3150,8 +3150,8 @@
     "braking": "9.1",
     "offroad": "4.8",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0166-ferrari-laferrari-2013.webp",
+    "imageFile": "fh6/0166-ferrari-laferrari-2013.webp"
   },
   {
     "game": "fh6",
@@ -3169,8 +3169,8 @@
     "braking": "7.6",
     "offroad": "4.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0167-ferrari-458-speciale-2013.webp",
+    "imageFile": "fh6/0167-ferrari-458-speciale-2013.webp"
   },
   {
     "game": "fh6",
@@ -3188,8 +3188,8 @@
     "braking": "10",
     "offroad": "4.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0168-ferrari-599xx-evolution-2012.webp",
+    "imageFile": "fh6/0168-ferrari-599xx-evolution-2012.webp"
   },
   {
     "game": "fh6",
@@ -3207,8 +3207,8 @@
     "braking": "9.1",
     "offroad": "4.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0169-ferrari-599xx-2010.webp",
+    "imageFile": "fh6/0169-ferrari-599xx-2010.webp"
   },
   {
     "game": "fh6",
@@ -3226,8 +3226,8 @@
     "braking": "6.8",
     "offroad": "4.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0170-ferrari-458-italia-2009.webp",
+    "imageFile": "fh6/0170-ferrari-458-italia-2009.webp"
   },
   {
     "game": "fh6",
@@ -3245,8 +3245,8 @@
     "braking": "6.8",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0171-ferrari-430-scuderia-2007.webp",
+    "imageFile": "fh6/0171-ferrari-430-scuderia-2007.webp"
   },
   {
     "game": "fh6",
@@ -3264,8 +3264,8 @@
     "braking": "10",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0172-ferrari-fxx-2005.webp",
+    "imageFile": "fh6/0172-ferrari-fxx-2005.webp"
   },
   {
     "game": "fh6",
@@ -3283,8 +3283,8 @@
     "braking": "7.9",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0173-ferrari-enzo-ferrari-2002.webp",
+    "imageFile": "fh6/0173-ferrari-enzo-ferrari-2002.webp"
   },
   {
     "game": "fh6",
@@ -3302,8 +3302,8 @@
     "braking": "10",
     "offroad": "4.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0174-ferrari-f50-gt-1996.webp",
+    "imageFile": "fh6/0174-ferrari-f50-gt-1996.webp"
   },
   {
     "game": "fh6",
@@ -3321,8 +3321,8 @@
     "braking": "5.5",
     "offroad": "5.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0175-ferrari-f50-1995.webp",
+    "imageFile": "fh6/0175-ferrari-f50-1995.webp"
   },
   {
     "game": "fh6",
@@ -3340,8 +3340,8 @@
     "braking": "4.3",
     "offroad": "5.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0176-ferrari-f355-berlinetta-1994.webp",
+    "imageFile": "fh6/0176-ferrari-f355-berlinetta-1994.webp"
   },
   {
     "game": "fh6",
@@ -3359,8 +3359,8 @@
     "braking": "4.5",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0177-ferrari-512-tr-1992.webp",
+    "imageFile": "fh6/0177-ferrari-512-tr-1992.webp"
   },
   {
     "game": "fh6",
@@ -3378,8 +3378,8 @@
     "braking": "10",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0178-ferrari-f40-competizione-1989.webp",
+    "imageFile": "fh6/0178-ferrari-f40-competizione-1989.webp"
   },
   {
     "game": "fh6",
@@ -3397,8 +3397,8 @@
     "braking": "5.2",
     "offroad": "5.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0179-ferrari-f40-1987.webp",
+    "imageFile": "fh6/0179-ferrari-f40-1987.webp"
   },
   {
     "game": "fh6",
@@ -3416,8 +3416,8 @@
     "braking": "4.2",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0180-ferrari-288-gto-1984.webp",
+    "imageFile": "fh6/0180-ferrari-288-gto-1984.webp"
   },
   {
     "game": "fh6",
@@ -3435,8 +3435,8 @@
     "braking": "5.6",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0181-ferrari-512-s-1970.webp",
+    "imageFile": "fh6/0181-ferrari-512-s-1970.webp"
   },
   {
     "game": "fh6",
@@ -3454,8 +3454,8 @@
     "braking": "2.8",
     "offroad": "5.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0182-ferrari-dino-246-gt-1969.webp",
+    "imageFile": "fh6/0182-ferrari-dino-246-gt-1969.webp"
   },
   {
     "game": "fh6",
@@ -3473,8 +3473,8 @@
     "braking": "4.2",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0183-ferrari-24-ferrari-spa-330-p4-1967.webp",
+    "imageFile": "fh6/0183-ferrari-24-ferrari-spa-330-p4-1967.webp"
   },
   {
     "game": "fh6",
@@ -3492,8 +3492,8 @@
     "braking": "",
     "offroad": "",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0184-ferrari-275-gtb4-spider-1967.webp",
+    "imageFile": "fh6/0184-ferrari-275-gtb4-spider-1967.webp"
   },
   {
     "game": "fh6",
@@ -3511,8 +3511,8 @@
     "braking": "2.8",
     "offroad": "5.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0185-ferrari-250-gto-1962.webp",
+    "imageFile": "fh6/0185-ferrari-250-gto-1962.webp"
   },
   {
     "game": "fh6",
@@ -3530,8 +3530,8 @@
     "braking": "2.9",
     "offroad": "5.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0186-ferrari-250-gt-berlinetta-lusso-1962.webp",
+    "imageFile": "fh6/0186-ferrari-250-gt-berlinetta-lusso-1962.webp"
   },
   {
     "game": "fh6",
@@ -3549,8 +3549,8 @@
     "braking": "5.0",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0187-ford-mustang-dark-horse-2024.webp",
+    "imageFile": "fh6/0187-ford-mustang-dark-horse-2024.webp"
   },
   {
     "game": "fh6",
@@ -3568,8 +3568,8 @@
     "braking": "4.4",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0188-ford-mustang-gt-2024-2024.webp",
+    "imageFile": "fh6/0188-ford-mustang-gt-2024-2024.webp"
   },
   {
     "game": "fh6",
@@ -3587,8 +3587,8 @@
     "braking": "4.3",
     "offroad": "9.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0189-ford-f-150-raptor-r-welcome-pack-2023.webp",
+    "imageFile": "fh6/0189-ford-f-150-raptor-r-welcome-pack-2023.webp"
   },
   {
     "game": "fh6",
@@ -3606,8 +3606,8 @@
     "braking": "3.2",
     "offroad": "8.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0190-ford-f-150-raptor-r-2023.webp",
+    "imageFile": "fh6/0190-ford-f-150-raptor-r-2023.webp"
   },
   {
     "game": "fh6",
@@ -3625,8 +3625,8 @@
     "braking": "3.7",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0191-ford-fiesta-st-2023-2023.webp",
+    "imageFile": "fh6/0191-ford-fiesta-st-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -3644,8 +3644,8 @@
     "braking": "8.6",
     "offroad": "4.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0192-ford-supervan-4-2022.webp",
+    "imageFile": "fh6/0192-ford-supervan-4-2022.webp"
   },
   {
     "game": "fh6",
@@ -3663,8 +3663,8 @@
     "braking": "4.2",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0193-ford-focus-st-2022-2022.webp",
+    "imageFile": "fh6/0193-ford-focus-st-2022-2022.webp"
   },
   {
     "game": "fh6",
@@ -3682,8 +3682,8 @@
     "braking": "2.9",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0194-ford-f-150-lightning-2022.webp",
+    "imageFile": "fh6/0194-ford-f-150-lightning-2022.webp"
   },
   {
     "game": "fh6",
@@ -3701,8 +3701,8 @@
     "braking": "3.3",
     "offroad": "9.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0195-ford-bronco-raptor-2022.webp",
+    "imageFile": "fh6/0195-ford-bronco-raptor-2022.webp"
   },
   {
     "game": "fh6",
@@ -3720,8 +3720,8 @@
     "braking": "5.5",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0196-ford-mustang-shelby-gt500-2020-2020.webp",
+    "imageFile": "fh6/0196-ford-mustang-shelby-gt500-2020-2020.webp"
   },
   {
     "game": "fh6",
@@ -3739,8 +3739,8 @@
     "braking": "4.9",
     "offroad": "9.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0197-ford-super-duty-f-450-drw-platinum-forza-edition-2020.webp",
+    "imageFile": "fh6/0197-ford-super-duty-f-450-drw-platinum-forza-edition-2020.webp"
   },
   {
     "game": "fh6",
@@ -3758,8 +3758,8 @@
     "braking": "4.8",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0198-ford-2069-ford-performance-bronco-r-2020.webp",
+    "imageFile": "fh6/0198-ford-2069-ford-performance-bronco-r-2020.webp"
   },
   {
     "game": "fh6",
@@ -3777,8 +3777,8 @@
     "braking": "2.7",
     "offroad": "8.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0199-ford-super-duty-f-450-drw-platinum-2020.webp",
+    "imageFile": "fh6/0199-ford-super-duty-f-450-drw-platinum-2020.webp"
   },
   {
     "game": "fh6",
@@ -3796,8 +3796,8 @@
     "braking": "4.8",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0200-ford-mustang-rtr-spec-5-2018.webp",
+    "imageFile": "fh6/0200-ford-mustang-rtr-spec-5-2018.webp"
   },
   {
     "game": "fh6",
@@ -3815,8 +3815,8 @@
     "braking": "5.8",
     "offroad": "7.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0201-ford-14-rahal-letterman-lanigan-racing-grc-fiesta-2017.webp",
+    "imageFile": "fh6/0201-ford-14-rahal-letterman-lanigan-racing-grc-fiesta-2017.webp"
   },
   {
     "game": "fh6",
@@ -3834,8 +3834,8 @@
     "braking": "8.3",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0202-ford-gt-2017-2017.webp",
+    "imageFile": "fh6/0202-ford-gt-2017-2017.webp"
   },
   {
     "game": "fh6",
@@ -3853,8 +3853,8 @@
     "braking": "5.9",
     "offroad": "8.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0203-ford-m-sport-fiesta-rs-2017.webp",
+    "imageFile": "fh6/0203-ford-m-sport-fiesta-rs-2017.webp"
   },
   {
     "game": "fh6",
@@ -3872,8 +3872,8 @@
     "braking": "5.2",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0204-ford-25-brocky-ultra4-bronco-rtr-2017.webp",
+    "imageFile": "fh6/0204-ford-25-brocky-ultra4-bronco-rtr-2017.webp"
   },
   {
     "game": "fh6",
@@ -3891,8 +3891,8 @@
     "braking": "4.2",
     "offroad": "5.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0205-ford-focus-rs-2017-2017.webp",
+    "imageFile": "fh6/0205-ford-focus-rs-2017-2017.webp"
   },
   {
     "game": "fh6",
@@ -3910,8 +3910,8 @@
     "braking": "6.0",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0206-ford-mustang-shelby-gt350r-2016.webp",
+    "imageFile": "fh6/0206-ford-mustang-shelby-gt350r-2016.webp"
   },
   {
     "game": "fh6",
@@ -3929,8 +3929,8 @@
     "braking": "4.8",
     "offroad": "9.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0207-ford-11-rockstar-f-150-trophy-truck-2014.webp",
+    "imageFile": "fh6/0207-ford-11-rockstar-f-150-trophy-truck-2014.webp"
   },
   {
     "game": "fh6",
@@ -3948,8 +3948,8 @@
     "braking": "3.7",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0208-ford-fpv-limited-edition-pursuit-ute-2014.webp",
+    "imageFile": "fh6/0208-ford-fpv-limited-edition-pursuit-ute-2014.webp"
   },
   {
     "game": "fh6",
@@ -3967,8 +3967,8 @@
     "braking": "4.0",
     "offroad": "8.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0209-ford-ranger-t6-rally-raid-2014.webp",
+    "imageFile": "fh6/0209-ford-ranger-t6-rally-raid-2014.webp"
   },
   {
     "game": "fh6",
@@ -3986,8 +3986,8 @@
     "braking": "4.3",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0210-ford-mustang-shelby-gt500-2013-2013.webp",
+    "imageFile": "fh6/0210-ford-mustang-shelby-gt500-2013-2013.webp"
   },
   {
     "game": "fh6",
@@ -4005,8 +4005,8 @@
     "braking": "2.3",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0211-ford-transit-supersportvan-2011.webp",
+    "imageFile": "fh6/0211-ford-transit-supersportvan-2011.webp"
   },
   {
     "game": "fh6",
@@ -4024,8 +4024,8 @@
     "braking": "2.5",
     "offroad": "5.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0212-ford-crown-victoria-police-interceptor-2010.webp",
+    "imageFile": "fh6/0212-ford-crown-victoria-police-interceptor-2010.webp"
   },
   {
     "game": "fh6",
@@ -4043,8 +4043,8 @@
     "braking": "3.9",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0213-ford-focus-rs-2009-2009.webp",
+    "imageFile": "fh6/0213-ford-focus-rs-2009-2009.webp"
   },
   {
     "game": "fh6",
@@ -4062,8 +4062,8 @@
     "braking": "5.2",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0214-ford-gt-2005-2005.webp",
+    "imageFile": "fh6/0214-ford-gt-2005-2005.webp"
   },
   {
     "game": "fh6",
@@ -4081,8 +4081,8 @@
     "braking": "3.5",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0215-ford-focus-rs-2003-2003.webp",
+    "imageFile": "fh6/0215-ford-focus-rs-2003-2003.webp"
   },
   {
     "game": "fh6",
@@ -4100,8 +4100,8 @@
     "braking": "3.4",
     "offroad": "6.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0216-ford-f-150-svt-lightning-2003.webp",
+    "imageFile": "fh6/0216-ford-f-150-svt-lightning-2003.webp"
   },
   {
     "game": "fh6",
@@ -4119,8 +4119,8 @@
     "braking": "4.0",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0217-ford-4-ford-focus-rs-2001.webp",
+    "imageFile": "fh6/0217-ford-4-ford-focus-rs-2001.webp"
   },
   {
     "game": "fh6",
@@ -4138,8 +4138,8 @@
     "braking": "3.4",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0218-ford-mustang-svt-cobra-r-2000-2000.webp",
+    "imageFile": "fh6/0218-ford-mustang-svt-cobra-r-2000-2000.webp"
   },
   {
     "game": "fh6",
@@ -4157,8 +4157,8 @@
     "braking": "3.3",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0219-ford-racing-puma-1999.webp",
+    "imageFile": "fh6/0219-ford-racing-puma-1999.webp"
   },
   {
     "game": "fh6",
@@ -4176,8 +4176,8 @@
     "braking": "8.6",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0220-ford-supervan-3-1994.webp",
+    "imageFile": "fh6/0220-ford-supervan-3-1994.webp"
   },
   {
     "game": "fh6",
@@ -4195,8 +4195,8 @@
     "braking": "2.9",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0221-ford-mustang-svt-cobra-r-1993-1993.webp",
+    "imageFile": "fh6/0221-ford-mustang-svt-cobra-r-1993-1993.webp"
   },
   {
     "game": "fh6",
@@ -4214,8 +4214,8 @@
     "braking": "3.1",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0222-ford-escort-rs-cosworth-1992.webp",
+    "imageFile": "fh6/0222-ford-escort-rs-cosworth-1992.webp"
   },
   {
     "game": "fh6",
@@ -4233,8 +4233,8 @@
     "braking": "3.4",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0223-ford-sierra-cosworth-rs500-1987.webp",
+    "imageFile": "fh6/0223-ford-sierra-cosworth-rs500-1987.webp"
   },
   {
     "game": "fh6",
@@ -4252,8 +4252,8 @@
     "braking": "6.8",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0224-ford-f-150-xlt-lariat-forza-edition-1986.webp",
+    "imageFile": "fh6/0224-ford-f-150-xlt-lariat-forza-edition-1986.webp"
   },
   {
     "game": "fh6",
@@ -4271,8 +4271,8 @@
     "braking": "3.0",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0225-ford-f-150-xlt-lariat-1986.webp",
+    "imageFile": "fh6/0225-ford-f-150-xlt-lariat-1986.webp"
   },
   {
     "game": "fh6",
@@ -4290,8 +4290,8 @@
     "braking": "5.0",
     "offroad": "8.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0226-ford-rs200-evolution-1985.webp",
+    "imageFile": "fh6/0226-ford-rs200-evolution-1985.webp"
   },
   {
     "game": "fh6",
@@ -4309,8 +4309,8 @@
     "braking": "3.8",
     "offroad": "7.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0227-ford-5-escort-rs1800-mkii-1977.webp",
+    "imageFile": "fh6/0227-ford-5-escort-rs1800-mkii-1977.webp"
   },
   {
     "game": "fh6",
@@ -4328,8 +4328,8 @@
     "braking": "2.7",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0228-ford-xb-falcon-gt-1973.webp",
+    "imageFile": "fh6/0228-ford-xb-falcon-gt-1973.webp"
   },
   {
     "game": "fh6",
@@ -4347,8 +4347,8 @@
     "braking": "2.5",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0229-ford-capri-rs3100-1973.webp",
+    "imageFile": "fh6/0229-ford-capri-rs3100-1973.webp"
   },
   {
     "game": "fh6",
@@ -4366,8 +4366,8 @@
     "braking": "3.0",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0230-ford-mustang-boss-302-1969.webp",
+    "imageFile": "fh6/0230-ford-mustang-boss-302-1969.webp"
   },
   {
     "game": "fh6",
@@ -4385,8 +4385,8 @@
     "braking": "4.3",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0231-ford-mustang-gt-2-2-fastback-forza-edition-1968.webp",
+    "imageFile": "fh6/0231-ford-mustang-gt-2-2-fastback-forza-edition-1968.webp"
   },
   {
     "game": "fh6",
@@ -4404,8 +4404,8 @@
     "braking": "2.3",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0232-ford-mustang-gt-2-2-fastback-1968.webp",
+    "imageFile": "fh6/0232-ford-mustang-gt-2-2-fastback-1968.webp"
   },
   {
     "game": "fh6",
@@ -4423,8 +4423,8 @@
     "braking": "3.8",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0233-ford-2-gt40-mk-ii-1966.webp",
+    "imageFile": "fh6/0233-ford-2-gt40-mk-ii-1966.webp"
   },
   {
     "game": "fh6",
@@ -4442,8 +4442,8 @@
     "braking": "2.3",
     "offroad": "5.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0234-ford-mustang-gt-coupe-1965.webp",
+    "imageFile": "fh6/0234-ford-mustang-gt-coupe-1965.webp"
   },
   {
     "game": "fh6",
@@ -4461,8 +4461,8 @@
     "braking": "1.8",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0235-ford-de-luxe-five-window-coupe-1932.webp",
+    "imageFile": "fh6/0235-ford-de-luxe-five-window-coupe-1932.webp"
   },
   {
     "game": "fh6",
@@ -4480,8 +4480,8 @@
     "braking": "5.5",
     "offroad": "4.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0236-formula-drift-64-forsberg-racing-nissan-z-2023.webp",
+    "imageFile": "fh6/0236-formula-drift-64-forsberg-racing-nissan-z-2023.webp"
   },
   {
     "game": "fh6",
@@ -4499,8 +4499,8 @@
     "braking": "5.6",
     "offroad": "4.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0237-formula-drift-151-toyota-gr-supra-2020.webp",
+    "imageFile": "fh6/0237-formula-drift-151-toyota-gr-supra-2020.webp"
   },
   {
     "game": "fh6",
@@ -4518,8 +4518,8 @@
     "braking": "5.0",
     "offroad": "4.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0238-formula-drift-91-bmw-m2-2020.webp",
+    "imageFile": "fh6/0238-formula-drift-91-bmw-m2-2020.webp"
   },
   {
     "game": "fh6",
@@ -4537,8 +4537,8 @@
     "braking": "5.5",
     "offroad": "4.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0239-formula-drift-411-toyota-corolla-hatchback-2019.webp",
+    "imageFile": "fh6/0239-formula-drift-411-toyota-corolla-hatchback-2019.webp"
   },
   {
     "game": "fh6",
@@ -4556,8 +4556,8 @@
     "braking": "4.3",
     "offroad": "4.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0240-formula-drift-530-hsv-maloo-gen-f-2016.webp",
+    "imageFile": "fh6/0240-formula-drift-530-hsv-maloo-gen-f-2016.webp"
   },
   {
     "game": "fh6",
@@ -4575,8 +4575,8 @@
     "braking": "4.7",
     "offroad": "4.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0241-formula-drift-13-ford-mustang-2015.webp",
+    "imageFile": "fh6/0241-formula-drift-13-ford-mustang-2015.webp"
   },
   {
     "game": "fh6",
@@ -4594,8 +4594,8 @@
     "braking": "4.8",
     "offroad": "4.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0242-formula-drift-777-chevrolet-corvette-2013.webp",
+    "imageFile": "fh6/0242-formula-drift-777-chevrolet-corvette-2013.webp"
   },
   {
     "game": "fh6",
@@ -4613,8 +4613,8 @@
     "braking": "4.5",
     "offroad": "4.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0243-formula-drift-99-mazda-rx-8-2009.webp",
+    "imageFile": "fh6/0243-formula-drift-99-mazda-rx-8-2009.webp"
   },
   {
     "game": "fh6",
@@ -4632,8 +4632,8 @@
     "braking": "4.7",
     "offroad": "4.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0244-formula-drift-117-599-gtb-fiorano-2007.webp",
+    "imageFile": "fh6/0244-formula-drift-117-599-gtb-fiorano-2007.webp"
   },
   {
     "game": "fh6",
@@ -4651,8 +4651,8 @@
     "braking": "4.9",
     "offroad": "4.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0245-formula-drift-43-dodge-viper-srt10-2006.webp",
+    "imageFile": "fh6/0245-formula-drift-43-dodge-viper-srt10-2006.webp"
   },
   {
     "game": "fh6",
@@ -4670,8 +4670,8 @@
     "braking": "4.4",
     "offroad": "4.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0246-formula-drift-777-nissan-240sx-1997.webp",
+    "imageFile": "fh6/0246-formula-drift-777-nissan-240sx-1997.webp"
   },
   {
     "game": "fh6",
@@ -4689,8 +4689,8 @@
     "braking": "5.6",
     "offroad": "4.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0247-formula-drift-34-toyota-supra-mkiv-1995.webp",
+    "imageFile": "fh6/0247-formula-drift-34-toyota-supra-mkiv-1995.webp"
   },
   {
     "game": "fh6",
@@ -4708,8 +4708,8 @@
     "braking": "4.2",
     "offroad": "4.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0248-formula-drift-98-bmw-325i-1989.webp",
+    "imageFile": "fh6/0248-formula-drift-98-bmw-325i-1989.webp"
   },
   {
     "game": "fh6",
@@ -4727,8 +4727,8 @@
     "braking": "5.1",
     "offroad": "8.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0249-funco-motorsports-f9-2018.webp",
+    "imageFile": "fh6/0249-funco-motorsports-f9-2018.webp"
   },
   {
     "game": "fh6",
@@ -4746,8 +4746,8 @@
     "braking": "3.5",
     "offroad": "8.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0250-gmc-hummer-ev-pickup-2022.webp",
+    "imageFile": "fh6/0250-gmc-hummer-ev-pickup-2022.webp"
   },
   {
     "game": "fh6",
@@ -4765,8 +4765,8 @@
     "braking": "2.6",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0251-gmc-typhoon-1992.webp",
+    "imageFile": "fh6/0251-gmc-typhoon-1992.webp"
   },
   {
     "game": "fh6",
@@ -4784,8 +4784,8 @@
     "braking": "2.6",
     "offroad": "5.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0252-gmc-syclone-1991.webp",
+    "imageFile": "fh6/0252-gmc-syclone-1991.webp"
   },
   {
     "game": "fh6",
@@ -4803,8 +4803,8 @@
     "braking": "3.1",
     "offroad": "9.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0253-gmc-jimmy-1970.webp",
+    "imageFile": "fh6/0253-gmc-jimmy-1970.webp"
   },
   {
     "game": "fh6",
@@ -4822,8 +4822,8 @@
     "braking": "10",
     "offroad": "5.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0254-gordon-murray-automotive-t-50-2022.webp",
+    "imageFile": "fh6/0254-gordon-murray-automotive-t-50-2022.webp"
   },
   {
     "game": "fh6",
@@ -4841,8 +4841,8 @@
     "braking": "7.4",
     "offroad": "5.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0255-gr-gt-prototype-2025.webp",
+    "imageFile": "fh6/0255-gr-gt-prototype-2025.webp"
   },
   {
     "game": "fh6",
@@ -4860,8 +4860,8 @@
     "braking": "8.2",
     "offroad": "4.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0256-hennessey-venom-f5-2021.webp",
+    "imageFile": "fh6/0256-hennessey-venom-f5-2021.webp"
   },
   {
     "game": "fh6",
@@ -4879,8 +4879,8 @@
     "braking": "4.5",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0257-hennessey-ford-f-150-velociraptor-6x6-2019.webp",
+    "imageFile": "fh6/0257-hennessey-ford-f-150-velociraptor-6x6-2019.webp"
   },
   {
     "game": "fh6",
@@ -4898,8 +4898,8 @@
     "braking": "7.7",
     "offroad": "4.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0258-hennessey-venom-gt-2012.webp",
+    "imageFile": "fh6/0258-hennessey-venom-gt-2012.webp"
   },
   {
     "game": "fh6",
@@ -4917,8 +4917,8 @@
     "braking": "2.7",
     "offroad": "5.4",
     "country": "Australia",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0259-holden-torana-a9x-1977.webp",
+    "imageFile": "fh6/0259-holden-torana-a9x-1977.webp"
   },
   {
     "game": "fh6",
@@ -4936,8 +4936,8 @@
     "braking": "4.7",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0260-honda-civic-type-r-2023-2023.webp",
+    "imageFile": "fh6/0260-honda-civic-type-r-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -4955,8 +4955,8 @@
     "braking": "3.3",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0261-honda-e-2022.webp",
+    "imageFile": "fh6/0261-honda-e-2022.webp"
   },
   {
     "game": "fh6",
@@ -4974,8 +4974,8 @@
     "braking": "4.6",
     "offroad": "5.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0262-honda-civic-type-r-2018-2018.webp",
+    "imageFile": "fh6/0262-honda-civic-type-r-2018-2018.webp"
   },
   {
     "game": "fh6",
@@ -4993,8 +4993,8 @@
     "braking": "4.3",
     "offroad": "5.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0263-honda-civic-type-r-2015-2015.webp",
+    "imageFile": "fh6/0263-honda-civic-type-r-2015-2015.webp"
   },
   {
     "game": "fh6",
@@ -5012,8 +5012,8 @@
     "braking": "4.8",
     "offroad": "9.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0264-honda-ridgeline-baja-trophy-truck-2015.webp",
+    "imageFile": "fh6/0264-honda-ridgeline-baja-trophy-truck-2015.webp"
   },
   {
     "game": "fh6",
@@ -5031,8 +5031,8 @@
     "braking": "3.7",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0265-honda-civic-type-r-2008-2008.webp",
+    "imageFile": "fh6/0265-honda-civic-type-r-2008-2008.webp"
   },
   {
     "game": "fh6",
@@ -5050,8 +5050,8 @@
     "braking": "3.7",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0266-honda-civic-type-r-2007-2007.webp",
+    "imageFile": "fh6/0266-honda-civic-type-r-2007-2007.webp"
   },
   {
     "game": "fh6",
@@ -5069,8 +5069,8 @@
     "braking": "5.5",
     "offroad": "5.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0267-honda-nsx-r-gt-2005.webp",
+    "imageFile": "fh6/0267-honda-nsx-r-gt-2005.webp"
   },
   {
     "game": "fh6",
@@ -5088,8 +5088,8 @@
     "braking": "4.7",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0268-honda-nsx-r-2005-2005.webp",
+    "imageFile": "fh6/0268-honda-nsx-r-2005-2005.webp"
   },
   {
     "game": "fh6",
@@ -5107,8 +5107,8 @@
     "braking": "10",
     "offroad": "4.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0269-honda-52-evasive-motorsports-s2000-wtac-2004.webp",
+    "imageFile": "fh6/0269-honda-52-evasive-motorsports-s2000-wtac-2004.webp"
   },
   {
     "game": "fh6",
@@ -5126,8 +5126,8 @@
     "braking": "3.5",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0270-honda-civic-type-r-2004-2004.webp",
+    "imageFile": "fh6/0270-honda-civic-type-r-2004-2004.webp"
   },
   {
     "game": "fh6",
@@ -5145,8 +5145,8 @@
     "braking": "3.3",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0271-honda-s2000-2003.webp",
+    "imageFile": "fh6/0271-honda-s2000-2003.webp"
   },
   {
     "game": "fh6",
@@ -5164,8 +5164,8 @@
     "braking": "10",
     "offroad": "4.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0272-honda-33-integra-wtac-2001.webp",
+    "imageFile": "fh6/0272-honda-33-integra-wtac-2001.webp"
   },
   {
     "game": "fh6",
@@ -5183,8 +5183,8 @@
     "braking": "3.0",
     "offroad": "5.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0273-honda-civic-type-r-1997-1997.webp",
+    "imageFile": "fh6/0273-honda-civic-type-r-1997-1997.webp"
   },
   {
     "game": "fh6",
@@ -5202,8 +5202,8 @@
     "braking": "3.1",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0274-honda-prelude-si-1994.webp",
+    "imageFile": "fh6/0274-honda-prelude-si-1994.webp"
   },
   {
     "game": "fh6",
@@ -5221,8 +5221,8 @@
     "braking": "2.8",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0275-honda-acty-1994.webp",
+    "imageFile": "fh6/0275-honda-acty-1994.webp"
   },
   {
     "game": "fh6",
@@ -5240,8 +5240,8 @@
     "braking": "10",
     "offroad": "4.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0276-honda-21-hardrace-jdmyard-civic-wtac-1992.webp",
+    "imageFile": "fh6/0276-honda-21-hardrace-jdmyard-civic-wtac-1992.webp"
   },
   {
     "game": "fh6",
@@ -5259,8 +5259,8 @@
     "braking": "4.3",
     "offroad": "5.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0277-honda-nsx-r-1992-1992.webp",
+    "imageFile": "fh6/0277-honda-nsx-r-1992-1992.webp"
   },
   {
     "game": "fh6",
@@ -5278,8 +5278,8 @@
     "braking": "2.9",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0278-honda-cr-x-sir-1991.webp",
+    "imageFile": "fh6/0278-honda-cr-x-sir-1991.webp"
   },
   {
     "game": "fh6",
@@ -5297,8 +5297,8 @@
     "braking": "3.0",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0279-honda-beat-1991.webp",
+    "imageFile": "fh6/0279-honda-beat-1991.webp"
   },
   {
     "game": "fh6",
@@ -5316,8 +5316,8 @@
     "braking": "10",
     "offroad": "4.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0280-honda-19-101-motorsport-crx-wtac-1990.webp",
+    "imageFile": "fh6/0280-honda-19-101-motorsport-crx-wtac-1990.webp"
   },
   {
     "game": "fh6",
@@ -5335,8 +5335,8 @@
     "braking": "2.3",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0281-honda-civic-si-1986-1986.webp",
+    "imageFile": "fh6/0281-honda-civic-si-1986-1986.webp"
   },
   {
     "game": "fh6",
@@ -5354,8 +5354,8 @@
     "braking": "2.6",
     "offroad": "4.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0282-honda-civic-crx-mugen-1984.webp",
+    "imageFile": "fh6/0282-honda-civic-crx-mugen-1984.webp"
   },
   {
     "game": "fh6",
@@ -5373,8 +5373,8 @@
     "braking": "3.6",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0283-honda-city-e-ii-1984.webp",
+    "imageFile": "fh6/0283-honda-city-e-ii-1984.webp"
   },
   {
     "game": "fh6",
@@ -5392,8 +5392,8 @@
     "braking": "2.4",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0284-honda-civic-rs-1974.webp",
+    "imageFile": "fh6/0284-honda-civic-rs-1974.webp"
   },
   {
     "game": "fh6",
@@ -5411,8 +5411,8 @@
     "braking": "2.4",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0285-honda-s800-1970.webp",
+    "imageFile": "fh6/0285-honda-s800-1970.webp"
   },
   {
     "game": "fh6",
@@ -5430,8 +5430,8 @@
     "braking": "4.8",
     "offroad": "4.8",
     "country": "Australia",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0286-hsv-limited-edition-gen-f-gts-maloo-2014.webp",
+    "imageFile": "fh6/0286-hsv-limited-edition-gen-f-gts-maloo-2014.webp"
   },
   {
     "game": "fh6",
@@ -5449,8 +5449,8 @@
     "braking": "4.5",
     "offroad": "5.2",
     "country": "Australia",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0287-hsv-gen-f-gts-2014.webp",
+    "imageFile": "fh6/0287-hsv-gen-f-gts-2014.webp"
   },
   {
     "game": "fh6",
@@ -5468,8 +5468,8 @@
     "braking": "4.0",
     "offroad": "6.0",
     "country": "Korea",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0288-hyundai-ioniq-5-n-2023.webp",
+    "imageFile": "fh6/0288-hyundai-ioniq-5-n-2023.webp"
   },
   {
     "game": "fh6",
@@ -5487,8 +5487,8 @@
     "braking": "4.8",
     "offroad": "4.8",
     "country": "Korea",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0289-hyundai-n-vision-74-2022.webp",
+    "imageFile": "fh6/0289-hyundai-n-vision-74-2022.webp"
   },
   {
     "game": "fh6",
@@ -5506,8 +5506,8 @@
     "braking": "4.4",
     "offroad": "5.5",
     "country": "Korea",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0290-hyundai-i20-n-2021.webp",
+    "imageFile": "fh6/0290-hyundai-i20-n-2021.webp"
   },
   {
     "game": "fh6",
@@ -5525,8 +5525,8 @@
     "braking": "4.3",
     "offroad": "5.3",
     "country": "Korea",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0291-hyundai-i30-n-2020.webp",
+    "imageFile": "fh6/0291-hyundai-i30-n-2020.webp"
   },
   {
     "game": "fh6",
@@ -5544,8 +5544,8 @@
     "braking": "3.7",
     "offroad": "5.5",
     "country": "Korea",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0292-hyundai-veloster-n-2019.webp",
+    "imageFile": "fh6/0292-hyundai-veloster-n-2019.webp"
   },
   {
     "game": "fh6",
@@ -5563,8 +5563,8 @@
     "braking": "7.8",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0293-jaguar-c-x75-2010.webp",
+    "imageFile": "fh6/0293-jaguar-c-x75-2010.webp"
   },
   {
     "game": "fh6",
@@ -5582,8 +5582,8 @@
     "braking": "5.9",
     "offroad": "5.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0294-jaguar-xj220s-twr-1993.webp",
+    "imageFile": "fh6/0294-jaguar-xj220s-twr-1993.webp"
   },
   {
     "game": "fh6",
@@ -5601,8 +5601,8 @@
     "braking": "5.2",
     "offroad": "5.4",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0295-jaguar-xj220-1993.webp",
+    "imageFile": "fh6/0295-jaguar-xj220-1993.webp"
   },
   {
     "game": "fh6",
@@ -5620,8 +5620,8 @@
     "braking": "6.4",
     "offroad": "5.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0296-jaguar-sport-xjr-15-1991.webp",
+    "imageFile": "fh6/0296-jaguar-sport-xjr-15-1991.webp"
   },
   {
     "game": "fh6",
@@ -5639,8 +5639,8 @@
     "braking": "3.4",
     "offroad": "5.0",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0297-jaguar-lightweight-e-type-1964.webp",
+    "imageFile": "fh6/0297-jaguar-lightweight-e-type-1964.webp"
   },
   {
     "game": "fh6",
@@ -5658,8 +5658,8 @@
     "braking": "2.7",
     "offroad": "5.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0298-jaguar-e-type-1961.webp",
+    "imageFile": "fh6/0298-jaguar-e-type-1961.webp"
   },
   {
     "game": "fh6",
@@ -5677,8 +5677,8 @@
     "braking": "2.8",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0299-jaguar-d-type-1956.webp",
+    "imageFile": "fh6/0299-jaguar-d-type-1956.webp"
   },
   {
     "game": "fh6",
@@ -5696,8 +5696,8 @@
     "braking": "2.5",
     "offroad": "8.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0300-jeep-jt-2020.webp",
+    "imageFile": "fh6/0300-jeep-jt-2020.webp"
   },
   {
     "game": "fh6",
@@ -5715,8 +5715,8 @@
     "braking": "4.9",
     "offroad": "6.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0301-jeep-grand-cherokee-trackhawk-2018.webp",
+    "imageFile": "fh6/0301-jeep-grand-cherokee-trackhawk-2018.webp"
   },
   {
     "game": "fh6",
@@ -5734,8 +5734,8 @@
     "braking": "4.0",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0302-jeep-trailcat-2016.webp",
+    "imageFile": "fh6/0302-jeep-trailcat-2016.webp"
   },
   {
     "game": "fh6",
@@ -5753,8 +5753,8 @@
     "braking": "2.4",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0303-jeep-wrangler-rubicon-2012.webp",
+    "imageFile": "fh6/0303-jeep-wrangler-rubicon-2012.webp"
   },
   {
     "game": "fh6",
@@ -5772,8 +5772,8 @@
     "braking": "4.5",
     "offroad": "8.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0304-jimco-179-hammerhead-class-1-2020.webp",
+    "imageFile": "fh6/0304-jimco-179-hammerhead-class-1-2020.webp"
   },
   {
     "game": "fh6",
@@ -5791,8 +5791,8 @@
     "braking": "5.2",
     "offroad": "9.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0305-jimco-240-fastball-racing-spec-trophy-truck-2019.webp",
+    "imageFile": "fh6/0305-jimco-240-fastball-racing-spec-trophy-truck-2019.webp"
   },
   {
     "game": "fh6",
@@ -5810,8 +5810,8 @@
     "braking": "7.6",
     "offroad": "5.1",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0306-koenigsegg-gemera-2024.webp",
+    "imageFile": "fh6/0306-koenigsegg-gemera-2024.webp"
   },
   {
     "game": "fh6",
@@ -5829,8 +5829,8 @@
     "braking": "8.9",
     "offroad": "5.0",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0307-koenigsegg-jesko-2020.webp",
+    "imageFile": "fh6/0307-koenigsegg-jesko-2020.webp"
   },
   {
     "game": "fh6",
@@ -5848,8 +5848,8 @@
     "braking": "9.2",
     "offroad": "4.8",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0308-koenigsegg-agera-rs-2017.webp",
+    "imageFile": "fh6/0308-koenigsegg-agera-rs-2017.webp"
   },
   {
     "game": "fh6",
@@ -5867,8 +5867,8 @@
     "braking": "8.8",
     "offroad": "4.9",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0309-koenigsegg-regera-2016.webp",
+    "imageFile": "fh6/0309-koenigsegg-regera-2016.webp"
   },
   {
     "game": "fh6",
@@ -5886,8 +5886,8 @@
     "braking": "9.5",
     "offroad": "4.9",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0310-koenigsegg-one-1-2015.webp",
+    "imageFile": "fh6/0310-koenigsegg-one-1-2015.webp"
   },
   {
     "game": "fh6",
@@ -5905,8 +5905,8 @@
     "braking": "7.4",
     "offroad": "4.9",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0311-koenigsegg-agera-2011.webp",
+    "imageFile": "fh6/0311-koenigsegg-agera-2011.webp"
   },
   {
     "game": "fh6",
@@ -5924,8 +5924,8 @@
     "braking": "10",
     "offroad": "4.4",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0312-koenigsegg-ccgt-2008.webp",
+    "imageFile": "fh6/0312-koenigsegg-ccgt-2008.webp"
   },
   {
     "game": "fh6",
@@ -5943,8 +5943,8 @@
     "braking": "10",
     "offroad": "5.0",
     "country": "Austria",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0313-ktm-x-bow-gt4-2018.webp",
+    "imageFile": "fh6/0313-ktm-x-bow-gt4-2018.webp"
   },
   {
     "game": "fh6",
@@ -5962,8 +5962,8 @@
     "braking": "7.7",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0314-lamborghini-revuelto-2024.webp",
+    "imageFile": "fh6/0314-lamborghini-revuelto-2024.webp"
   },
   {
     "game": "fh6",
@@ -5981,8 +5981,8 @@
     "braking": "6.2",
     "offroad": "7.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0315-lamborghini-huracan-sterrato-2023.webp",
+    "imageFile": "fh6/0315-lamborghini-huracan-sterrato-2023.webp"
   },
   {
     "game": "fh6",
@@ -6000,8 +6000,8 @@
     "braking": "7.4",
     "offroad": "4.8",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0316-lamborghini-huracan-tecnica-2022.webp",
+    "imageFile": "fh6/0316-lamborghini-huracan-tecnica-2022.webp"
   },
   {
     "game": "fh6",
@@ -6019,8 +6019,8 @@
     "braking": "7.8",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0317-lamborghini-aventador-lp-780-4-ultimae-2021.webp",
+    "imageFile": "fh6/0317-lamborghini-aventador-lp-780-4-ultimae-2021.webp"
   },
   {
     "game": "fh6",
@@ -6038,8 +6038,8 @@
     "braking": "7.4",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0318-lamborghini-countach-lpi-800-4-2021.webp",
+    "imageFile": "fh6/0318-lamborghini-countach-lpi-800-4-2021.webp"
   },
   {
     "game": "fh6",
@@ -6057,8 +6057,8 @@
     "braking": "10",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0319-lamborghini-essenza-scv12-2020.webp",
+    "imageFile": "fh6/0319-lamborghini-essenza-scv12-2020.webp"
   },
   {
     "game": "fh6",
@@ -6076,8 +6076,8 @@
     "braking": "8.0",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0320-lamborghini-sian-roadster-2020.webp",
+    "imageFile": "fh6/0320-lamborghini-sian-roadster-2020.webp"
   },
   {
     "game": "fh6",
@@ -6095,8 +6095,8 @@
     "braking": "8.7",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0321-lamborghini-huracan-sto-2020.webp",
+    "imageFile": "fh6/0321-lamborghini-huracan-sto-2020.webp"
   },
   {
     "game": "fh6",
@@ -6114,8 +6114,8 @@
     "braking": "7.2",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0322-lamborghini-huracan-evo-2020.webp",
+    "imageFile": "fh6/0322-lamborghini-huracan-evo-2020.webp"
   },
   {
     "game": "fh6",
@@ -6133,8 +6133,8 @@
     "braking": "6.2",
     "offroad": "6.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0323-lamborghini-urus-2019.webp",
+    "imageFile": "fh6/0323-lamborghini-urus-2019.webp"
   },
   {
     "game": "fh6",
@@ -6152,8 +6152,8 @@
     "braking": "7.9",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0324-lamborghini-aventador-svj-2018.webp",
+    "imageFile": "fh6/0324-lamborghini-aventador-svj-2018.webp"
   },
   {
     "game": "fh6",
@@ -6171,8 +6171,8 @@
     "braking": "8.6",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0325-lamborghini-centenario-lp-770-4-2016.webp",
+    "imageFile": "fh6/0325-lamborghini-centenario-lp-770-4-2016.webp"
   },
   {
     "game": "fh6",
@@ -6190,8 +6190,8 @@
     "braking": "7.0",
     "offroad": "5.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0326-lamborghini-huracan-lp-610-4-2014.webp",
+    "imageFile": "fh6/0326-lamborghini-huracan-lp-610-4-2014.webp"
   },
   {
     "game": "fh6",
@@ -6209,8 +6209,8 @@
     "braking": "9.7",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0327-lamborghini-veneno-2013.webp",
+    "imageFile": "fh6/0327-lamborghini-veneno-2013.webp"
   },
   {
     "game": "fh6",
@@ -6228,8 +6228,8 @@
     "braking": "7.3",
     "offroad": "5.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0328-lamborghini-aventador-lp700-4-2012.webp",
+    "imageFile": "fh6/0328-lamborghini-aventador-lp700-4-2012.webp"
   },
   {
     "game": "fh6",
@@ -6247,8 +6247,8 @@
     "braking": "6.6",
     "offroad": "5.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0329-lamborghini-gallardo-lp570-4-spyder-performante-2012.webp",
+    "imageFile": "fh6/0329-lamborghini-gallardo-lp570-4-spyder-performante-2012.webp"
   },
   {
     "game": "fh6",
@@ -6266,8 +6266,8 @@
     "braking": "10",
     "offroad": "5.7",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0330-lamborghini-sesto-elemento-2011.webp",
+    "imageFile": "fh6/0330-lamborghini-sesto-elemento-2011.webp"
   },
   {
     "game": "fh6",
@@ -6285,8 +6285,8 @@
     "braking": "6.8",
     "offroad": "5.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0331-lamborghini-murcielago-lp-670-4-sv-2010.webp",
+    "imageFile": "fh6/0331-lamborghini-murcielago-lp-670-4-sv-2010.webp"
   },
   {
     "game": "fh6",
@@ -6304,8 +6304,8 @@
     "braking": "7.9",
     "offroad": "4.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0332-lamborghini-diablo-gtr-1999.webp",
+    "imageFile": "fh6/0332-lamborghini-diablo-gtr-1999.webp"
   },
   {
     "game": "fh6",
@@ -6323,8 +6323,8 @@
     "braking": "4.9",
     "offroad": "5.1",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0333-lamborghini-diablo-sv-1997.webp",
+    "imageFile": "fh6/0333-lamborghini-diablo-sv-1997.webp"
   },
   {
     "game": "fh6",
@@ -6342,8 +6342,8 @@
     "braking": "4.3",
     "offroad": "5.3",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0334-lamborghini-countach-lp5000-qv-1988.webp",
+    "imageFile": "fh6/0334-lamborghini-countach-lp5000-qv-1988.webp"
   },
   {
     "game": "fh6",
@@ -6361,8 +6361,8 @@
     "braking": "3.1",
     "offroad": "5.4",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0335-lamborghini-miura-p400-1967.webp",
+    "imageFile": "fh6/0335-lamborghini-miura-p400-1967.webp"
   },
   {
     "game": "fh6",
@@ -6380,8 +6380,8 @@
     "braking": "3.6",
     "offroad": "6.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0336-lancia-delta-hf-integrale-evo-1992.webp",
+    "imageFile": "fh6/0336-lancia-delta-hf-integrale-evo-1992.webp"
   },
   {
     "game": "fh6",
@@ -6399,8 +6399,8 @@
     "braking": "3.7",
     "offroad": "7.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0337-lancia-delta-s4-1986.webp",
+    "imageFile": "fh6/0337-lancia-delta-s4-1986.webp"
   },
   {
     "game": "fh6",
@@ -6418,8 +6418,8 @@
     "braking": "3.1",
     "offroad": "6.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0338-lancia-stratos-hf-stradale-1974.webp",
+    "imageFile": "fh6/0338-lancia-stratos-hf-stradale-1974.webp"
   },
   {
     "game": "fh6",
@@ -6437,8 +6437,8 @@
     "braking": "2.9",
     "offroad": "7.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0339-land-rover-defender-110-x-2020.webp",
+    "imageFile": "fh6/0339-land-rover-defender-110-x-2020.webp"
   },
   {
     "game": "fh6",
@@ -6456,8 +6456,8 @@
     "braking": "4.1",
     "offroad": "7.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0340-land-rover-range-rover-sport-svr-2015.webp",
+    "imageFile": "fh6/0340-land-rover-range-rover-sport-svr-2015.webp"
   },
   {
     "game": "fh6",
@@ -6475,8 +6475,8 @@
     "braking": "4.4",
     "offroad": "5.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0341-lexus-lc-500-2021.webp",
+    "imageFile": "fh6/0341-lexus-lc-500-2021.webp"
   },
   {
     "game": "fh6",
@@ -6494,8 +6494,8 @@
     "braking": "5.2",
     "offroad": "5.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0342-lexus-rc-f-2015.webp",
+    "imageFile": "fh6/0342-lexus-rc-f-2015.webp"
   },
   {
     "game": "fh6",
@@ -6513,8 +6513,8 @@
     "braking": "10",
     "offroad": "4.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0343-lexus-lfa-forza-edition-2010.webp",
+    "imageFile": "fh6/0343-lexus-lfa-forza-edition-2010.webp"
   },
   {
     "game": "fh6",
@@ -6532,8 +6532,8 @@
     "braking": "7.0",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0344-lexus-lfa-2010.webp",
+    "imageFile": "fh6/0344-lexus-lfa-2010.webp"
   },
   {
     "game": "fh6",
@@ -6551,8 +6551,8 @@
     "braking": "1.9",
     "offroad": "6.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0345-lincoln-continental-1962-1962.webp",
+    "imageFile": "fh6/0345-lincoln-continental-1962-1962.webp"
   },
   {
     "game": "fh6",
@@ -6570,8 +6570,8 @@
     "braking": "5.6",
     "offroad": "5.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0346-lotus-emira-2023.webp",
+    "imageFile": "fh6/0346-lotus-emira-2023.webp"
   },
   {
     "game": "fh6",
@@ -6589,8 +6589,8 @@
     "braking": "10",
     "offroad": "4.5",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0347-lotus-evija-2020.webp",
+    "imageFile": "fh6/0347-lotus-evija-2020.webp"
   },
   {
     "game": "fh6",
@@ -6608,8 +6608,8 @@
     "braking": "7.9",
     "offroad": "4.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0348-lotus-evija-forza-edition-2020.webp",
+    "imageFile": "fh6/0348-lotus-evija-forza-edition-2020.webp"
   },
   {
     "game": "fh6",
@@ -6627,8 +6627,8 @@
     "braking": "10",
     "offroad": "4.3",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0349-lotus-scura-motorsports-exige-wtac-2018.webp",
+    "imageFile": "fh6/0349-lotus-scura-motorsports-exige-wtac-2018.webp"
   },
   {
     "game": "fh6",
@@ -6646,8 +6646,8 @@
     "braking": "6.8",
     "offroad": "4.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0350-lotus-exige-cup-430-2018.webp",
+    "imageFile": "fh6/0350-lotus-exige-cup-430-2018.webp"
   },
   {
     "game": "fh6",
@@ -6665,8 +6665,8 @@
     "braking": "5.1",
     "offroad": "5.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0351-lotus-elise-series-1-sport-190-1999.webp",
+    "imageFile": "fh6/0351-lotus-elise-series-1-sport-190-1999.webp"
   },
   {
     "game": "fh6",
@@ -6684,8 +6684,8 @@
     "braking": "7.0",
     "offroad": "5.2",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0352-lotus-elise-gt1-1997.webp",
+    "imageFile": "fh6/0352-lotus-elise-gt1-1997.webp"
   },
   {
     "game": "fh6",
@@ -6703,8 +6703,8 @@
     "braking": "6.2",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0353-lucid-air-sapphire-2024.webp",
+    "imageFile": "fh6/0353-lucid-air-sapphire-2024.webp"
   },
   {
     "game": "fh6",
@@ -6722,8 +6722,8 @@
     "braking": "7.0",
     "offroad": "4.8",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0354-maserati-mc20-2022.webp",
+    "imageFile": "fh6/0354-maserati-mc20-2022.webp"
   },
   {
     "game": "fh6",
@@ -6741,8 +6741,8 @@
     "braking": "10",
     "offroad": "4.5",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0355-maserati-mc12-versione-corsa-2008.webp",
+    "imageFile": "fh6/0355-maserati-mc12-versione-corsa-2008.webp"
   },
   {
     "game": "fh6",
@@ -6760,8 +6760,8 @@
     "braking": "6.6",
     "offroad": "5.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0356-maserati-mc12-2004.webp",
+    "imageFile": "fh6/0356-maserati-mc12-2004.webp"
   },
   {
     "game": "fh6",
@@ -6779,8 +6779,8 @@
     "braking": "4.3",
     "offroad": "4.9",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0357-maserati-ghibli-cup-1997.webp",
+    "imageFile": "fh6/0357-maserati-ghibli-cup-1997.webp"
   },
   {
     "game": "fh6",
@@ -6798,8 +6798,8 @@
     "braking": "3.8",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0358-mazda-mx-5-miata-rf-2022.webp",
+    "imageFile": "fh6/0358-mazda-mx-5-miata-rf-2022.webp"
   },
   {
     "game": "fh6",
@@ -6817,8 +6817,8 @@
     "braking": "4.5",
     "offroad": "4.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0359-mazda-mx-5-cup-2017-2017.webp",
+    "imageFile": "fh6/0359-mazda-mx-5-cup-2017-2017.webp"
   },
   {
     "game": "fh6",
@@ -6836,8 +6836,8 @@
     "braking": "3.7",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0360-mazda-mx-5-2016-2016.webp",
+    "imageFile": "fh6/0360-mazda-mx-5-2016-2016.webp"
   },
   {
     "game": "fh6",
@@ -6855,8 +6855,8 @@
     "braking": "3.4",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0361-mazda-mx-5-2013-2013.webp",
+    "imageFile": "fh6/0361-mazda-mx-5-2013-2013.webp"
   },
   {
     "game": "fh6",
@@ -6874,8 +6874,8 @@
     "braking": "3.7",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0362-mazda-rx-8-r3-2011.webp",
+    "imageFile": "fh6/0362-mazda-rx-8-r3-2011.webp"
   },
   {
     "game": "fh6",
@@ -6893,8 +6893,8 @@
     "braking": "3.5",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0363-mazda-mazdaspeed-3-2010-2010.webp",
+    "imageFile": "fh6/0363-mazda-mazdaspeed-3-2010-2010.webp"
   },
   {
     "game": "fh6",
@@ -6912,8 +6912,8 @@
     "braking": "10",
     "offroad": "4.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0364-mazda-furai-2008.webp",
+    "imageFile": "fh6/0364-mazda-furai-2008.webp"
   },
   {
     "game": "fh6",
@@ -6931,8 +6931,8 @@
     "braking": "3.5",
     "offroad": "5.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0365-mazda-mazdaspeed-mx-5-2005.webp",
+    "imageFile": "fh6/0365-mazda-mazdaspeed-mx-5-2005.webp"
   },
   {
     "game": "fh6",
@@ -6950,8 +6950,8 @@
     "braking": "6.7",
     "offroad": "4.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0366-mazda-mx-5-miata-forza-edition-1994.webp",
+    "imageFile": "fh6/0366-mazda-mx-5-miata-forza-edition-1994.webp"
   },
   {
     "game": "fh6",
@@ -6969,8 +6969,8 @@
     "braking": "2.5",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0367-mazda-mx-5-miata-1994-1994.webp",
+    "imageFile": "fh6/0367-mazda-mx-5-miata-1994-1994.webp"
   },
   {
     "game": "fh6",
@@ -6988,8 +6988,8 @@
     "braking": "3.4",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0368-mazda-rx-7-type-r-1992.webp",
+    "imageFile": "fh6/0368-mazda-rx-7-type-r-1992.webp"
   },
   {
     "game": "fh6",
@@ -7007,8 +7007,8 @@
     "braking": "10",
     "offroad": "4.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0369-mazda-55-mazda-787b-1991.webp",
+    "imageFile": "fh6/0369-mazda-55-mazda-787b-1991.webp"
   },
   {
     "game": "fh6",
@@ -7026,8 +7026,8 @@
     "braking": "3.1",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0370-mazda-savanna-rx-7-1990.webp",
+    "imageFile": "fh6/0370-mazda-savanna-rx-7-1990.webp"
   },
   {
     "game": "fh6",
@@ -7045,8 +7045,8 @@
     "braking": "2.8",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0371-mazda-rx-7-gsl-se-1985.webp",
+    "imageFile": "fh6/0371-mazda-rx-7-gsl-se-1985.webp"
   },
   {
     "game": "fh6",
@@ -7064,8 +7064,8 @@
     "braking": "5.1",
     "offroad": "4.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0372-mazda-123-mad-mike-808-wagon-fursty-1974.webp",
+    "imageFile": "fh6/0372-mazda-123-mad-mike-808-wagon-fursty-1974.webp"
   },
   {
     "game": "fh6",
@@ -7083,8 +7083,8 @@
     "braking": "4.2",
     "offroad": "4.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0373-mazda-rx-3-forza-edition-1973.webp",
+    "imageFile": "fh6/0373-mazda-rx-3-forza-edition-1973.webp"
   },
   {
     "game": "fh6",
@@ -7102,8 +7102,8 @@
     "braking": "2.5",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0374-mazda-rx-3-1973.webp",
+    "imageFile": "fh6/0374-mazda-rx-3-1973.webp"
   },
   {
     "game": "fh6",
@@ -7121,8 +7121,8 @@
     "braking": "2.8",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0375-mazda-cosmo-110s-series-ii-1972.webp",
+    "imageFile": "fh6/0375-mazda-cosmo-110s-series-ii-1972.webp"
   },
   {
     "game": "fh6",
@@ -7140,8 +7140,8 @@
     "braking": "7.2",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0376-mclaren-artura-2023.webp",
+    "imageFile": "fh6/0376-mclaren-artura-2023.webp"
   },
   {
     "game": "fh6",
@@ -7159,8 +7159,8 @@
     "braking": "8.9",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0377-mclaren-765lt-coupe-2021.webp",
+    "imageFile": "fh6/0377-mclaren-765lt-coupe-2021.webp"
   },
   {
     "game": "fh6",
@@ -7178,8 +7178,8 @@
     "braking": "7.7",
     "offroad": "4.6",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0378-mclaren-sabre-2021.webp",
+    "imageFile": "fh6/0378-mclaren-sabre-2021.webp"
   },
   {
     "game": "fh6",
@@ -7197,8 +7197,8 @@
     "braking": "8.4",
     "offroad": "5.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0379-mclaren-620r-2021.webp",
+    "imageFile": "fh6/0379-mclaren-620r-2021.webp"
   },
   {
     "game": "fh6",
@@ -7216,8 +7216,8 @@
     "braking": "7.2",
     "offroad": "4.3",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0380-mclaren-speedtail-2019.webp",
+    "imageFile": "fh6/0380-mclaren-speedtail-2019.webp"
   },
   {
     "game": "fh6",
@@ -7235,8 +7235,8 @@
     "braking": "7.6",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0381-mclaren-600lt-coupe-2018.webp",
+    "imageFile": "fh6/0381-mclaren-600lt-coupe-2018.webp"
   },
   {
     "game": "fh6",
@@ -7254,8 +7254,8 @@
     "braking": "6.9",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0382-mclaren-570s-coupe-2015.webp",
+    "imageFile": "fh6/0382-mclaren-570s-coupe-2015.webp"
   },
   {
     "game": "fh6",
@@ -7273,8 +7273,8 @@
     "braking": "7.8",
     "offroad": "5.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0383-mclaren-650s-spider-2014.webp",
+    "imageFile": "fh6/0383-mclaren-650s-spider-2014.webp"
   },
   {
     "game": "fh6",
@@ -7292,8 +7292,8 @@
     "braking": "9.2",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0384-mclaren-p1-2013.webp",
+    "imageFile": "fh6/0384-mclaren-p1-2013.webp"
   },
   {
     "game": "fh6",
@@ -7311,8 +7311,8 @@
     "braking": "6.2",
     "offroad": "5.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0385-mclaren-12c-coupe-2011.webp",
+    "imageFile": "fh6/0385-mclaren-12c-coupe-2011.webp"
   },
   {
     "game": "fh6",
@@ -7330,8 +7330,8 @@
     "braking": "6.6",
     "offroad": "4.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0386-mclaren-f1-gt-1997.webp",
+    "imageFile": "fh6/0386-mclaren-f1-gt-1997.webp"
   },
   {
     "game": "fh6",
@@ -7349,8 +7349,8 @@
     "braking": "5.4",
     "offroad": "5.0",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0387-mclaren-f1-1993.webp",
+    "imageFile": "fh6/0387-mclaren-f1-1993.webp"
   },
   {
     "game": "fh6",
@@ -7368,8 +7368,8 @@
     "braking": "9.6",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0388-mercedes-amg-mercedes-amg-one-2021.webp",
+    "imageFile": "fh6/0388-mercedes-amg-mercedes-amg-one-2021.webp"
   },
   {
     "game": "fh6",
@@ -7387,8 +7387,8 @@
     "braking": "8.4",
     "offroad": "4.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0389-mercedes-amg-gt-black-series-2021.webp",
+    "imageFile": "fh6/0389-mercedes-amg-gt-black-series-2021.webp"
   },
   {
     "game": "fh6",
@@ -7406,8 +7406,8 @@
     "braking": "4.8",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0390-mercedes-amg-sl-63-2021.webp",
+    "imageFile": "fh6/0390-mercedes-amg-sl-63-2021.webp"
   },
   {
     "game": "fh6",
@@ -7425,8 +7425,8 @@
     "braking": "10",
     "offroad": "4.7",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0391-mercedes-amg-gt-black-series-welcome-pack-2020.webp",
+    "imageFile": "fh6/0391-mercedes-amg-gt-black-series-welcome-pack-2020.webp"
   },
   {
     "game": "fh6",
@@ -7444,8 +7444,8 @@
     "braking": "4.5",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0392-mercedes-amg-slc-43-final-edition-2020.webp",
+    "imageFile": "fh6/0392-mercedes-amg-slc-43-final-edition-2020.webp"
   },
   {
     "game": "fh6",
@@ -7463,8 +7463,8 @@
     "braking": "4.8",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0393-mercedes-amg-e-63-s-2018.webp",
+    "imageFile": "fh6/0393-mercedes-amg-e-63-s-2018.webp"
   },
   {
     "game": "fh6",
@@ -7482,8 +7482,8 @@
     "braking": "4.5",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0394-mercedes-amg-gt-4-door-coupe-2018.webp",
+    "imageFile": "fh6/0394-mercedes-amg-gt-4-door-coupe-2018.webp"
   },
   {
     "game": "fh6",
@@ -7501,8 +7501,8 @@
     "braking": "7.3",
     "offroad": "4.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0395-mercedes-amg-gt-r-2017.webp",
+    "imageFile": "fh6/0395-mercedes-amg-gt-r-2017.webp"
   },
   {
     "game": "fh6",
@@ -7520,8 +7520,8 @@
     "braking": "5.6",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0396-mercedes-amg-c-63-s-coupe-2016.webp",
+    "imageFile": "fh6/0396-mercedes-amg-c-63-s-coupe-2016.webp"
   },
   {
     "game": "fh6",
@@ -7539,8 +7539,8 @@
     "braking": "7.0",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0397-mercedes-amg-gt-s-2015.webp",
+    "imageFile": "fh6/0397-mercedes-amg-gt-s-2015.webp"
   },
   {
     "game": "fh6",
@@ -7558,8 +7558,8 @@
     "braking": "2.8",
     "offroad": "8.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0398-mercedes-benz-x-class-2018.webp",
+    "imageFile": "fh6/0398-mercedes-benz-x-class-2018.webp"
   },
   {
     "game": "fh6",
@@ -7577,8 +7577,8 @@
     "braking": "4.1",
     "offroad": "9.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0399-mercedes-benz-g-63-amg-6x6-2014.webp",
+    "imageFile": "fh6/0399-mercedes-benz-g-63-amg-6x6-2014.webp"
   },
   {
     "game": "fh6",
@@ -7596,8 +7596,8 @@
     "braking": "2.7",
     "offroad": "9.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0400-mercedes-benz-unimog-u5023-2014.webp",
+    "imageFile": "fh6/0400-mercedes-benz-unimog-u5023-2014.webp"
   },
   {
     "game": "fh6",
@@ -7615,8 +7615,8 @@
     "braking": "4.4",
     "offroad": "5.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0401-mercedes-benz-a-45-amg-2013.webp",
+    "imageFile": "fh6/0401-mercedes-benz-a-45-amg-2013.webp"
   },
   {
     "game": "fh6",
@@ -7634,8 +7634,8 @@
     "braking": "3.2",
     "offroad": "8.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0402-mercedes-benz-g-65-amg-2013.webp",
+    "imageFile": "fh6/0402-mercedes-benz-g-65-amg-2013.webp"
   },
   {
     "game": "fh6",
@@ -7653,8 +7653,8 @@
     "braking": "5.2",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0403-mercedes-benz-c-63-amg-coupe-black-series-2012.webp",
+    "imageFile": "fh6/0403-mercedes-benz-c-63-amg-coupe-black-series-2012.webp"
   },
   {
     "game": "fh6",
@@ -7672,8 +7672,8 @@
     "braking": "5.2",
     "offroad": "4.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0404-mercedes-benz-sl-65-amg-black-series-2009.webp",
+    "imageFile": "fh6/0404-mercedes-benz-sl-65-amg-black-series-2009.webp"
   },
   {
     "game": "fh6",
@@ -7691,8 +7691,8 @@
     "braking": "6.3",
     "offroad": "4.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0405-mercedes-benz-amg-clk-gtr-1998.webp",
+    "imageFile": "fh6/0405-mercedes-benz-amg-clk-gtr-1998.webp"
   },
   {
     "game": "fh6",
@@ -7710,8 +7710,8 @@
     "braking": "6.3",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0406-mercedes-benz-190e-2-5-16-evolution-ii-forza-edition-1990.webp",
+    "imageFile": "fh6/0406-mercedes-benz-190e-2-5-16-evolution-ii-forza-edition-1990.webp"
   },
   {
     "game": "fh6",
@@ -7729,8 +7729,8 @@
     "braking": "2.9",
     "offroad": "4.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0407-mercedes-benz-190e-2-5-16-evolution-ii-1990.webp",
+    "imageFile": "fh6/0407-mercedes-benz-190e-2-5-16-evolution-ii-1990.webp"
   },
   {
     "game": "fh6",
@@ -7748,8 +7748,8 @@
     "braking": "3.8",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0408-mercedes-benz-amg-hammer-coupe-1987.webp",
+    "imageFile": "fh6/0408-mercedes-benz-amg-hammer-coupe-1987.webp"
   },
   {
     "game": "fh6",
@@ -7767,8 +7767,8 @@
     "braking": "3.1",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0409-mercedes-benz-300-slr-1955.webp",
+    "imageFile": "fh6/0409-mercedes-benz-300-slr-1955.webp"
   },
   {
     "game": "fh6",
@@ -7786,8 +7786,8 @@
     "braking": "2.4",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0410-mercedes-benz-300-sl-coupe-1954.webp",
+    "imageFile": "fh6/0410-mercedes-benz-300-sl-coupe-1954.webp"
   },
   {
     "game": "fh6",
@@ -7805,8 +7805,8 @@
     "braking": "3.6",
     "offroad": "6.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0411-meyers-manx-2-0-2023.webp",
+    "imageFile": "fh6/0411-meyers-manx-2-0-2023.webp"
   },
   {
     "game": "fh6",
@@ -7824,8 +7824,8 @@
     "braking": "2.6",
     "offroad": "6.2",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0412-meyers-manx-1971.webp",
+    "imageFile": "fh6/0412-meyers-manx-1971.webp"
   },
   {
     "game": "fh6",
@@ -7843,8 +7843,8 @@
     "braking": "5.8",
     "offroad": "8.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0413-mg-metro-6r4-1986.webp",
+    "imageFile": "fh6/0413-mg-metro-6r4-1986.webp"
   },
   {
     "game": "fh6",
@@ -7862,8 +7862,8 @@
     "braking": "4.6",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0414-mini-john-cooper-works-gp-2021-2021.webp",
+    "imageFile": "fh6/0414-mini-john-cooper-works-gp-2021-2021.webp"
   },
   {
     "game": "fh6",
@@ -7881,8 +7881,8 @@
     "braking": "4.9",
     "offroad": "10",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0415-mini-x-raid-john-cooper-works-buggy-2018.webp",
+    "imageFile": "fh6/0415-mini-x-raid-john-cooper-works-buggy-2018.webp"
   },
   {
     "game": "fh6",
@@ -7900,8 +7900,8 @@
     "braking": "4.1",
     "offroad": "8.4",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0416-mini-x-raid-all4-racing-countryman-2013.webp",
+    "imageFile": "fh6/0416-mini-x-raid-all4-racing-countryman-2013.webp"
   },
   {
     "game": "fh6",
@@ -7919,8 +7919,8 @@
     "braking": "3.7",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0417-mini-john-cooper-works-gp-2012-2012.webp",
+    "imageFile": "fh6/0417-mini-john-cooper-works-gp-2012-2012.webp"
   },
   {
     "game": "fh6",
@@ -7938,8 +7938,8 @@
     "braking": "2.0",
     "offroad": "4.3",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0418-mini-cooper-s-1965-1965.webp",
+    "imageFile": "fh6/0418-mini-cooper-s-1965-1965.webp"
   },
   {
     "game": "fh6",
@@ -7957,8 +7957,8 @@
     "braking": "3.7",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0419-mitsubishi-lancer-evolution-x-gsr-2008.webp",
+    "imageFile": "fh6/0419-mitsubishi-lancer-evolution-x-gsr-2008.webp"
   },
   {
     "game": "fh6",
@@ -7976,8 +7976,8 @@
     "braking": "3.6",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0420-mitsubishi-lancer-evolution-ix-mr-2006.webp",
+    "imageFile": "fh6/0420-mitsubishi-lancer-evolution-ix-mr-2006.webp"
   },
   {
     "game": "fh6",
@@ -7995,8 +7995,8 @@
     "braking": "10",
     "offroad": "4.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0421-mitsubishi-1-sierra-sierra-enterprises-lancer-evolution-time-attack-2005.webp",
+    "imageFile": "fh6/0421-mitsubishi-1-sierra-sierra-enterprises-lancer-evolution-time-attack-2005.webp"
   },
   {
     "game": "fh6",
@@ -8014,8 +8014,8 @@
     "braking": "5.1",
     "offroad": "6.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0422-mitsubishi-lancer-evolution-viii-mr-welcome-pack-2004.webp",
+    "imageFile": "fh6/0422-mitsubishi-lancer-evolution-viii-mr-welcome-pack-2004.webp"
   },
   {
     "game": "fh6",
@@ -8033,8 +8033,8 @@
     "braking": "3.6",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0423-mitsubishi-lancer-evolution-viii-mr-2004.webp",
+    "imageFile": "fh6/0423-mitsubishi-lancer-evolution-viii-mr-2004.webp"
   },
   {
     "game": "fh6",
@@ -8052,8 +8052,8 @@
     "braking": "4.2",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0424-mitsubishi-lancer-evolution-vi-gsr-tm-edition-2001.webp",
+    "imageFile": "fh6/0424-mitsubishi-lancer-evolution-vi-gsr-tm-edition-2001.webp"
   },
   {
     "game": "fh6",
@@ -8071,8 +8071,8 @@
     "braking": "3.4",
     "offroad": "5.8",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0425-mitsubishi-gto-1997.webp",
+    "imageFile": "fh6/0425-mitsubishi-gto-1997.webp"
   },
   {
     "game": "fh6",
@@ -8090,8 +8090,8 @@
     "braking": "2.5",
     "offroad": "8.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0426-mitsubishi-montero-evolution-1997.webp",
+    "imageFile": "fh6/0426-mitsubishi-montero-evolution-1997.webp"
   },
   {
     "game": "fh6",
@@ -8109,8 +8109,8 @@
     "braking": "3.5",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0427-mitsubishi-lancer-evolution-iii-gsr-1995.webp",
+    "imageFile": "fh6/0427-mitsubishi-lancer-evolution-iii-gsr-1995.webp"
   },
   {
     "game": "fh6",
@@ -8128,8 +8128,8 @@
     "braking": "2.8",
     "offroad": "5.8",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0428-mitsubishi-eclipse-gsx-1995.webp",
+    "imageFile": "fh6/0428-mitsubishi-eclipse-gsx-1995.webp"
   },
   {
     "game": "fh6",
@@ -8147,8 +8147,8 @@
     "braking": "2.8",
     "offroad": "8.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0429-mitsubishi-montero-exceed-2800-td-1995.webp",
+    "imageFile": "fh6/0429-mitsubishi-montero-exceed-2800-td-1995.webp"
   },
   {
     "game": "fh6",
@@ -8166,8 +8166,8 @@
     "braking": "2.8",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0430-mitsubishi-galant-vr-4-1992.webp",
+    "imageFile": "fh6/0430-mitsubishi-galant-vr-4-1992.webp"
   },
   {
     "game": "fh6",
@@ -8185,8 +8185,8 @@
     "braking": "9.2",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0431-mitsubishi-269-attacking-the-clock-racing-minicab-time-attack-1990.webp",
+    "imageFile": "fh6/0431-mitsubishi-269-attacking-the-clock-racing-minicab-time-attack-1990.webp"
   },
   {
     "game": "fh6",
@@ -8204,8 +8204,8 @@
     "braking": "7.3",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0432-nissan-gt-r-nismo-2024-2024.webp",
+    "imageFile": "fh6/0432-nissan-gt-r-nismo-2024-2024.webp"
   },
   {
     "game": "fh6",
@@ -8223,8 +8223,8 @@
     "braking": "4.8",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0433-nissan-z-nismo-2024.webp",
+    "imageFile": "fh6/0433-nissan-z-nismo-2024.webp"
   },
   {
     "game": "fh6",
@@ -8242,8 +8242,8 @@
     "braking": "6.8",
     "offroad": "5.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0434-nissan-gt-r-nismo-r35-2020.webp",
+    "imageFile": "fh6/0434-nissan-gt-r-nismo-r35-2020.webp"
   },
   {
     "game": "fh6",
@@ -8261,8 +8261,8 @@
     "braking": "4.5",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0435-nissan-370z-nismo-2019.webp",
+    "imageFile": "fh6/0435-nissan-370z-nismo-2019.webp"
   },
   {
     "game": "fh6",
@@ -8280,8 +8280,8 @@
     "braking": "5.3",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0436-nissan-gt-r-r35-2017.webp",
+    "imageFile": "fh6/0436-nissan-gt-r-r35-2017.webp"
   },
   {
     "game": "fh6",
@@ -8299,8 +8299,8 @@
     "braking": "8.1",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0437-nissan-gt-r-black-edition-r35-forza-edition-2012.webp",
+    "imageFile": "fh6/0437-nissan-gt-r-black-edition-r35-forza-edition-2012.webp"
   },
   {
     "game": "fh6",
@@ -8318,8 +8318,8 @@
     "braking": "5.3",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0438-nissan-gt-r-black-edition-r35-2012.webp",
+    "imageFile": "fh6/0438-nissan-gt-r-black-edition-r35-2012.webp"
   },
   {
     "game": "fh6",
@@ -8337,8 +8337,8 @@
     "braking": "3.9",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0439-nissan-370z-2010.webp",
+    "imageFile": "fh6/0439-nissan-370z-2010.webp"
   },
   {
     "game": "fh6",
@@ -8356,8 +8356,8 @@
     "braking": "3.5",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0440-nissan-fairlady-z-2003.webp",
+    "imageFile": "fh6/0440-nissan-fairlady-z-2003.webp"
   },
   {
     "game": "fh6",
@@ -8375,8 +8375,8 @@
     "braking": "3.8",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0441-nissan-silvia-spec-r-2002-2002.webp",
+    "imageFile": "fh6/0441-nissan-silvia-spec-r-2002-2002.webp"
   },
   {
     "game": "fh6",
@@ -8394,8 +8394,8 @@
     "braking": "10",
     "offroad": "4.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0442-nissan-36-dream-project-s15-silvia-wtac-2000.webp",
+    "imageFile": "fh6/0442-nissan-36-dream-project-s15-silvia-wtac-2000.webp"
   },
   {
     "game": "fh6",
@@ -8413,8 +8413,8 @@
     "braking": "3.8",
     "offroad": "5.8",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0443-nissan-skyline-gt-r-v-spec-ii-2000-2000.webp",
+    "imageFile": "fh6/0443-nissan-skyline-gt-r-v-spec-ii-2000-2000.webp"
   },
   {
     "game": "fh6",
@@ -8432,8 +8432,8 @@
     "braking": "9.5",
     "offroad": "4.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0444-nissan-23-pennzoil-nismo-skyline-gt-r-1998.webp",
+    "imageFile": "fh6/0444-nissan-23-pennzoil-nismo-skyline-gt-r-1998.webp"
   },
   {
     "game": "fh6",
@@ -8451,8 +8451,8 @@
     "braking": "6.6",
     "offroad": "3.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0445-nissan-r390-gt1-1998.webp",
+    "imageFile": "fh6/0445-nissan-r390-gt1-1998.webp"
   },
   {
     "game": "fh6",
@@ -8470,8 +8470,8 @@
     "braking": "3.5",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0446-nissan-skyline-gt-r-40th-anniversary-1998.webp",
+    "imageFile": "fh6/0446-nissan-skyline-gt-r-40th-anniversary-1998.webp"
   },
   {
     "game": "fh6",
@@ -8489,8 +8489,8 @@
     "braking": "3.4",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0447-nissan-silvia-ks-aero-1998.webp",
+    "imageFile": "fh6/0447-nissan-silvia-ks-aero-1998.webp"
   },
   {
     "game": "fh6",
@@ -8508,8 +8508,8 @@
     "braking": "3.6",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0448-nissan-skyline-gt-r-v-spec-1997-1997.webp",
+    "imageFile": "fh6/0448-nissan-skyline-gt-r-v-spec-1997-1997.webp"
   },
   {
     "game": "fh6",
@@ -8527,8 +8527,8 @@
     "braking": "4.0",
     "offroad": "4.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0449-nissan-nismo-gt-r-lm-1995.webp",
+    "imageFile": "fh6/0449-nissan-nismo-gt-r-lm-1995.webp"
   },
   {
     "game": "fh6",
@@ -8546,8 +8546,8 @@
     "braking": "3.1",
     "offroad": "6.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0450-nissan-stagea-rs-four-v-1997.webp",
+    "imageFile": "fh6/0450-nissan-stagea-rs-four-v-1997.webp"
   },
   {
     "game": "fh6",
@@ -8565,8 +8565,8 @@
     "braking": "3.1",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0451-nissan-gloria-gran-turismo-1995.webp",
+    "imageFile": "fh6/0451-nissan-gloria-gran-turismo-1995.webp"
   },
   {
     "game": "fh6",
@@ -8584,8 +8584,8 @@
     "braking": "3.4",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0452-nissan-silvia-ks-1994-1994.webp",
+    "imageFile": "fh6/0452-nissan-silvia-ks-1994-1994.webp"
   },
   {
     "game": "fh6",
@@ -8603,8 +8603,8 @@
     "braking": "3.2",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0453-nissan-fairlady-z-version-s-twin-turbo-1994.webp",
+    "imageFile": "fh6/0453-nissan-fairlady-z-version-s-twin-turbo-1994.webp"
   },
   {
     "game": "fh6",
@@ -8622,8 +8622,8 @@
     "braking": "10",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0454-nissan-32-skyline-wtac-xtreme-gtr-1993.webp",
+    "imageFile": "fh6/0454-nissan-32-skyline-wtac-xtreme-gtr-1993.webp"
   },
   {
     "game": "fh6",
@@ -8641,8 +8641,8 @@
     "braking": "2.5",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0455-nissan-240sx-1993.webp",
+    "imageFile": "fh6/0455-nissan-240sx-1993.webp"
   },
   {
     "game": "fh6",
@@ -8660,8 +8660,8 @@
     "braking": "3.6",
     "offroad": "5.8",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0456-nissan-skyline-gt-r-1992-1992.webp",
+    "imageFile": "fh6/0456-nissan-skyline-gt-r-1992-1992.webp"
   },
   {
     "game": "fh6",
@@ -8679,8 +8679,8 @@
     "braking": "2.9",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0457-nissan-figaro-1991.webp",
+    "imageFile": "fh6/0457-nissan-figaro-1991.webp"
   },
   {
     "game": "fh6",
@@ -8698,8 +8698,8 @@
     "braking": "8.1",
     "offroad": "5.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0458-nissan-12-skyline-gt-r-bnr32-gr-a-jtc-1990.webp",
+    "imageFile": "fh6/0458-nissan-12-skyline-gt-r-bnr32-gr-a-jtc-1990.webp"
   },
   {
     "game": "fh6",
@@ -8717,8 +8717,8 @@
     "braking": "2.9",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0459-nissan-pulsar-gti-r-1990.webp",
+    "imageFile": "fh6/0459-nissan-pulsar-gti-r-1990.webp"
   },
   {
     "game": "fh6",
@@ -8736,8 +8736,8 @@
     "braking": "6.8",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0460-nissan-s-cargo-forza-edition-1989.webp",
+    "imageFile": "fh6/0460-nissan-s-cargo-forza-edition-1989.webp"
   },
   {
     "game": "fh6",
@@ -8755,8 +8755,8 @@
     "braking": "2.9",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0461-nissan-silvia-ks-1989-1989.webp",
+    "imageFile": "fh6/0461-nissan-silvia-ks-1989-1989.webp"
   },
   {
     "game": "fh6",
@@ -8774,8 +8774,8 @@
     "braking": "3.1",
     "offroad": "6.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0462-nissan-pao-1989.webp",
+    "imageFile": "fh6/0462-nissan-pao-1989.webp"
   },
   {
     "game": "fh6",
@@ -8793,8 +8793,8 @@
     "braking": "2.8",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0463-nissan-s-cargo-1989.webp",
+    "imageFile": "fh6/0463-nissan-s-cargo-1989.webp"
   },
   {
     "game": "fh6",
@@ -8812,8 +8812,8 @@
     "braking": "2.7",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0464-nissan-skyline-gts-r-1987.webp",
+    "imageFile": "fh6/0464-nissan-skyline-gts-r-1987.webp"
   },
   {
     "game": "fh6",
@@ -8831,8 +8831,8 @@
     "braking": "3.2",
     "offroad": "6.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0465-nissan-be-1-1987.webp",
+    "imageFile": "fh6/0465-nissan-be-1-1987.webp"
   },
   {
     "game": "fh6",
@@ -8850,8 +8850,8 @@
     "braking": "2.2",
     "offroad": "8.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0466-nissan-safari-turbo-1985.webp",
+    "imageFile": "fh6/0466-nissan-safari-turbo-1985.webp"
   },
   {
     "game": "fh6",
@@ -8869,8 +8869,8 @@
     "braking": "9.1",
     "offroad": "4.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0467-nissan-11-tomica-skyline-turbo-super-silhouette-1983.webp",
+    "imageFile": "fh6/0467-nissan-11-tomica-skyline-turbo-super-silhouette-1983.webp"
   },
   {
     "game": "fh6",
@@ -8888,8 +8888,8 @@
     "braking": "3.0",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0468-nissan-skyline-h-t-2000gt-r-1973.webp",
+    "imageFile": "fh6/0468-nissan-skyline-h-t-2000gt-r-1973.webp"
   },
   {
     "game": "fh6",
@@ -8907,8 +8907,8 @@
     "braking": "2.6",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0469-nissan-skyline-2000gt-r-1971.webp",
+    "imageFile": "fh6/0469-nissan-skyline-2000gt-r-1971.webp"
   },
   {
     "game": "fh6",
@@ -8926,8 +8926,8 @@
     "braking": "2.7",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0470-nissan-fairlady-z-432-1969.webp",
+    "imageFile": "fh6/0470-nissan-fairlady-z-432-1969.webp"
   },
   {
     "game": "fh6",
@@ -8945,8 +8945,8 @@
     "braking": "6.1",
     "offroad": "5.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0471-noble-m600-2010.webp",
+    "imageFile": "fh6/0471-noble-m600-2010.webp"
   },
   {
     "game": "fh6",
@@ -8964,8 +8964,8 @@
     "braking": "3.7",
     "offroad": "6.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0472-opel-manta-400-1984.webp",
+    "imageFile": "fh6/0472-opel-manta-400-1984.webp"
   },
   {
     "game": "fh6",
@@ -8983,8 +8983,8 @@
     "braking": "10",
     "offroad": "5.0",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0473-pagani-huayra-r-2021.webp",
+    "imageFile": "fh6/0473-pagani-huayra-r-2021.webp"
   },
   {
     "game": "fh6",
@@ -9002,8 +9002,8 @@
     "braking": "9.5",
     "offroad": "4.6",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0474-pagani-huayra-bc-coupe-2016.webp",
+    "imageFile": "fh6/0474-pagani-huayra-bc-coupe-2016.webp"
   },
   {
     "game": "fh6",
@@ -9021,8 +9021,8 @@
     "braking": "8.3",
     "offroad": "4.8",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0475-pagani-zonda-cinque-roadster-2010.webp",
+    "imageFile": "fh6/0475-pagani-zonda-cinque-roadster-2010.webp"
   },
   {
     "game": "fh6",
@@ -9040,8 +9040,8 @@
     "braking": "10",
     "offroad": "4.2",
     "country": "Italy",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0476-pagani-zonda-r-2009.webp",
+    "imageFile": "fh6/0476-pagani-zonda-r-2009.webp"
   },
   {
     "game": "fh6",
@@ -9059,8 +9059,8 @@
     "braking": "5.2",
     "offroad": "4.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0477-peel-p50-1962.webp",
+    "imageFile": "fh6/0477-peel-p50-1962.webp"
   },
   {
     "game": "fh6",
@@ -9078,8 +9078,8 @@
     "braking": "5.2",
     "offroad": "4.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0478-peel-p50-trolli-edition-1962.webp",
+    "imageFile": "fh6/0478-peel-p50-trolli-edition-1962.webp"
   },
   {
     "game": "fh6",
@@ -9097,8 +9097,8 @@
     "braking": "4.3",
     "offroad": "9.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0479-penhall-the-cholla-2011.webp",
+    "imageFile": "fh6/0479-penhall-the-cholla-2011.webp"
   },
   {
     "game": "fh6",
@@ -9116,8 +9116,8 @@
     "braking": "5.7",
     "offroad": "8.3",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0480-peugeot-207-super-2000-2007.webp",
+    "imageFile": "fh6/0480-peugeot-207-super-2000-2007.webp"
   },
   {
     "game": "fh6",
@@ -9135,8 +9135,8 @@
     "braking": "2.5",
     "offroad": "5.1",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0481-peugeot-205-rallye-1991.webp",
+    "imageFile": "fh6/0481-peugeot-205-rallye-1991.webp"
   },
   {
     "game": "fh6",
@@ -9154,8 +9154,8 @@
     "braking": "3.6",
     "offroad": "7.4",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0482-peugeot-205-turbo-16-1984.webp",
+    "imageFile": "fh6/0482-peugeot-205-turbo-16-1984.webp"
   },
   {
     "game": "fh6",
@@ -9173,8 +9173,8 @@
     "braking": "2.4",
     "offroad": "5.4",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0483-plymouth-cuda-426-hemi-1971.webp",
+    "imageFile": "fh6/0483-plymouth-cuda-426-hemi-1971.webp"
   },
   {
     "game": "fh6",
@@ -9192,8 +9192,8 @@
     "braking": "2.9",
     "offroad": "6.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0484-plymouth-barracuda-formula-s-1968.webp",
+    "imageFile": "fh6/0484-plymouth-barracuda-formula-s-1968.webp"
   },
   {
     "game": "fh6",
@@ -9211,8 +9211,8 @@
     "braking": "2.1",
     "offroad": "5.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0485-plymouth-fury-1958.webp",
+    "imageFile": "fh6/0485-plymouth-fury-1958.webp"
   },
   {
     "game": "fh6",
@@ -9230,8 +9230,8 @@
     "braking": "4.8",
     "offroad": "9.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0486-polaris-rzr-pro-xp-ultimate-2021.webp",
+    "imageFile": "fh6/0486-polaris-rzr-pro-xp-ultimate-2021.webp"
   },
   {
     "game": "fh6",
@@ -9249,8 +9249,8 @@
     "braking": "5.1",
     "offroad": "10",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0487-polaris-rzr-pro-xp-factory-racing-limited-edition-2021.webp",
+    "imageFile": "fh6/0487-polaris-rzr-pro-xp-factory-racing-limited-edition-2021.webp"
   },
   {
     "game": "fh6",
@@ -9268,8 +9268,8 @@
     "braking": "2.4",
     "offroad": "5.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0488-pontiac-firebird-trans-am-gta-1987.webp",
+    "imageFile": "fh6/0488-pontiac-firebird-trans-am-gta-1987.webp"
   },
   {
     "game": "fh6",
@@ -9287,8 +9287,8 @@
     "braking": "2.1",
     "offroad": "5.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0489-pontiac-firebird-trans-am-1977-1977.webp",
+    "imageFile": "fh6/0489-pontiac-firebird-trans-am-1977-1977.webp"
   },
   {
     "game": "fh6",
@@ -9306,8 +9306,8 @@
     "braking": "7.2",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0490-porsche-911-turbo-s-2023-2023.webp",
+    "imageFile": "fh6/0490-porsche-911-turbo-s-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -9325,8 +9325,8 @@
     "braking": "10",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0491-porsche-911-gt3-rs-2023-2023.webp",
+    "imageFile": "fh6/0491-porsche-911-gt3-rs-2023-2023.webp"
   },
   {
     "game": "fh6",
@@ -9344,8 +9344,8 @@
     "braking": "4.8",
     "offroad": "8.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0492-porsche-911-rallye-2023.webp",
+    "imageFile": "fh6/0492-porsche-911-rallye-2023.webp"
   },
   {
     "game": "fh6",
@@ -9363,8 +9363,8 @@
     "braking": "8.8",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0493-porsche-mission-r-2022.webp",
+    "imageFile": "fh6/0493-porsche-mission-r-2022.webp"
   },
   {
     "game": "fh6",
@@ -9382,8 +9382,8 @@
     "braking": "6.2",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0494-porsche-718-cayman-gt4-rs-2022.webp",
+    "imageFile": "fh6/0494-porsche-718-cayman-gt4-rs-2022.webp"
   },
   {
     "game": "fh6",
@@ -9401,8 +9401,8 @@
     "braking": "7.9",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0495-porsche-911-gt3-2021-2021.webp",
+    "imageFile": "fh6/0495-porsche-911-gt3-2021-2021.webp"
   },
   {
     "game": "fh6",
@@ -9420,8 +9420,8 @@
     "braking": "6.0",
     "offroad": "4.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0496-porsche-taycan-turbo-s-2020.webp",
+    "imageFile": "fh6/0496-porsche-taycan-turbo-s-2020.webp"
   },
   {
     "game": "fh6",
@@ -9439,8 +9439,8 @@
     "braking": "9.6",
     "offroad": "4.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0497-porsche-70-porsche-motorsport-935-2019.webp",
+    "imageFile": "fh6/0497-porsche-70-porsche-motorsport-935-2019.webp"
   },
   {
     "game": "fh6",
@@ -9458,8 +9458,8 @@
     "braking": "8.0",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0498-porsche-911-gt3-rs-2019-2019.webp",
+    "imageFile": "fh6/0498-porsche-911-gt3-rs-2019-2019.webp"
   },
   {
     "game": "fh6",
@@ -9477,8 +9477,8 @@
     "braking": "7.6",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0499-porsche-911-carrera-s-2019.webp",
+    "imageFile": "fh6/0499-porsche-911-carrera-s-2019.webp"
   },
   {
     "game": "fh6",
@@ -9496,8 +9496,8 @@
     "braking": "8.9",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0500-porsche-911-gt2-rs-2018-2018.webp",
+    "imageFile": "fh6/0500-porsche-911-gt2-rs-2018-2018.webp"
   },
   {
     "game": "fh6",
@@ -9515,8 +9515,8 @@
     "braking": "5.5",
     "offroad": "4.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0501-porsche-718-cayman-gts-2018.webp",
+    "imageFile": "fh6/0501-porsche-718-cayman-gts-2018.webp"
   },
   {
     "game": "fh6",
@@ -9534,8 +9534,8 @@
     "braking": "6.0",
     "offroad": "6.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0502-porsche-cayenne-turbo-2018-2018.webp",
+    "imageFile": "fh6/0502-porsche-cayenne-turbo-2018-2018.webp"
   },
   {
     "game": "fh6",
@@ -9553,8 +9553,8 @@
     "braking": "4.7",
     "offroad": "10",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0503-porsche-macan-lpr-rally-raid-2018.webp",
+    "imageFile": "fh6/0503-porsche-macan-lpr-rally-raid-2018.webp"
   },
   {
     "game": "fh6",
@@ -9572,8 +9572,8 @@
     "braking": "9.0",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0504-porsche-918-spyder-2014.webp",
+    "imageFile": "fh6/0504-porsche-918-spyder-2014.webp"
   },
   {
     "game": "fh6",
@@ -9591,8 +9591,8 @@
     "braking": "7.3",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0505-porsche-911-gt3-rs-4-0-2012.webp",
+    "imageFile": "fh6/0505-porsche-911-gt3-rs-4-0-2012.webp"
   },
   {
     "game": "fh6",
@@ -9610,8 +9610,8 @@
     "braking": "10",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0506-porsche-cayman-gt3-wtac-2005.webp",
+    "imageFile": "fh6/0506-porsche-cayman-gt3-wtac-2005.webp"
   },
   {
     "game": "fh6",
@@ -9629,8 +9629,8 @@
     "braking": "5.3",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0507-porsche-911-gt3-2004-2004.webp",
+    "imageFile": "fh6/0507-porsche-911-gt3-2004-2004.webp"
   },
   {
     "game": "fh6",
@@ -9648,8 +9648,8 @@
     "braking": "7.4",
     "offroad": "5.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0508-porsche-carrera-gt-2003.webp",
+    "imageFile": "fh6/0508-porsche-carrera-gt-2003.webp"
   },
   {
     "game": "fh6",
@@ -9667,8 +9667,8 @@
     "braking": "8.2",
     "offroad": "4.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0509-porsche-911-gt1-strassenversion-1997.webp",
+    "imageFile": "fh6/0509-porsche-911-gt1-strassenversion-1997.webp"
   },
   {
     "game": "fh6",
@@ -9686,8 +9686,8 @@
     "braking": "5.3",
     "offroad": "5.1",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0510-porsche-911-gt2-1995-1995.webp",
+    "imageFile": "fh6/0510-porsche-911-gt2-1995-1995.webp"
   },
   {
     "game": "fh6",
@@ -9705,8 +9705,8 @@
     "braking": "5.0",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0511-porsche-911-turbo-s-leichtbau-1993.webp",
+    "imageFile": "fh6/0511-porsche-911-turbo-s-leichtbau-1993.webp"
   },
   {
     "game": "fh6",
@@ -9724,8 +9724,8 @@
     "braking": "4.1",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0512-porsche-968-turbo-s-1993.webp",
+    "imageFile": "fh6/0512-porsche-968-turbo-s-1993.webp"
   },
   {
     "game": "fh6",
@@ -9743,8 +9743,8 @@
     "braking": "4.0",
     "offroad": "5.4",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0513-porsche-928-gts-1993.webp",
+    "imageFile": "fh6/0513-porsche-928-gts-1993.webp"
   },
   {
     "game": "fh6",
@@ -9762,8 +9762,8 @@
     "braking": "4.1",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0514-porsche-944-turbo-1989.webp",
+    "imageFile": "fh6/0514-porsche-944-turbo-1989.webp"
   },
   {
     "game": "fh6",
@@ -9781,8 +9781,8 @@
     "braking": "4.9",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0515-porsche-959-1987.webp",
+    "imageFile": "fh6/0515-porsche-959-1987.webp"
   },
   {
     "game": "fh6",
@@ -9800,8 +9800,8 @@
     "braking": "4.3",
     "offroad": "7.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0516-porsche-185-959-prodrive-rally-raid-1986.webp",
+    "imageFile": "fh6/0516-porsche-185-959-prodrive-rally-raid-1986.webp"
   },
   {
     "game": "fh6",
@@ -9819,8 +9819,8 @@
     "braking": "4.1",
     "offroad": "5.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0517-porsche-911-turbo-3-3-1982.webp",
+    "imageFile": "fh6/0517-porsche-911-turbo-3-3-1982.webp"
   },
   {
     "game": "fh6",
@@ -9838,8 +9838,8 @@
     "braking": "3.1",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0518-porsche-911-carrera-rs-1973.webp",
+    "imageFile": "fh6/0518-porsche-911-carrera-rs-1973.webp"
   },
   {
     "game": "fh6",
@@ -9857,8 +9857,8 @@
     "braking": "10",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0519-porsche-3-917-lh-forza-edition-1970.webp",
+    "imageFile": "fh6/0519-porsche-3-917-lh-forza-edition-1970.webp"
   },
   {
     "game": "fh6",
@@ -9876,8 +9876,8 @@
     "braking": "4.9",
     "offroad": "4.5",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0520-porsche-3-917-lh-1970.webp",
+    "imageFile": "fh6/0520-porsche-3-917-lh-1970.webp"
   },
   {
     "game": "fh6",
@@ -9895,8 +9895,8 @@
     "braking": "8.3",
     "offroad": "4.6",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0521-radical-rxc-turbo-2015.webp",
+    "imageFile": "fh6/0521-radical-rxc-turbo-2015.webp"
   },
   {
     "game": "fh6",
@@ -9914,8 +9914,8 @@
     "braking": "3.3",
     "offroad": "8.8",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0522-ram-1500-trx-2024.webp",
+    "imageFile": "fh6/0522-ram-1500-trx-2024.webp"
   },
   {
     "game": "fh6",
@@ -9933,8 +9933,8 @@
     "braking": "2.0",
     "offroad": "6.1",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0523-reliant-supervan-iii-1972.webp",
+    "imageFile": "fh6/0523-reliant-supervan-iii-1972.webp"
   },
   {
     "game": "fh6",
@@ -9952,8 +9952,8 @@
     "braking": "4.4",
     "offroad": "5.3",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0524-renault-megane-r-s-2018.webp",
+    "imageFile": "fh6/0524-renault-megane-r-s-2018.webp"
   },
   {
     "game": "fh6",
@@ -9971,8 +9971,8 @@
     "braking": "4.8",
     "offroad": "5.4",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0525-renault-megane-rs-250-2010.webp",
+    "imageFile": "fh6/0525-renault-megane-rs-250-2010.webp"
   },
   {
     "game": "fh6",
@@ -9990,8 +9990,8 @@
     "braking": "5.2",
     "offroad": "5.2",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0526-renault-megane-r26-r-2008.webp",
+    "imageFile": "fh6/0526-renault-megane-r26-r-2008.webp"
   },
   {
     "game": "fh6",
@@ -10009,8 +10009,8 @@
     "braking": "2.9",
     "offroad": "5.2",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0527-renault-clio-williams-1993.webp",
+    "imageFile": "fh6/0527-renault-clio-williams-1993.webp"
   },
   {
     "game": "fh6",
@@ -10028,8 +10028,8 @@
     "braking": "2.9",
     "offroad": "6.3",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0528-renault-5-turbo-1980.webp",
+    "imageFile": "fh6/0528-renault-5-turbo-1980.webp"
   },
   {
     "game": "fh6",
@@ -10047,8 +10047,8 @@
     "braking": "2.9",
     "offroad": "6.1",
     "country": "France",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0529-renault-8-gordini-1967.webp",
+    "imageFile": "fh6/0529-renault-8-gordini-1967.webp"
   },
   {
     "game": "fh6",
@@ -10066,8 +10066,8 @@
     "braking": "8.3",
     "offroad": "4.9",
     "country": "Croatia",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0530-rimac-nevera-2021.webp",
+    "imageFile": "fh6/0530-rimac-nevera-2021.webp"
   },
   {
     "game": "fh6",
@@ -10085,8 +10085,8 @@
     "braking": "4.1",
     "offroad": "8.3",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0531-rivian-r1t-2021.webp",
+    "imageFile": "fh6/0531-rivian-r1t-2021.webp"
   },
   {
     "game": "fh6",
@@ -10104,8 +10104,8 @@
     "braking": "5.3",
     "offroad": "9.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0532-rj-anderson-37-polaris-rzr-pro-4-truck-2021.webp",
+    "imageFile": "fh6/0532-rj-anderson-37-polaris-rzr-pro-4-truck-2021.webp"
   },
   {
     "game": "fh6",
@@ -10123,8 +10123,8 @@
     "braking": "5.1",
     "offroad": "10.0",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0533-rj-anderson-37-polaris-rzr-pro-2-truck-2016.webp",
+    "imageFile": "fh6/0533-rj-anderson-37-polaris-rzr-pro-2-truck-2016.webp"
   },
   {
     "game": "fh6",
@@ -10142,8 +10142,8 @@
     "braking": "7.2",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0534-saleen-s7-lm-2017.webp",
+    "imageFile": "fh6/0534-saleen-s7-lm-2017.webp"
   },
   {
     "game": "fh6",
@@ -10161,8 +10161,8 @@
     "braking": "6.8",
     "offroad": "5.0",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0535-schuppan-962cr-1993.webp",
+    "imageFile": "fh6/0535-schuppan-962cr-1993.webp"
   },
   {
     "game": "fh6",
@@ -10180,8 +10180,8 @@
     "braking": "3.2",
     "offroad": "4.7",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0536-shelby-cobra-427-s-c-1965.webp",
+    "imageFile": "fh6/0536-shelby-cobra-427-s-c-1965.webp"
   },
   {
     "game": "fh6",
@@ -10199,8 +10199,8 @@
     "braking": "2.8",
     "offroad": "4.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0537-shelby-cobra-daytona-coupe-1965.webp",
+    "imageFile": "fh6/0537-shelby-cobra-daytona-coupe-1965.webp"
   },
   {
     "game": "fh6",
@@ -10218,8 +10218,8 @@
     "braking": "5.9",
     "offroad": "7.9",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0538-sierra-cars-rx3-2021.webp",
+    "imageFile": "fh6/0538-sierra-cars-rx3-2021.webp"
   },
   {
     "game": "fh6",
@@ -10237,8 +10237,8 @@
     "braking": "6.3",
     "offroad": "8.6",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0539-sierra-cars-700r-2021.webp",
+    "imageFile": "fh6/0539-sierra-cars-700r-2021.webp"
   },
   {
     "game": "fh6",
@@ -10256,8 +10256,8 @@
     "braking": "10",
     "offroad": "4.5",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0540-sierra-cars-23-yokohama-alpha-2020.webp",
+    "imageFile": "fh6/0540-sierra-cars-23-yokohama-alpha-2020.webp"
   },
   {
     "game": "fh6",
@@ -10275,8 +10275,8 @@
     "braking": "5.8",
     "offroad": "5.1",
     "country": "United States",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0541-srt-viper-gts-2013.webp",
+    "imageFile": "fh6/0541-srt-viper-gts-2013.webp"
   },
   {
     "game": "fh6",
@@ -10294,8 +10294,8 @@
     "braking": "4.3",
     "offroad": "10",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0542-subaru-brz-2022-forza-edition-2022.webp",
+    "imageFile": "fh6/0542-subaru-brz-2022-forza-edition-2022.webp"
   },
   {
     "game": "fh6",
@@ -10313,8 +10313,8 @@
     "braking": "4.2",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0543-subaru-brz-2022-2022.webp",
+    "imageFile": "fh6/0543-subaru-brz-2022-2022.webp"
   },
   {
     "game": "fh6",
@@ -10332,8 +10332,8 @@
     "braking": "3.8",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0544-subaru-wrx-2022.webp",
+    "imageFile": "fh6/0544-subaru-wrx-2022.webp"
   },
   {
     "game": "fh6",
@@ -10351,8 +10351,8 @@
     "braking": "4.4",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0545-subaru-sti-s209-2019.webp",
+    "imageFile": "fh6/0545-subaru-sti-s209-2019.webp"
   },
   {
     "game": "fh6",
@@ -10370,8 +10370,8 @@
     "braking": "5.9",
     "offroad": "8.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0546-subaru-wrx-sti-arx-supercar-2018.webp",
+    "imageFile": "fh6/0546-subaru-wrx-sti-arx-supercar-2018.webp"
   },
   {
     "game": "fh6",
@@ -10389,8 +10389,8 @@
     "braking": "3.9",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0547-subaru-wrx-sti-2015-2015.webp",
+    "imageFile": "fh6/0547-subaru-wrx-sti-2015-2015.webp"
   },
   {
     "game": "fh6",
@@ -10408,8 +10408,8 @@
     "braking": "3.1",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0548-subaru-brz-2013-2013.webp",
+    "imageFile": "fh6/0548-subaru-brz-2013-2013.webp"
   },
   {
     "game": "fh6",
@@ -10427,8 +10427,8 @@
     "braking": "3.9",
     "offroad": "6.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0549-subaru-wrx-sti-2011-2011.webp",
+    "imageFile": "fh6/0549-subaru-wrx-sti-2011-2011.webp"
   },
   {
     "game": "fh6",
@@ -10446,8 +10446,8 @@
     "braking": "3.7",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0550-subaru-impreza-wrx-sti-2008-2008.webp",
+    "imageFile": "fh6/0550-subaru-impreza-wrx-sti-2008-2008.webp"
   },
   {
     "game": "fh6",
@@ -10465,8 +10465,8 @@
     "braking": "3.6",
     "offroad": "6.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0551-subaru-impreza-wrx-sti-2005-2005.webp",
+    "imageFile": "fh6/0551-subaru-impreza-wrx-sti-2005-2005.webp"
   },
   {
     "game": "fh6",
@@ -10484,8 +10484,8 @@
     "braking": "3.3",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0552-subaru-legacy-b4-2-0-gt-2005.webp",
+    "imageFile": "fh6/0552-subaru-legacy-b4-2-0-gt-2005.webp"
   },
   {
     "game": "fh6",
@@ -10503,8 +10503,8 @@
     "braking": "3.6",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0553-subaru-impreza-wrx-sti-2004-2004.webp",
+    "imageFile": "fh6/0553-subaru-impreza-wrx-sti-2004-2004.webp"
   },
   {
     "game": "fh6",
@@ -10522,8 +10522,8 @@
     "braking": "4.0",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0554-subaru-impreza-22b-sti-version-1998.webp",
+    "imageFile": "fh6/0554-subaru-impreza-22b-sti-version-1998.webp"
   },
   {
     "game": "fh6",
@@ -10541,8 +10541,8 @@
     "braking": "3.2",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0555-subaru-svx-1996.webp",
+    "imageFile": "fh6/0555-subaru-svx-1996.webp"
   },
   {
     "game": "fh6",
@@ -10560,8 +10560,8 @@
     "braking": "9.8",
     "offroad": "4.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0556-subaru-vivio-rx-r-forza-edition-1994.webp",
+    "imageFile": "fh6/0556-subaru-vivio-rx-r-forza-edition-1994.webp"
   },
   {
     "game": "fh6",
@@ -10579,8 +10579,8 @@
     "braking": "2.8",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0557-subaru-vivio-rx-r-1994.webp",
+    "imageFile": "fh6/0557-subaru-vivio-rx-r-1994.webp"
   },
   {
     "game": "fh6",
@@ -10598,8 +10598,8 @@
     "braking": "2.8",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0558-subaru-legacy-rs-1990.webp",
+    "imageFile": "fh6/0558-subaru-legacy-rs-1990.webp"
   },
   {
     "game": "fh6",
@@ -10617,8 +10617,8 @@
     "braking": "1.9",
     "offroad": "6.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0559-subaru-brat-gl-1980.webp",
+    "imageFile": "fh6/0559-subaru-brat-gl-1980.webp"
   },
   {
     "game": "fh6",
@@ -10636,8 +10636,8 @@
     "braking": "2.9",
     "offroad": "7.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0560-toyota-land-cruiser-2025.webp",
+    "imageFile": "fh6/0560-toyota-land-cruiser-2025.webp"
   },
   {
     "game": "fh6",
@@ -10655,8 +10655,8 @@
     "braking": "5.0",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0561-toyota-gr-corolla-2023.webp",
+    "imageFile": "fh6/0561-toyota-gr-corolla-2023.webp"
   },
   {
     "game": "fh6",
@@ -10674,8 +10674,8 @@
     "braking": "3.6",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0562-toyota-camry-trd-2023.webp",
+    "imageFile": "fh6/0562-toyota-camry-trd-2023.webp"
   },
   {
     "game": "fh6",
@@ -10693,8 +10693,8 @@
     "braking": "4.3",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0563-toyota-gr86-2022.webp",
+    "imageFile": "fh6/0563-toyota-gr86-2022.webp"
   },
   {
     "game": "fh6",
@@ -10712,8 +10712,8 @@
     "braking": "4.9",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0564-toyota-gr-yaris-2021.webp",
+    "imageFile": "fh6/0564-toyota-gr-yaris-2021.webp"
   },
   {
     "game": "fh6",
@@ -10731,8 +10731,8 @@
     "braking": "4.6",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0565-toyota-gr-supra-2020.webp",
+    "imageFile": "fh6/0565-toyota-gr-supra-2020.webp"
   },
   {
     "game": "fh6",
@@ -10750,8 +10750,8 @@
     "braking": "10",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0566-toyota-tacoma-trd-pro-forza-edition-2019.webp",
+    "imageFile": "fh6/0566-toyota-tacoma-trd-pro-forza-edition-2019.webp"
   },
   {
     "game": "fh6",
@@ -10769,8 +10769,8 @@
     "braking": "3.2",
     "offroad": "9.1",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0567-toyota-4runner-trd-pro-2019.webp",
+    "imageFile": "fh6/0567-toyota-4runner-trd-pro-2019.webp"
   },
   {
     "game": "fh6",
@@ -10788,8 +10788,8 @@
     "braking": "3.1",
     "offroad": "8.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0568-toyota-tacoma-trd-pro-2019.webp",
+    "imageFile": "fh6/0568-toyota-tacoma-trd-pro-2019.webp"
   },
   {
     "game": "fh6",
@@ -10807,8 +10807,8 @@
     "braking": "2.7",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0569-toyota-jpn-taxi-2017.webp",
+    "imageFile": "fh6/0569-toyota-jpn-taxi-2017.webp"
   },
   {
     "game": "fh6",
@@ -10826,8 +10826,8 @@
     "braking": "2.7",
     "offroad": "9.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0570-toyota-land-cruiser-arctic-trucks-at37-2016.webp",
+    "imageFile": "fh6/0570-toyota-land-cruiser-arctic-trucks-at37-2016.webp"
   },
   {
     "game": "fh6",
@@ -10845,8 +10845,8 @@
     "braking": "5.2",
     "offroad": "4.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0571-toyota-86-stories-2013.webp",
+    "imageFile": "fh6/0571-toyota-86-stories-2013.webp"
   },
   {
     "game": "fh6",
@@ -10864,8 +10864,8 @@
     "braking": "3.2",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0572-toyota-86-2013.webp",
+    "imageFile": "fh6/0572-toyota-86-2013.webp"
   },
   {
     "game": "fh6",
@@ -10883,8 +10883,8 @@
     "braking": "2.5",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0573-toyota-crown-super-deluxe-taxi-2005.webp",
+    "imageFile": "fh6/0573-toyota-crown-super-deluxe-taxi-2005.webp"
   },
   {
     "game": "fh6",
@@ -10902,8 +10902,8 @@
     "braking": "3.0",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0574-toyota-celica-sport-specialty-ii-2003.webp",
+    "imageFile": "fh6/0574-toyota-celica-sport-specialty-ii-2003.webp"
   },
   {
     "game": "fh6",
@@ -10921,8 +10921,8 @@
     "braking": "3.2",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0575-toyota-altezza-rs200-z-edition-1999.webp",
+    "imageFile": "fh6/0575-toyota-altezza-rs200-z-edition-1999.webp"
   },
   {
     "game": "fh6",
@@ -10940,8 +10940,8 @@
     "braking": "3.5",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0576-toyota-supra-rz-1998.webp",
+    "imageFile": "fh6/0576-toyota-supra-rz-1998.webp"
   },
   {
     "game": "fh6",
@@ -10959,8 +10959,8 @@
     "braking": "3.3",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0577-toyota-chaser-2-5-tourer-v-1997.webp",
+    "imageFile": "fh6/0577-toyota-chaser-2-5-tourer-v-1997.webp"
   },
   {
     "game": "fh6",
@@ -10978,8 +10978,8 @@
     "braking": "3.1",
     "offroad": "5.9",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0578-toyota-soarer-2-5-gt-t-1997.webp",
+    "imageFile": "fh6/0578-toyota-soarer-2-5-gt-t-1997.webp"
   },
   {
     "game": "fh6",
@@ -10997,8 +10997,8 @@
     "braking": "3.0",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0579-toyota-starlet-glanza-v-1996.webp",
+    "imageFile": "fh6/0579-toyota-starlet-glanza-v-1996.webp"
   },
   {
     "game": "fh6",
@@ -11016,8 +11016,8 @@
     "braking": "9.5",
     "offroad": "4.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0580-toyota-j-and-j-motorsport-supra-wtac-1995.webp",
+    "imageFile": "fh6/0580-toyota-j-and-j-motorsport-supra-wtac-1995.webp"
   },
   {
     "game": "fh6",
@@ -11035,8 +11035,8 @@
     "braking": "3.1",
     "offroad": "5.2",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0581-toyota-mr2-gt-1995.webp",
+    "imageFile": "fh6/0581-toyota-mr2-gt-1995.webp"
   },
   {
     "game": "fh6",
@@ -11054,8 +11054,8 @@
     "braking": "3.0",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0582-toyota-celica-gt-four-st205-1994.webp",
+    "imageFile": "fh6/0582-toyota-celica-gt-four-st205-1994.webp"
   },
   {
     "game": "fh6",
@@ -11073,8 +11073,8 @@
     "braking": "4.7",
     "offroad": "10",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0583-toyota-1-t100-baja-truck-1993.webp",
+    "imageFile": "fh6/0583-toyota-1-t100-baja-truck-1993.webp"
   },
   {
     "game": "fh6",
@@ -11092,8 +11092,8 @@
     "braking": "3.0",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0584-toyota-supra-2-0-gt-1992.webp",
+    "imageFile": "fh6/0584-toyota-supra-2-0-gt-1992.webp"
   },
   {
     "game": "fh6",
@@ -11111,8 +11111,8 @@
     "braking": "2.7",
     "offroad": "5.7",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0585-toyota-celica-gt-four-rc-st185-1992.webp",
+    "imageFile": "fh6/0585-toyota-celica-gt-four-rc-st185-1992.webp"
   },
   {
     "game": "fh6",
@@ -11130,8 +11130,8 @@
     "braking": "3.1",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0586-toyota-chaser-gt-twin-turbo-1991.webp",
+    "imageFile": "fh6/0586-toyota-chaser-gt-twin-turbo-1991.webp"
   },
   {
     "game": "fh6",
@@ -11149,8 +11149,8 @@
     "braking": "3.0",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0587-toyota-sera-1991.webp",
+    "imageFile": "fh6/0587-toyota-sera-1991.webp"
   },
   {
     "game": "fh6",
@@ -11168,8 +11168,8 @@
     "braking": "2.8",
     "offroad": "5.6",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0588-toyota-mr2-sc-1989.webp",
+    "imageFile": "fh6/0588-toyota-mr2-sc-1989.webp"
   },
   {
     "game": "fh6",
@@ -11187,8 +11187,8 @@
     "braking": "5.5",
     "offroad": "4.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0589-toyota-sprinter-trueno-gt-apex-forza-edition-1985.webp",
+    "imageFile": "fh6/0589-toyota-sprinter-trueno-gt-apex-forza-edition-1985.webp"
   },
   {
     "game": "fh6",
@@ -11206,8 +11206,8 @@
     "braking": "2.6",
     "offroad": "5.5",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0590-toyota-sprinter-trueno-gt-apex-1985.webp",
+    "imageFile": "fh6/0590-toyota-sprinter-trueno-gt-apex-1985.webp"
   },
   {
     "game": "fh6",
@@ -11225,8 +11225,8 @@
     "braking": "2.3",
     "offroad": "7.8",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0591-toyota-fj40-1979.webp",
+    "imageFile": "fh6/0591-toyota-fj40-1979.webp"
   },
   {
     "game": "fh6",
@@ -11244,8 +11244,8 @@
     "braking": "2.2",
     "offroad": "5.4",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0592-toyota-corolla-sr5-1974.webp",
+    "imageFile": "fh6/0592-toyota-corolla-sr5-1974.webp"
   },
   {
     "game": "fh6",
@@ -11263,8 +11263,8 @@
     "braking": "2.6",
     "offroad": "5.3",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0593-toyota-2000gt-1969.webp",
+    "imageFile": "fh6/0593-toyota-2000gt-1969.webp"
   },
   {
     "game": "fh6",
@@ -11282,8 +11282,8 @@
     "braking": "2.9",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0594-toyota-sports-800-1965.webp",
+    "imageFile": "fh6/0594-toyota-sports-800-1965.webp"
   },
   {
     "game": "fh6",
@@ -11301,8 +11301,8 @@
     "braking": "2.9",
     "offroad": "6.0",
     "country": "Japan",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0595-toyota-sports-800-fanta-edition-1965.webp",
+    "imageFile": "fh6/0595-toyota-sports-800-fanta-edition-1965.webp"
   },
   {
     "game": "fh6",
@@ -11320,8 +11320,8 @@
     "braking": "6.8",
     "offroad": "4.7",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0596-tvr-griffith-2018.webp",
+    "imageFile": "fh6/0596-tvr-griffith-2018.webp"
   },
   {
     "game": "fh6",
@@ -11339,8 +11339,8 @@
     "braking": "5.0",
     "offroad": "4.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0597-tvr-sagaris-2005.webp",
+    "imageFile": "fh6/0597-tvr-sagaris-2005.webp"
   },
   {
     "game": "fh6",
@@ -11358,8 +11358,8 @@
     "braking": "6.6",
     "offroad": "3.8",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0598-tvr-cerbera-speed-12-1998.webp",
+    "imageFile": "fh6/0598-tvr-cerbera-speed-12-1998.webp"
   },
   {
     "game": "fh6",
@@ -11377,8 +11377,8 @@
     "braking": "8.0",
     "offroad": "4.9",
     "country": "United Kingdom",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0599-ultima-evolution-coupe-1020-2015.webp",
+    "imageFile": "fh6/0599-ultima-evolution-coupe-1020-2015.webp"
   },
   {
     "game": "fh6",
@@ -11396,8 +11396,8 @@
     "braking": "4.3",
     "offroad": "6.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0600-volkswagen-golf-r-2022-2022.webp",
+    "imageFile": "fh6/0600-volkswagen-golf-r-2022-2022.webp"
   },
   {
     "game": "fh6",
@@ -11415,8 +11415,8 @@
     "braking": "3.9",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0601-volkswagen-golf-r-2021-2021.webp",
+    "imageFile": "fh6/0601-volkswagen-golf-r-2021-2021.webp"
   },
   {
     "game": "fh6",
@@ -11434,8 +11434,8 @@
     "braking": "5.9",
     "offroad": "7.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0602-volkswagen-34-volkswagen-andretti-rally-cross-beetle-2017.webp",
+    "imageFile": "fh6/0602-volkswagen-34-volkswagen-andretti-rally-cross-beetle-2017.webp"
   },
   {
     "game": "fh6",
@@ -11453,8 +11453,8 @@
     "braking": "3.8",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0603-volkswagen-golf-r-2014-2014.webp",
+    "imageFile": "fh6/0603-volkswagen-golf-r-2014-2014.webp"
   },
   {
     "game": "fh6",
@@ -11472,8 +11472,8 @@
     "braking": "4.0",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0604-volkswagen-scirocco-r-2011.webp",
+    "imageFile": "fh6/0604-volkswagen-scirocco-r-2011.webp"
   },
   {
     "game": "fh6",
@@ -11491,8 +11491,8 @@
     "braking": "3.5",
     "offroad": "5.8",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0605-volkswagen-golf-r-2010-2010.webp",
+    "imageFile": "fh6/0605-volkswagen-golf-r-2010-2010.webp"
   },
   {
     "game": "fh6",
@@ -11510,8 +11510,8 @@
     "braking": "2.8",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0606-volkswagen-corrado-vr6-1995.webp",
+    "imageFile": "fh6/0606-volkswagen-corrado-vr6-1995.webp"
   },
   {
     "game": "fh6",
@@ -11529,8 +11529,8 @@
     "braking": "2.4",
     "offroad": "5.2",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0607-volkswagen-golf-gti-16v-mk2-1992.webp",
+    "imageFile": "fh6/0607-volkswagen-golf-gti-16v-mk2-1992.webp"
   },
   {
     "game": "fh6",
@@ -11548,8 +11548,8 @@
     "braking": "2.9",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0608-volkswagen-rallye-golf-1989.webp",
+    "imageFile": "fh6/0608-volkswagen-rallye-golf-1989.webp"
   },
   {
     "game": "fh6",
@@ -11567,8 +11567,8 @@
     "braking": "2.4",
     "offroad": "5.3",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0609-volkswagen-golf-gti-1983.webp",
+    "imageFile": "fh6/0609-volkswagen-golf-gti-1983.webp"
   },
   {
     "game": "fh6",
@@ -11586,8 +11586,8 @@
     "braking": "2.5",
     "offroad": "6.6",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0610-volkswagen-pickup-lx-1982.webp",
+    "imageFile": "fh6/0610-volkswagen-pickup-lx-1982.webp"
   },
   {
     "game": "fh6",
@@ -11605,8 +11605,8 @@
     "braking": "3.1",
     "offroad": "8.0",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0611-volkswagen-class-5-1600-baja-bug-1969.webp",
+    "imageFile": "fh6/0611-volkswagen-class-5-1600-baja-bug-1969.webp"
   },
   {
     "game": "fh6",
@@ -11624,8 +11624,8 @@
     "braking": "1.9",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0612-volkswagen-beetle-1963.webp",
+    "imageFile": "fh6/0612-volkswagen-beetle-1963.webp"
   },
   {
     "game": "fh6",
@@ -11643,8 +11643,8 @@
     "braking": "2.0",
     "offroad": "5.9",
     "country": "Germany",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0613-volkswagen-type-2-de-luxe-1963.webp",
+    "imageFile": "fh6/0613-volkswagen-type-2-de-luxe-1963.webp"
   },
   {
     "game": "fh6",
@@ -11662,8 +11662,8 @@
     "braking": "3.1",
     "offroad": "5.7",
     "country": "Sweden",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0614-volvo-242-turbo-evolution-1983.webp",
+    "imageFile": "fh6/0614-volvo-242-turbo-evolution-1983.webp"
   },
   {
     "game": "fh6",
@@ -11681,8 +11681,8 @@
     "braking": "3.3",
     "offroad": "6.2",
     "country": "China",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0615-wuling-hongguang-mini-ev-2022.webp",
+    "imageFile": "fh6/0615-wuling-hongguang-mini-ev-2022.webp"
   },
   {
     "game": "fh6",
@@ -11700,8 +11700,8 @@
     "braking": "7.7",
     "offroad": "5.3",
     "country": "China",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0616-wuling-sunshine-s-forza-edition-2020.webp",
+    "imageFile": "fh6/0616-wuling-sunshine-s-forza-edition-2020.webp"
   },
   {
     "game": "fh6",
@@ -11719,8 +11719,8 @@
     "braking": "2.6",
     "offroad": "6.5",
     "country": "China",
-    "image": "",
-    "imageFile": ""
+    "image": "assets/cars/fh6/0617-wuling-sunshine-s-2013.webp",
+    "imageFile": "fh6/0617-wuling-sunshine-s-2013.webp"
   },
   {
     "game": "fh6",
@@ -11738,7 +11738,45 @@
     "braking": "10",
     "offroad": "4.8",
     "country": "Denmark",
+    "image": "assets/cars/fh6/0618-zenvo-tsr-s-2019.webp",
+    "imageFile": "fh6/0618-zenvo-tsr-s-2019.webp"
+  },
+  {
+    "name": "Absolute Ultimate Chance",
+    "kind": "ultimate-chance",
+    "source": "Any car you want",
+    "value": "∞ CR",
+    "rarity": "Ultimate",
+    "piClass": "",
+    "pi": "",
+    "speed": "",
+    "handling": "",
+    "acceleration": "",
+    "launch": "",
+    "braking": "",
+    "offroad": "",
+    "country": "",
     "image": "",
-    "imageFile": ""
+    "imageFile": "",
+    "game": "fh6"
+  },
+  {
+    "name": "Rival's choice",
+    "kind": "rivals-choice",
+    "source": "Rival's choice",
+    "value": "Rival's choice",
+    "rarity": "Rival",
+    "piClass": "",
+    "pi": "",
+    "speed": "",
+    "handling": "",
+    "acceleration": "",
+    "launch": "",
+    "braking": "",
+    "offroad": "",
+    "country": "",
+    "image": "",
+    "imageFile": "",
+    "game": "fh6"
   }
 ]

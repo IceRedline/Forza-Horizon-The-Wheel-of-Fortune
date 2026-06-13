@@ -1,5 +1,9 @@
 // Runtime data and timing constants. The HTML files only provide the page shell.
-const cars = window.FH4_CARS || [];
+const gameDatasets = {
+  fh4: { label: 'Forza Horizon 4', cars: window.FH4_CARS || [] },
+  fh5: { label: 'Forza Horizon 5', cars: window.FH5_CARS || [] },
+  fh6: { label: 'Forza Horizon 6', cars: window.FH6_CARS || [] },
+};
 const forceRivalsChoice = document.body.dataset.forceRivalsChoice === 'true';
 const spinLength = 96;
 const winnerOffsetFromStart = 7;
@@ -38,7 +42,7 @@ const themeToggle = document.getElementById('themeToggle');
 const gamePicker = document.getElementById('gamePicker');
 const gamePickerToggle = document.getElementById('gamePickerToggle');
 const gamePickerMenu = document.getElementById('gamePickerMenu');
-const gamePickerTooltip = document.getElementById('gamePickerTooltip');
+const gamePickerLabel = gamePickerToggle?.querySelector('span');
 const spinSound = new Audio(spinSoundSrc);
 spinSound.preload = 'none';
 spinSound.volume = spinSoundVolume;
@@ -51,11 +55,8 @@ let currentStartTranslate = 0;
 let hasSpun = false;
 let currentResultAnimation = 0;
 let pendingStopSoundTimer = 0;
-const specialChanceCount = cars.filter(isSpecialChance).length;
-const carCount = cars.length - specialChanceCount;
-totalCars.textContent = specialChanceCount
-  ? `${carCount.toLocaleString('en-US')} + ${specialChanceCount.toLocaleString('en-US')}`
-  : cars.length.toLocaleString('en-US');
+let currentGameId = 'fh4';
+let cars = gameDatasets[currentGameId].cars;
 
 // Theme is intentionally page-local: default dark, optional light, persisted per browser.
 function setTheme(theme) {
@@ -85,16 +86,6 @@ function closeGamePicker() {
   gamePickerToggle.setAttribute('aria-expanded', 'false');
 }
 
-function showComingSoonTooltip() {
-  if (!gamePickerTooltip) return;
-  gamePickerTooltip.classList.remove('is-visible');
-  void gamePickerTooltip.offsetWidth;
-  gamePickerTooltip.classList.add('is-visible');
-  setTimeout(() => {
-    gamePickerTooltip.classList.remove('is-visible');
-  }, 1800);
-}
-
 if (gamePickerToggle && gamePicker) {
   gamePickerToggle.addEventListener('click', () => {
     const isOpen = gamePicker.classList.toggle('is-open');
@@ -106,7 +97,7 @@ if (gamePickerMenu) {
   gamePickerMenu.addEventListener('click', (event) => {
     const button = event.target.closest('button');
     if (!button) return;
-    if (button.dataset.comingSoon !== undefined) showComingSoonTooltip();
+    if (button.dataset.game) setGame(button.dataset.game);
     closeGamePicker();
   });
 }
@@ -187,6 +178,18 @@ function isSpecialChance(car) {
   return isUltimateChance(car) || isRivalsChoice(car);
 }
 
+function getGameLabel(gameId = currentGameId) {
+  return gameDatasets[gameId]?.label || gameDatasets.fh4.label;
+}
+
+function getRegularCars(dataset = cars) {
+  return dataset.filter((car) => !isSpecialChance(car));
+}
+
+function updateTotalCars() {
+  totalCars.textContent = getRegularCars().length.toLocaleString('en-US');
+}
+
 function getResultRgb(car) {
   if (isUltimateChance(car)) return '255, 255, 255';
   if (isRivalsChoice(car)) return '210, 24, 24';
@@ -250,9 +253,12 @@ function renderCaseItem(car) {
       </div>
     `;
   }
+  const imageHtml = car.image
+    ? `<img src="${car.image}" alt="">`
+    : `<div class="case-item-placeholder" aria-hidden="true">${escapeHtml(getGameLabel(car.game))}</div>`;
   return `
     <div class="case-item ${getClassColorClass(car)}">
-      <img src="${car.image}" alt="">
+      ${imageHtml}
       <div class="case-item-name">${escapeHtml(car.name)}</div>
       <div class="case-item-pi">${escapeHtml(`${car.piClass} ${car.pi}`.trim() || 'PI -')}</div>
     </div>
@@ -486,7 +492,9 @@ function addHistory(car) {
   item.className = `history-item history-enter${isUltimateChance(car) ? ' history-special' : ''}${isRivalsChoice(car) ? ' history-rival' : ''}`;
   const imageHtml = isSpecialChance(car)
     ? '<div class="history-special-mark">?</div>'
-    : `<img src="${car.image}" alt="">`;
+    : car.image
+      ? `<img src="${car.image}" alt="">`
+      : '<div class="history-special-mark">FH</div>';
   item.innerHTML = `
     ${imageHtml}
     <div>
@@ -514,6 +522,44 @@ function escapeHtml(value) {
     '>': '&gt;',
     '"': '&quot;',
   }[char]));
+}
+
+function resetWheelForCurrentGame() {
+  const initialSequence = sampleCars(spinLength);
+  const initialIndex = Math.max(0, initialSequence.length - 1 - startOffsetFromEnd);
+  currentSequence = initialSequence;
+  currentWinnerIndex = Math.min(winnerOffsetFromStart, initialSequence.length - 1);
+  placeRivalsChoice(currentSequence, currentWinnerIndex);
+  renderCaseTrack(currentSequence);
+  currentStartTranslate = getWinnerTranslate(initialIndex);
+  caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
+  clearCurrentResult(false);
+  updateResultGlow({ piClass: 'd' }, false);
+  carName.textContent = 'Press Spin';
+  metaRow.innerHTML = '';
+  status.textContent = 'Ready to spin';
+}
+
+function setGame(gameId) {
+  if (!gameDatasets[gameId] || spinButton.disabled) return;
+  currentGameId = gameId;
+  cars = gameDatasets[currentGameId].cars;
+  const label = getGameLabel();
+
+  if (gamePickerLabel) gamePickerLabel.textContent = label;
+  document.title = `${label} - Wheelspin Simulator`;
+  gamePickerMenu?.querySelectorAll('[data-game]').forEach((button) => {
+    button.classList.toggle('active', button.dataset.game === currentGameId);
+  });
+
+  resetStopSound();
+  stopSpinSound();
+  stage.classList.remove('spinning');
+  history.innerHTML = '';
+  hasSpun = false;
+  currentResultAnimation += 1;
+  updateTotalCars();
+  resetWheelForCurrentGame();
 }
 
 // Main spin flow: prepare assets, optionally swap the reel under a white flash, then animate.
@@ -584,13 +630,4 @@ async function spin() {
 spinButton.addEventListener('click', spin);
 
 // Initial reel is already full-length so the first click can spin immediately without a reload flash.
-const initialSequence = sampleCars(spinLength);
-const initialIndex = Math.max(0, initialSequence.length - 1 - startOffsetFromEnd);
-currentSequence = initialSequence;
-currentWinnerIndex = Math.min(winnerOffsetFromStart, initialSequence.length - 1);
-placeRivalsChoice(currentSequence, currentWinnerIndex);
-renderCaseTrack(currentSequence);
-currentStartTranslate = getWinnerTranslate(initialIndex);
-caseTrack.style.transform = `translate3d(0, ${currentStartTranslate}px, 0)`;
-clearCurrentResult(false);
-status.textContent = 'Ready to spin';
+setGame(currentGameId);
